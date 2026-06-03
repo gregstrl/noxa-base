@@ -46,47 +46,6 @@ CREATE TABLE `account_info` (
 -- Déchargement des données de la table `account_info`
 --
 
-INSERT INTO `account_info` (`account_id`, `license`, `steam`, `xbl`, `discord`, `live`, `shopgift`, `fivem`, `name`, `ip`, `guid`, `first_connection`) VALUES
-(40166, 'license:3310914fc4f9f87dd05b0fb4fe52519a2d0702d4', 'steam:11000015b92ae1b', 'xbl:2535451769415070', '', 'live:1055519757629289', 0, '', '5129 3929 1920 2019 3910', '26.106.232.214', '148618792003094509', '2025-04-27 22:51:55'),
-(40167, 'license:889f0d96d7e5b365c6921a856b44258bb17c0868', 'steam:1100001431387cd', '', 'discord:1321901468504035380', '', 1, 'fivem:1159227', 'Mister', '26.108.78.218', '148618792014132758', '2025-04-27 23:56:12'),
-(40168, 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'steam:1100001703f92b2', 'xbl:2535428279336930', 'discord:980532233943261274', 'live:985155475126644', 1, 'fivem:9141304', 'Eva.lpq', '51.210.126.15', '148618792341387883', '2025-08-30 13:02:30'),
-(40169, 'license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 'steam:110000168ce3765', '', 'discord:749258273449836677', '', 1, '', '13Tpc', '176.133.204.6', '148618792025798040', '2025-08-31 20:55:38'),
-(40170, 'license:f7691c3c253b9ba4571deb872fbb4378a548dd22', 'steam:11000010f2bee67', 'xbl:2533274852608105', 'discord:722072847828385832', 'live:1829581090713358', 0, 'fivem:16129274', 'H || Teyko || CDT || 11 || Juan Hernandez', '92.91.130.85', '148618792339046201', '2025-09-01 14:14:38'),
-(40171, 'license:214315ffb6b1f4899c249364bc1b44dfd5a690e1', 'steam:1100001551ab872', 'xbl:2535456444018481', 'discord:518364636190343179', 'live:985154918007056', 1, '', 'meetballseater', '153.94.16.91', '148618792012104993', '2025-09-09 12:13:33'),
-(40177, 'license:44cd1ef37b4fda00d53702007fb2c5cec6356919', '', 'xbl:2535462579062807', 'discord:898673240254328853', 'live:914801468312569', 1, 'fivem:8110601', 'Neo', '31.33.226.19', '148618792009385258', '2025-09-11 19:50:43'),
-(40172, 'license:52953829a66104dfd4a1cf30f3ef7f5990714968', 'steam:110000149577c8a', '', 'discord:1292474364960313406', '', 1, 'fivem:13351934', 'SBMD', '94.107.164.85', '148618792048559805', '2025-09-09 16:06:07'),
-(40178, 'license:c4a0eb2bf2fe32c0f616b4b18e075a9c181717d9', '', 'xbl:2535451806471494', 'discord:1122138705956712468', 'live:1055519728333451', 0, '', 'petit', '82.122.132.84', '148618791998542368', '2025-09-12 16:34:06'),
-(40173, 'license:a3f90caeb2011bbe94ead4782b3ff5832d39bdf1', '', 'xbl:2535425079411194', 'discord:810116130915090443', 'live:1055519063570527', 1, 'fivem:7924653', 'SayonSoon', '86.244.4.140', '148618791998278790', '2025-09-09 16:36:01'),
-(40174, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'steam:110000149b59db1', 'xbl:2535469584096718', 'discord:873493653975334973', 'live:844426020416766', 1, 'fivem:15010377', 'R I C H Y ', '89.84.160.107', '148618791998270555', '2025-09-10 14:28:27'),
-(40175, 'license:a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a', 'steam:11000015dfeaf23', '', 'discord:1100896231510790195', '', 0, '', 'Rss4', '91.165.126.205', '148618792358683180', '2025-09-10 19:15:32'),
-(40176, 'license:c25cd13ce096742893d9d010335e7e148877d361', '', '', 'discord:423226260735524865', '', 0, 'fivem:9745193', '[M] Razmo2.7', '91.171.170.223', '148618792016302274', '2025-09-10 21:34:12'),
-(40179, 'license:85e8937833a05423627d78865cb0da6ab013652b', 'steam:1100001682983c4', '', 'discord:1399066877195714592', '', 1, 'fivem:17526033', 'BacKey', '37.67.100.177', '148618793056330806', '2025-09-12 18:19:44'),
-(40180, 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 'steam:1100001718399bb', '', 'discord:1025770976111243345', '', 1, 'fivem:17049513', 'Hivann', '31.39.170.43', '148618792013904196', '2025-09-12 18:30:43'),
-(40181, 'license:ff187a16a8f5e997e2d25dcb92abba25aff5f52f', 'steam:11000011a69fe96', 'xbl:2535430905460164', 'discord:819672516733173780', 'live:985158097052482', 1, 'fivem:8705535', 'Chinois', '109.9.87.130', '148618792138259055', '2025-09-12 18:32:17'),
-(40182, 'license:88afb341c54c6ed2006bd7be158667299b00d341', 'steam:110000155e26122', 'xbl:2535471213286282', 'discord:418004010478338048', 'live:1055522568579778', 1, 'fivem:9737729', 'SPECMOIT\'AIMELESHOMMES', '92.138.39.70', '148618792107284211', '2025-09-12 18:34:14'),
-(40183, '', '', '', '', '', 0, '', NULL, NULL, NULL, '2025-09-12 18:46:31'),
-(40184, 'license:d80d72c120d125db77e208fec6c02ffd4d14ef6b', 'steam:11000015862bcd3', 'xbl:2535467344193100', 'discord:1018137605180772352', 'live:985154517884558', 1, 'fivem:10403284', 'Diamonds', '91.168.23.142', '148618792007953415', '2025-09-12 18:53:28'),
-(40185, 'license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', 'steam:110000164fffe1a', '', 'discord:1355469418909536426', '', 1, 'fivem:17406911', 'Tim', '88.183.241.156', '148618792031144383', '2025-09-12 19:22:32'),
-(40190, 'license:7ff6f1946f2f1bfe40b860ecf6100019f1a71bc6', 'steam:110000172752a7c', 'xbl:2535417480104789', 'discord:1166523819872235544', 'live:844431724456027', 1, 'fivem:8328191', 'Rimoo', '90.76.170.14', '148618791999750633', '2025-09-13 03:56:28'),
-(40186, 'license:80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f', '', 'xbl:2535429938588939', 'discord:593849034842832897', 'live:1055519467626155', 1, 'fivem:14480406', 'WASK', '83.192.13.123', '148618792005470852', '2025-09-12 19:29:00'),
-(40187, 'license:88830294ccd5ffe723158350adb3f2046b1fe30c', '', '', 'discord:853762504056635423', '', 1, 'fivem:12639573', 'Utilisateur', '90.79.99.165', '148618792035769227', '2025-09-12 20:08:39'),
-(40191, 'license:effa1ffd386df938a94332c73611cf8003bdbf36', '', '', 'discord:835091428610146306', '', 1, 'fivem:9904507', '\'mamad', '88.174.129.205', '148618791999149180', '2025-09-13 10:17:49'),
-(40188, 'license:5702e6e4c5207718991892da312aca4d700333b3', 'steam:11000016e512e8f', '', 'discord:1329202937250975834', '', 0, 'fivem:16485159', 'inesla92iii', '88.186.22.205', '148618792016994071', '2025-09-12 20:24:03'),
-(40189, 'license:2e35218c23bd014dcb89d25164f85957a1af2a7f', '', '', '', '', 0, '', 'JteRushEnQuamis', '86.221.93.65', '148618792001670836', '2025-09-12 21:19:33'),
-(40192, 'license:bd7372e5293d8536f66d64ef9ba5056eff7993a5', 'steam:11000015a184342', 'xbl:2535465229109027', 'discord:744533231633956895', 'live:1055519149294178', 0, 'fivem:9949995', 'Ne3Ne3', '88.177.133.3', '148618792010818930', '2025-09-13 12:06:12'),
-(40193, 'license:bd0b96bcf0ad850627351145e2cd98ce9fb9b394', '', '', '', '', 0, '', 'kjhjk', '82.66.123.209', '148618792050986758', '2025-09-13 13:29:59'),
-(40194, 'license:3c2f3c5fb0bd9cf8f0b03f9c87b936d5fb0a87c8', 'steam:110000117886052', '', 'discord:516241634833334325', '', 1, 'fivem:1137998', '20h', '88.139.217.250', '148618792001887836', '2025-09-13 14:37:00'),
-(40195, 'license:5b72f58116e111c998f65cc2446b28716b1c6656', '', 'xbl:2535455750848799', 'discord:1321327162221006919', 'live:914804503654849', 1, 'fivem:15914073', 'Zey', '31.37.166.227', '148618792003450305', '2025-09-13 15:01:22'),
-(40196, 'license:dc3ce3ee6e5b3842fa1cadd850be3fa9272eb4bb', '', '', 'discord:1134664855098511380', '', 0, 'fivem:11758808', '™ tw_Lvkatron', '88.160.137.82', '148618791999997368', '2025-09-13 18:02:18'),
-(40197, 'license:2d3bf527a3daf2e686ea0446f622abe95b591441', 'steam:1100001561caf2f', 'xbl:2535407399951082', 'discord:1113143580626784297', 'live:985155528656235', 0, '', 'BARBIE EN Y', '62.35.143.26', '148618792032396243', '2025-09-13 19:10:37'),
-(40198, 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c', '', '', 'discord:1147835790777405510', '', 1, 'fivem:10775537', 'MT | lito', '91.163.141.215', '148618792015968900', '2025-09-13 19:22:30'),
-(40199, 'license:455f58044f988017e2a1eafe39970040aa2ecaf3', 'steam:110000157fbbf32', '', 'discord:1041107501912965160', '', 1, 'fivem:13513617', 'Petrouchka', '176.165.150.65', '148618792029641211', '2025-09-14 17:50:24'),
-(40200, 'license:c22273042664c8be00ea1a43f764385f57495fb8', '', 'xbl:2535422806761098', 'discord:838111023046328352', 'live:914804595120160', 0, 'fivem:5162073', 'dams6', '90.60.207.115', '148618792203811149', '2025-09-14 18:47:34'),
-(40201, 'license:ce5deecf9b52b051d22f5b1f7c9e2fe726a91e1c', 'steam:110000160421c84', '', 'discord:1171897239791227014', '', 1, 'fivem:5386085', 'Taeck1s', '81.254.60.203', '148618792044705336', '2025-09-14 23:26:34'),
-(40202, 'license:e3d6d7770360b919247209fbe422f0103682305a', '', '', 'discord:1136739245122388040', '', 0, 'fivem:17612132', 'monst', '78.113.135.154', '148618792085488227', '2025-09-15 16:17:41'),
-(40203, 'license:86f18a2d6f24691336c74f6987dd645cdb65e45a', 'steam:11000014ab7838d', 'xbl:2535436572719125', 'discord:847959669620473886', 'live:1688851324404201', 1, 'fivem:17567329', 'WaR', '85.98.199.25', '148618792041938618', '2025-09-17 07:23:35'),
-(40204, 'license:5a462e16ff3e0af65da0ac6c653e479c8b4a3436', '', '', '', '', 0, '', 'FlowUP', '178.51.156.223', '148618792004539197', '2025-09-20 07:20:28'),
-(40205, 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', '', 'xbl:2535428279336930', 'discord:980532233943261274', 'live:985155475126644', 0, 'fivem:9141304', 'dimit', '192.168.1.184', '148618792073983461', '2025-10-08 04:59:44');
 
 -- --------------------------------------------------------
 
@@ -157,37 +116,6 @@ CREATE TABLE `addon_account_data` (
 -- Déchargement des données de la table `addon_account_data`
 --
 
-INSERT INTO `addon_account_data` (`id`, `account_name`, `money`, `owner`) VALUES
-(45288, 'society_test10', 25000, NULL),
-(45531, 'society_cardealer', 9999999999, NULL),
-(48494, 'society_avocat', 0, NULL),
-(48495, 'society_Kays', 0, NULL),
-(48496, 'society_bahamas', 0, NULL),
-(48497, 'society_ambulance', 0, NULL),
-(48498, 'society_boatseller', 0, NULL),
-(48499, 'society_boatshop', 0, NULL),
-(48500, 'society_brinks', 0, NULL),
-(48501, 'society_cardealer2', 0, NULL),
-(48502, 'society_carshop', 0, NULL),
-(48503, 'society_fib', 0, NULL),
-(48504, 'society_gouv', 0, NULL),
-(48505, 'society_k2r', 0, NULL),
-(48506, 'society_kk', 0, NULL),
-(48507, 'society_mecano', 0, NULL),
-(48508, 'society_mecano2', 0, NULL),
-(48509, 'society_planeseller', 0, NULL),
-(48510, 'society_planeshop', 0, NULL),
-(48511, 'society_police', 0, NULL),
-(48512, 'society_rap', 0, NULL),
-(48513, 'society_realestateagent', 0, NULL),
-(48514, 'society_roxsherif', 0, NULL),
-(48515, 'society_tabac', 0, NULL),
-(48516, 'society_taxi', 0, NULL),
-(48517, 'society_test1', 0, NULL),
-(48518, 'society_testk', 0, NULL),
-(48519, 'society_unicorn', 0, NULL),
-(48520, 'society_vigne', 0, NULL),
-(48521, 'society_vigneron', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -255,25 +183,6 @@ CREATE TABLE `addon_inventory_items` (
 -- Déchargement des données de la table `addon_inventory_items`
 --
 
-INSERT INTO `addon_inventory_items` (`id`, `inventory_name`, `name`, `count`, `owner`) VALUES
-(1, 'society_police', 'kevlar', 11, NULL),
-(2, 'society_police', 'coke_pooch', 4, NULL),
-(3, 'society_police', 'weed_pooch', 4, NULL),
-(4, 'society_police', 'weed', 5, NULL),
-(5, 'society_police', 'coke', 15, NULL),
-(6, 'society_police', 'phone', 15, NULL),
-(7, 'society_police', 'clip', 237, NULL),
-(8, 'society_police', 'lsd', 1, NULL),
-(9, 'society_15', 'bandage', 1, NULL),
-(10, 'society_police', 'radio', 12, NULL),
-(11, 'society_police', 'meth_pooch', 1, NULL),
-(13, 'society_police', 'lsd_pooch', 1, NULL),
-(14, 'society_police', 'silencer', 1, NULL),
-(15, 'society_police', 'meth', 1, NULL),
-(17, 'society_police', 'bread', 19, NULL),
-(19, 'society_police', 'kevlarvip', 1, NULL),
-(20, 'society_gouv', 'phone', 1, NULL),
-(22, 'society_police', 'water', 7, NULL);
 
 -- --------------------------------------------------------
 
@@ -297,34 +206,6 @@ CREATE TABLE `baninfo` (
 -- Déchargement des données de la table `baninfo`
 --
 
-INSERT INTO `baninfo` (`id`, `license`, `identifier`, `liveid`, `xblid`, `discord`, `playerip`, `playername`, `Token`) VALUES
-(1, 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'steam:1100001703f92b2', 'live:985155475126644', 'xbl:2535428279336930', 'discord:980532233943261274', 'ip:51.210.126.15', 'Eva.lpq', NULL),
-(2, 'license:214315ffb6b1f4899c249364bc1b44dfd5a690e1', 'steam:1100001551ab872', 'live:985154918007056', 'xbl:2535456444018481', 'discord:518364636190343179', 'ip:153.94.16.91', 'meetballseater', NULL),
-(3, 'license:52953829a66104dfd4a1cf30f3ef7f5990714968', 'steam:110000149577c8a', NULL, NULL, 'discord:1292474364960313406', 'ip:94.107.164.85', 'SBMD', NULL),
-(4, 'license:a3f90caeb2011bbe94ead4782b3ff5832d39bdf1', NULL, 'live:1055519063570527', 'xbl:2535425079411194', 'discord:810116130915090443', 'ip:86.244.4.140', 'SayonSoon', NULL),
-(5, 'license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 'steam:110000168ce3765', NULL, NULL, 'discord:749258273449836677', 'ip:176.133.204.6', '13Tpc', NULL),
-(6, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'steam:110000149b59db1', 'live:844426020416766', 'xbl:2535469584096718', 'discord:873493653975334973', 'ip:89.84.160.107', 'R I C H Y ', NULL),
-(7, 'license:a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a', 'steam:11000015dfeaf23', NULL, NULL, 'discord:1100896231510790195', 'ip:91.165.126.205', 'Rss4', NULL),
-(8, 'license:44cd1ef37b4fda00d53702007fb2c5cec6356919', NULL, 'live:914801468312569', 'xbl:2535462579062807', 'discord:898673240254328853', 'ip:31.33.226.19', 'Neo', NULL),
-(9, 'license:85e8937833a05423627d78865cb0da6ab013652b', 'steam:1100001682983c4', NULL, NULL, 'discord:1399066877195714592', 'ip:37.67.100.177', 'BacKey', NULL),
-(10, 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 'steam:1100001718399bb', NULL, NULL, 'discord:1025770976111243345', 'ip:31.39.170.43', 'Hivann', NULL),
-(11, 'license:88afb341c54c6ed2006bd7be158667299b00d341', 'steam:110000155e26122', 'live:1055522568579778', 'xbl:2535471213286282', 'discord:418004010478338048', 'ip:92.138.39.70', 'SPECMOIT\'AIMELESHOMMES', NULL),
-(12, 'license:ff187a16a8f5e997e2d25dcb92abba25aff5f52f', 'steam:11000011a69fe96', 'live:985158097052482', 'xbl:2535430905460164', 'discord:819672516733173780', 'ip:109.9.87.130', 'Chinois', NULL),
-(13, 'license:d80d72c120d125db77e208fec6c02ffd4d14ef6b', 'steam:11000015862bcd3', 'live:985154517884558', 'xbl:2535467344193100', 'discord:1018137605180772352', 'ip:91.168.23.142', 'Diamonds', NULL),
-(14, 'license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', 'steam:110000164fffe1a', NULL, NULL, 'discord:1355469418909536426', 'ip:88.183.241.156', 'Tim', NULL),
-(15, 'license:80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f', NULL, 'live:1055519467626155', 'xbl:2535429938588939', 'discord:593849034842832897', 'ip:83.192.13.123', 'WASK', NULL),
-(16, 'license:88830294ccd5ffe723158350adb3f2046b1fe30c', NULL, NULL, NULL, 'discord:853762504056635423', 'ip:90.79.99.165', 'Utilisateur', NULL),
-(17, 'license:2e35218c23bd014dcb89d25164f85957a1af2a7f', NULL, NULL, NULL, NULL, 'ip:86.221.93.65', 'JteRushEnQuamis', NULL),
-(18, 'license:7ff6f1946f2f1bfe40b860ecf6100019f1a71bc6', 'steam:110000172752a7c', 'live:844431724456027', 'xbl:2535417480104789', 'discord:1166523819872235544', 'ip:90.76.170.14', 'Rimoo', NULL),
-(19, 'license:effa1ffd386df938a94332c73611cf8003bdbf36', NULL, NULL, NULL, 'discord:835091428610146306', 'ip:88.174.129.205', '\'mamad', NULL),
-(20, 'license:bd0b96bcf0ad850627351145e2cd98ce9fb9b394', NULL, NULL, NULL, NULL, 'ip:82.66.123.209', 'kjhjk', NULL),
-(21, 'license:3c2f3c5fb0bd9cf8f0b03f9c87b936d5fb0a87c8', 'steam:110000117886052', NULL, NULL, 'discord:516241634833334325', 'ip:88.139.217.250', '20h', NULL),
-(22, 'license:5b72f58116e111c998f65cc2446b28716b1c6656', NULL, 'live:914804503654849', 'xbl:2535455750848799', 'discord:1321327162221006919', 'ip:31.37.166.227', 'Zey', NULL),
-(23, 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c', NULL, NULL, NULL, 'discord:1147835790777405510', 'ip:91.163.141.215', 'MT | lito', NULL),
-(24, 'license:455f58044f988017e2a1eafe39970040aa2ecaf3', 'steam:110000157fbbf32', NULL, NULL, 'discord:1041107501912965160', 'ip:176.165.150.65', 'Petrouchka', NULL),
-(25, 'license:ce5deecf9b52b051d22f5b1f7c9e2fe726a91e1c', 'steam:110000160421c84', NULL, NULL, 'discord:1171897239791227014', 'ip:81.254.60.203', 'Taeck1s', NULL),
-(26, 'license:86f18a2d6f24691336c74f6987dd645cdb65e45a', 'steam:11000014ab7838d', 'live:1688851324404201', 'xbl:2535436572719125', 'discord:847959669620473886', 'ip:85.98.199.25', 'WaR', NULL),
-(27, 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', NULL, 'live:985155475126644', 'xbl:2535428279336930', 'discord:980532233943261274', 'ip:192.168.1.184', 'dimit', NULL);
 
 -- --------------------------------------------------------
 
@@ -347,238 +228,6 @@ CREATE TABLE `bank_transactions` (
 -- Déchargement des données de la table `bank_transactions`
 --
 
-INSERT INTO `bank_transactions` (`id`, `identifier`, `type`, `amount`, `sender`, `receiver`, `label`, `date`) VALUES
-(1, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', 'withdraw', 10000, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', NULL, NULL, '2025-04-23 15:04:01'),
-(2, 'license:6aa69b1bc8c1f5af088caec06c3081b96405b6d7', 'deposit', 51000, 'license:6aa69b1bc8c1f5af088caec06c3081b96405b6d7', NULL, NULL, '2025-04-23 15:12:02'),
-(3, 'license:f8dbab11e14794e12a3f48c39cfdb3f0d2f48c3a', 'deposit', 1000, 'license:f8dbab11e14794e12a3f48c39cfdb3f0d2f48c3a', NULL, NULL, '2025-04-23 15:41:06'),
-(4, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', 'deposit', 10000, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', NULL, NULL, '2025-04-23 15:42:58'),
-(5, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', 'deposit', 23000, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', NULL, NULL, '2025-04-23 16:01:03'),
-(6, 'license:df6d2d3d929b44e62cc134e43b2c9b2a6b75c944', 'deposit', 20000, 'license:df6d2d3d929b44e62cc134e43b2c9b2a6b75c944', NULL, NULL, '2025-04-23 16:02:01'),
-(7, 'license:8c9788147a2dbeedb37811d1a8e55d52e02043d3', 'withdraw', 3000, 'license:8c9788147a2dbeedb37811d1a8e55d52e02043d3', NULL, NULL, '2025-04-23 16:07:42'),
-(8, 'license:ff7f48cc05a860a37148e531f5982444db596da1', 'withdraw', 10000, 'license:ff7f48cc05a860a37148e531f5982444db596da1', NULL, NULL, '2025-04-23 16:18:18'),
-(9, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', 'withdraw', 3000, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', NULL, NULL, '2025-04-23 16:32:56'),
-(10, 'license:c8cdc950992855f1d13004a5238c4e5e4492ddd2', 'deposit', 25000, 'license:c8cdc950992855f1d13004a5238c4e5e4492ddd2', NULL, NULL, '2025-04-23 17:10:01'),
-(11, 'license:c8cdc950992855f1d13004a5238c4e5e4492ddd2', 'withdraw', 1000, 'license:c8cdc950992855f1d13004a5238c4e5e4492ddd2', NULL, NULL, '2025-04-23 17:12:20'),
-(12, 'license:d8fd6f841115a49967e95521833602fd1023254b', 'withdraw', 100000, 'license:d8fd6f841115a49967e95521833602fd1023254b', NULL, NULL, '2025-04-23 17:37:54'),
-(13, 'license:d8124fa81d8fd02fc33768bec0ba05c510df5fe2', 'withdraw', 2500, 'license:d8124fa81d8fd02fc33768bec0ba05c510df5fe2', NULL, NULL, '2025-04-23 17:46:48'),
-(14, 'license:17f382dfcc41bde96bc653d29fa22f5f4b683123', 'deposit', 55000, 'license:17f382dfcc41bde96bc653d29fa22f5f4b683123', NULL, NULL, '2025-04-23 18:50:42'),
-(15, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', 'deposit', 4400, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', NULL, NULL, '2025-04-23 18:53:53'),
-(16, 'license:44fee60b44c25bca5fe6cf7688291b1b50bb24b2', 'deposit', 87000000, 'license:44fee60b44c25bca5fe6cf7688291b1b50bb24b2', NULL, NULL, '2025-04-23 18:56:07'),
-(17, 'license:d8124fa81d8fd02fc33768bec0ba05c510df5fe2', 'withdraw', 10000, 'license:d8124fa81d8fd02fc33768bec0ba05c510df5fe2', NULL, NULL, '2025-04-23 19:50:52'),
-(18, 'license:1331309793d9606f7273e6d206dccb05356e99b1', 'deposit', 111, 'license:1331309793d9606f7273e6d206dccb05356e99b1', NULL, NULL, '2025-04-23 20:32:26'),
-(19, 'license:4ad68eafec47fe4d24fd29df13b896e7025dab92', 'deposit', 25000, 'license:4ad68eafec47fe4d24fd29df13b896e7025dab92', NULL, NULL, '2025-04-23 20:49:25'),
-(20, 'license:e301399c93fff9a601fa9b7d3870b4aefe9d0030', 'withdraw', 120000, 'license:e301399c93fff9a601fa9b7d3870b4aefe9d0030', NULL, NULL, '2025-04-23 21:41:14'),
-(21, 'license:17f382dfcc41bde96bc653d29fa22f5f4b683123', 'deposit', 15000, 'license:17f382dfcc41bde96bc653d29fa22f5f4b683123', NULL, NULL, '2025-04-23 22:51:51'),
-(22, 'license:17f382dfcc41bde96bc653d29fa22f5f4b683123', 'withdraw', 1100, 'license:17f382dfcc41bde96bc653d29fa22f5f4b683123', NULL, NULL, '2025-04-23 23:33:10'),
-(23, 'license:b2b58b25147bd6bb7367da9e6d606d9dbfb5ae28', 'deposit', 40000, 'license:b2b58b25147bd6bb7367da9e6d606d9dbfb5ae28', NULL, NULL, '2025-04-24 05:56:32'),
-(24, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', 'withdraw', 2500, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', NULL, NULL, '2025-04-24 07:35:25'),
-(25, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', 'deposit', 1000, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', NULL, NULL, '2025-04-24 09:40:13'),
-(26, 'license:430d0a8677c1ea13776b56560271e460c6a18a9d', 'deposit', 75000, 'license:430d0a8677c1ea13776b56560271e460c6a18a9d', NULL, NULL, '2025-04-24 10:02:57'),
-(27, 'license:e0041ae1baa917030050b93169d8e39c996557cc', 'deposit', 50000, 'license:e0041ae1baa917030050b93169d8e39c996557cc', NULL, NULL, '2025-04-24 10:33:42'),
-(28, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', 'deposit', 50000, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', NULL, NULL, '2025-04-24 10:34:19'),
-(29, 'license:4ad68eafec47fe4d24fd29df13b896e7025dab92', 'deposit', 80, 'license:4ad68eafec47fe4d24fd29df13b896e7025dab92', NULL, NULL, '2025-04-24 11:21:08'),
-(30, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', 'withdraw', 3000, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', NULL, NULL, '2025-04-24 11:28:46'),
-(31, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'deposit', 145000, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', NULL, NULL, '2025-04-24 12:21:45'),
-(32, 'license:949aa32e9267de064a30d1b833304b8cc1ba1f19', 'deposit', 25000, 'license:949aa32e9267de064a30d1b833304b8cc1ba1f19', NULL, NULL, '2025-04-24 12:38:42'),
-(33, 'license:4d04e37eb7b6e6330fefe28db1d1abcf6c42c099', 'withdraw', 10000, 'license:4d04e37eb7b6e6330fefe28db1d1abcf6c42c099', NULL, NULL, '2025-04-24 14:40:48'),
-(34, 'license:0537fda9299ad1126c9908234711edf465767d9d', 'withdraw', 3000, 'license:0537fda9299ad1126c9908234711edf465767d9d', NULL, NULL, '2025-04-24 16:31:24'),
-(35, 'license:d373c81fb2c64427e016a7911c236281e9279936', 'withdraw', 2000, 'license:d373c81fb2c64427e016a7911c236281e9279936', NULL, NULL, '2025-04-24 17:05:59'),
-(36, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', 'withdraw', 4000, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', NULL, NULL, '2025-04-24 17:39:07'),
-(37, 'license:4811d79bf7e8951f7caab7214f0b4a6c2a98c6c6', 'withdraw', 150000, 'license:4811d79bf7e8951f7caab7214f0b4a6c2a98c6c6', NULL, NULL, '2025-04-24 17:39:23'),
-(38, 'license:85719cf4a910cf328a26f57ffa81fbd248524427', 'deposit', 25000, 'license:85719cf4a910cf328a26f57ffa81fbd248524427', NULL, NULL, '2025-04-24 18:25:55'),
-(39, 'license:85719cf4a910cf328a26f57ffa81fbd248524427', 'withdraw', 5000, 'license:85719cf4a910cf328a26f57ffa81fbd248524427', NULL, NULL, '2025-04-24 18:26:08'),
-(40, 'license:f59aaa1c21810573ec12c32dd329a07d88ed96df', 'deposit', 120000000, 'license:f59aaa1c21810573ec12c32dd329a07d88ed96df', NULL, NULL, '2025-04-24 18:43:31'),
-(41, 'license:89712de164a1393d86d079452f5763a76500d123', 'deposit', 35000, 'license:89712de164a1393d86d079452f5763a76500d123', NULL, NULL, '2025-04-24 19:09:21'),
-(42, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', 'withdraw', 1500, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', NULL, NULL, '2025-04-24 19:27:29'),
-(43, 'license:3ed9c0687d7b69423a2a5e0e1aa7abbfada7a636', 'deposit', 1100000, 'license:3ed9c0687d7b69423a2a5e0e1aa7abbfada7a636', NULL, NULL, '2025-04-24 19:29:00'),
-(44, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', 'withdraw', 2550, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', NULL, NULL, '2025-04-24 19:46:32'),
-(45, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', 'withdraw', 25000, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', NULL, NULL, '2025-04-24 19:52:10'),
-(46, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', 'withdraw', 5000, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', NULL, NULL, '2025-04-24 20:02:56'),
-(47, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'deposit', 1000000, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', NULL, NULL, '2025-04-24 20:03:13'),
-(48, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', 'withdraw', 1000, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', NULL, NULL, '2025-04-24 20:08:29'),
-(49, 'license:d373c81fb2c64427e016a7911c236281e9279936', 'deposit', 20000, 'license:d373c81fb2c64427e016a7911c236281e9279936', NULL, NULL, '2025-04-24 20:09:02'),
-(50, 'license:091c57cbec13d84ba5ca856492e68ae13771cdaf', 'deposit', 170000, 'license:091c57cbec13d84ba5ca856492e68ae13771cdaf', NULL, NULL, '2025-04-24 20:14:47'),
-(51, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', 'deposit', 7000, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', NULL, NULL, '2025-04-24 20:18:06'),
-(52, 'license:7ab8b58018a73b18f7957ab1561356a25d0dba3d', 'deposit', 40000, 'license:7ab8b58018a73b18f7957ab1561356a25d0dba3d', NULL, NULL, '2025-04-24 20:28:56'),
-(53, 'license:44364f3cd4525ba3ca6f39fb67a3d66eab35dc94', 'withdraw', 30000, 'license:44364f3cd4525ba3ca6f39fb67a3d66eab35dc94', NULL, NULL, '2025-04-24 20:32:19'),
-(54, 'license:0fcef6b679717db2f29635f8a9e1c2e804e230a9', 'deposit', 30000, 'license:0fcef6b679717db2f29635f8a9e1c2e804e230a9', NULL, NULL, '2025-04-24 20:36:25'),
-(55, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', 'deposit', 30000, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', NULL, NULL, '2025-04-24 20:41:35'),
-(56, 'license:0fcef6b679717db2f29635f8a9e1c2e804e230a9', 'deposit', 25000, 'license:0fcef6b679717db2f29635f8a9e1c2e804e230a9', NULL, NULL, '2025-04-24 20:42:11'),
-(57, 'license:3fcadb733981fa3f2ab536e202a3e47f3d9bf814', 'deposit', 2000, 'license:3fcadb733981fa3f2ab536e202a3e47f3d9bf814', NULL, NULL, '2025-04-24 20:42:55'),
-(58, 'license:8c9788147a2dbeedb37811d1a8e55d52e02043d3', 'withdraw', 2500, 'license:8c9788147a2dbeedb37811d1a8e55d52e02043d3', NULL, NULL, '2025-04-24 20:54:18'),
-(59, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'withdraw', 2500, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', NULL, NULL, '2025-04-24 21:01:54'),
-(60, 'license:3961a8ba02456763c06776e410af02c467de6aa4', 'withdraw', 10000, 'license:3961a8ba02456763c06776e410af02c467de6aa4', NULL, NULL, '2025-04-24 21:06:00'),
-(61, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'withdraw', 1700, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', NULL, NULL, '2025-04-24 23:10:46'),
-(62, 'license:89712de164a1393d86d079452f5763a76500d123', 'withdraw', 400000, 'license:89712de164a1393d86d079452f5763a76500d123', NULL, NULL, '2025-04-24 23:11:21'),
-(63, 'license:ae029d5841a7c755d1066ceaa27b66ff62d4fa8d', 'withdraw', 30000, 'license:ae029d5841a7c755d1066ceaa27b66ff62d4fa8d', NULL, NULL, '2025-04-24 23:11:36'),
-(64, 'license:262f3e64de21f530d76b2e9d3797fa6f034dc163', 'deposit', 15000, 'license:262f3e64de21f530d76b2e9d3797fa6f034dc163', NULL, NULL, '2025-04-24 23:25:17'),
-(65, 'license:4ad68eafec47fe4d24fd29df13b896e7025dab92', 'withdraw', 1500, 'license:4ad68eafec47fe4d24fd29df13b896e7025dab92', NULL, NULL, '2025-04-24 23:55:58'),
-(66, 'license:2fd41ddb3cc780c1e0dbd73a43950ec059a236cc', 'withdraw', 218969, 'license:2fd41ddb3cc780c1e0dbd73a43950ec059a236cc', NULL, NULL, '2025-04-25 00:31:42'),
-(67, 'license:6648b3c221b9f2db934923bc789b09afd6c83045', 'deposit', 968, 'license:6648b3c221b9f2db934923bc789b09afd6c83045', NULL, NULL, '2025-04-25 01:00:35'),
-(68, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', 'withdraw', 1500, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', NULL, NULL, '2025-04-25 08:28:04'),
-(69, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', 'deposit', 11000, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', NULL, NULL, '2025-04-25 09:14:11'),
-(70, 'license:d373c81fb2c64427e016a7911c236281e9279936', 'withdraw', 2500, 'license:d373c81fb2c64427e016a7911c236281e9279936', NULL, NULL, '2025-04-25 10:24:05'),
-(71, 'license:4cf69bdf5723b7925cc515253b68f96d0f2cb55d', 'deposit', 25000, 'license:4cf69bdf5723b7925cc515253b68f96d0f2cb55d', NULL, NULL, '2025-04-25 10:25:10'),
-(72, 'license:0fcef6b679717db2f29635f8a9e1c2e804e230a9', 'withdraw', 3000, 'license:0fcef6b679717db2f29635f8a9e1c2e804e230a9', NULL, NULL, '2025-04-25 10:26:27'),
-(73, 'license:d373c81fb2c64427e016a7911c236281e9279936', 'withdraw', 350, 'license:d373c81fb2c64427e016a7911c236281e9279936', NULL, NULL, '2025-04-25 10:59:56'),
-(74, 'license:3f36152e73807ccfa6ed3e65dcb325efb8fd42c6', 'withdraw', 6500, 'license:3f36152e73807ccfa6ed3e65dcb325efb8fd42c6', NULL, NULL, '2025-04-25 11:14:15'),
-(75, 'license:aaf19def12c6ed83352642e4e0a09465b188310a', 'withdraw', 5000, 'license:aaf19def12c6ed83352642e4e0a09465b188310a', NULL, NULL, '2025-04-25 11:14:16'),
-(76, 'license:4cf69bdf5723b7925cc515253b68f96d0f2cb55d', 'withdraw', 3000, 'license:4cf69bdf5723b7925cc515253b68f96d0f2cb55d', NULL, NULL, '2025-04-25 11:31:02'),
-(77, 'license:4811d79bf7e8951f7caab7214f0b4a6c2a98c6c6', 'withdraw', 300000, 'license:4811d79bf7e8951f7caab7214f0b4a6c2a98c6c6', NULL, NULL, '2025-04-25 11:36:47'),
-(78, 'license:3799c92a03a707a3e9e9873b3dc7919edbb78ae0', 'deposit', 24400, 'license:3799c92a03a707a3e9e9873b3dc7919edbb78ae0', NULL, NULL, '2025-04-25 11:40:46'),
-(79, 'license:b2b58b25147bd6bb7367da9e6d606d9dbfb5ae28', 'withdraw', 2000, 'license:b2b58b25147bd6bb7367da9e6d606d9dbfb5ae28', NULL, NULL, '2025-04-25 12:41:59'),
-(80, 'license:4811d79bf7e8951f7caab7214f0b4a6c2a98c6c6', 'withdraw', 100000, 'license:4811d79bf7e8951f7caab7214f0b4a6c2a98c6c6', NULL, NULL, '2025-04-25 13:02:52'),
-(81, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'withdraw', 500, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', NULL, NULL, '2025-04-25 13:14:14'),
-(82, 'license:372db15c8e62dfc63599a53a7d7c0ae5818e6432', 'withdraw', 1000000, 'license:372db15c8e62dfc63599a53a7d7c0ae5818e6432', NULL, NULL, '2025-04-25 14:41:33'),
-(83, 'license:b2b58b25147bd6bb7367da9e6d606d9dbfb5ae28', 'withdraw', 4998, 'license:b2b58b25147bd6bb7367da9e6d606d9dbfb5ae28', NULL, NULL, '2025-04-25 14:47:43'),
-(84, 'license:7f553e36905ea02d3c933e4365abd9b5fa35105f', 'withdraw', 1500, 'license:7f553e36905ea02d3c933e4365abd9b5fa35105f', NULL, NULL, '2025-04-25 15:06:19'),
-(85, 'license:992a9d318863137fba6c8c551ec018a37029d2d9', 'deposit', 100000, 'license:992a9d318863137fba6c8c551ec018a37029d2d9', NULL, NULL, '2025-04-25 15:22:16'),
-(86, 'license:460b599566dbd1907d865474e807ce664ca3051f', 'deposit', 20000, 'license:460b599566dbd1907d865474e807ce664ca3051f', NULL, NULL, '2025-04-25 15:37:54'),
-(87, 'license:464f241480f08471d04a23aaf92f86e679b1ca54', 'deposit', 20000, 'license:464f241480f08471d04a23aaf92f86e679b1ca54', NULL, NULL, '2025-04-25 16:11:02'),
-(88, 'license:2da14804b4b600a1022bd94e0898261fe363d417', 'withdraw', 174000, 'license:2da14804b4b600a1022bd94e0898261fe363d417', NULL, NULL, '2025-04-25 16:12:11'),
-(89, 'license:2da14804b4b600a1022bd94e0898261fe363d417', 'withdraw', 700, 'license:2da14804b4b600a1022bd94e0898261fe363d417', NULL, NULL, '2025-04-25 16:12:19'),
-(90, 'license:2da14804b4b600a1022bd94e0898261fe363d417', 'deposit', 191000, 'license:2da14804b4b600a1022bd94e0898261fe363d417', NULL, NULL, '2025-04-25 16:17:26'),
-(91, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', 'deposit', 54000, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', NULL, NULL, '2025-04-25 16:19:29'),
-(92, 'license:4cf69bdf5723b7925cc515253b68f96d0f2cb55d', 'withdraw', 1500, 'license:4cf69bdf5723b7925cc515253b68f96d0f2cb55d', NULL, NULL, '2025-04-25 17:17:03'),
-(93, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', 'deposit', 2000000, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', NULL, NULL, '2025-04-25 17:25:23'),
-(94, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', 'deposit', 22000, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', NULL, NULL, '2025-04-25 17:39:38'),
-(95, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', 'deposit', 75500, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', NULL, NULL, '2025-04-25 18:39:17'),
-(96, 'license:8c9788147a2dbeedb37811d1a8e55d52e02043d3', 'deposit', 70000, 'license:8c9788147a2dbeedb37811d1a8e55d52e02043d3', NULL, NULL, '2025-04-25 19:10:40'),
-(97, 'license:44fee60b44c25bca5fe6cf7688291b1b50bb24b2', 'withdraw', 17000000, 'license:44fee60b44c25bca5fe6cf7688291b1b50bb24b2', NULL, NULL, '2025-04-25 19:20:35'),
-(98, 'license:44fee60b44c25bca5fe6cf7688291b1b50bb24b2', 'withdraw', 126000000, 'license:44fee60b44c25bca5fe6cf7688291b1b50bb24b2', NULL, NULL, '2025-04-25 19:20:53'),
-(99, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', 'deposit', 1700000, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', NULL, NULL, '2025-04-25 19:24:29'),
-(100, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', 'deposit', 20000, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', NULL, NULL, '2025-04-25 19:24:43'),
-(101, 'license:9f1496e628c7e846f2029eb97cf0b9fdabe40b57', 'deposit', 9000000, 'license:9f1496e628c7e846f2029eb97cf0b9fdabe40b57', NULL, NULL, '2025-04-25 19:32:20'),
-(102, 'license:4d04e37eb7b6e6330fefe28db1d1abcf6c42c099', 'withdraw', 10000, 'license:4d04e37eb7b6e6330fefe28db1d1abcf6c42c099', NULL, NULL, '2025-04-25 20:12:43'),
-(103, 'license:6f20e22ea0436aca953946d8841023487415505c', 'deposit', 243000, 'license:6f20e22ea0436aca953946d8841023487415505c', NULL, NULL, '2025-04-25 20:22:13'),
-(104, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', 'deposit', 60000, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', NULL, NULL, '2025-04-25 20:38:25'),
-(105, 'license:e804ed68b654ba2cda298d844af95f8e573bbf54', 'withdraw', 15000, 'license:e804ed68b654ba2cda298d844af95f8e573bbf54', NULL, NULL, '2025-04-25 20:48:20'),
-(106, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', 'withdraw', 2000, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', NULL, NULL, '2025-04-25 20:48:48'),
-(107, 'license:14d8525084302e3d906a5bd8b6b7093cbe96d1a9', 'deposit', 450000, 'license:14d8525084302e3d906a5bd8b6b7093cbe96d1a9', NULL, NULL, '2025-04-25 20:48:53'),
-(108, 'license:4811d79bf7e8951f7caab7214f0b4a6c2a98c6c6', 'deposit', 500000, 'license:4811d79bf7e8951f7caab7214f0b4a6c2a98c6c6', NULL, NULL, '2025-04-25 21:02:08'),
-(109, 'license:372db15c8e62dfc63599a53a7d7c0ae5818e6432', 'deposit', 50000, 'license:372db15c8e62dfc63599a53a7d7c0ae5818e6432', NULL, NULL, '2025-04-25 21:10:54'),
-(110, 'license:4cf69bdf5723b7925cc515253b68f96d0f2cb55d', 'withdraw', 160000, 'license:4cf69bdf5723b7925cc515253b68f96d0f2cb55d', NULL, NULL, '2025-04-25 21:42:37'),
-(111, 'license:20e2b50501d169b2e7f4b98afe57feaaf6370cb3', 'withdraw', 200000, 'license:20e2b50501d169b2e7f4b98afe57feaaf6370cb3', NULL, NULL, '2025-04-25 21:42:54'),
-(112, 'license:8c9788147a2dbeedb37811d1a8e55d52e02043d3', 'deposit', 43000, 'license:8c9788147a2dbeedb37811d1a8e55d52e02043d3', NULL, NULL, '2025-04-25 21:55:06'),
-(113, 'license:2aa1e28b88874458af262384e3f70b4e3e84ec71', 'deposit', 25000, 'license:2aa1e28b88874458af262384e3f70b4e3e84ec71', NULL, NULL, '2025-04-25 22:04:20'),
-(114, 'license:e5fa3082b5ea55e80e51d347c58ccf304c77658e', 'deposit', 25000, 'license:e5fa3082b5ea55e80e51d347c58ccf304c77658e', NULL, NULL, '2025-04-25 22:04:27'),
-(115, 'license:2aa1e28b88874458af262384e3f70b4e3e84ec71', 'withdraw', 10000, 'license:2aa1e28b88874458af262384e3f70b4e3e84ec71', NULL, NULL, '2025-04-25 22:06:07'),
-(116, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', 'withdraw', 27000000, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', NULL, NULL, '2025-04-25 22:10:56'),
-(117, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', 'withdraw', 30000, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', NULL, NULL, '2025-04-25 22:12:06'),
-(118, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', 'withdraw', 29000000, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', NULL, NULL, '2025-04-25 22:12:35'),
-(119, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', 'withdraw', 1780000, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', NULL, NULL, '2025-04-25 22:12:59'),
-(120, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', 'withdraw', 7900000, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', NULL, NULL, '2025-04-25 22:23:46'),
-(121, 'license:c6d6239b9037927cc45ff61dca6fce28b806b59b', 'withdraw', 20000, 'license:c6d6239b9037927cc45ff61dca6fce28b806b59b', NULL, NULL, '2025-04-25 22:47:38'),
-(122, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', 'deposit', 15000000, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', NULL, NULL, '2025-04-25 22:50:22'),
-(123, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', 'deposit', 50000000, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', NULL, NULL, '2025-04-25 22:54:11'),
-(124, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', 'deposit', 1000000, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', NULL, NULL, '2025-04-25 22:54:22'),
-(125, 'license:430d0a8677c1ea13776b56560271e460c6a18a9d', 'deposit', 350000, 'license:430d0a8677c1ea13776b56560271e460c6a18a9d', NULL, NULL, '2025-04-25 23:12:04'),
-(126, 'license:9bff33d0474382000bae1aa8aff777e03d57e45a', 'withdraw', 24000, 'license:9bff33d0474382000bae1aa8aff777e03d57e45a', NULL, NULL, '2025-04-26 03:38:44'),
-(127, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', 'deposit', 3100000, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', NULL, NULL, '2025-04-26 08:45:48'),
-(128, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', 'deposit', 500000, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', NULL, NULL, '2025-04-26 08:45:57'),
-(129, 'license:6ebae076b47c87ece58cda1b02fcf9de69a81656', 'withdraw', 10000, 'license:6ebae076b47c87ece58cda1b02fcf9de69a81656', NULL, NULL, '2025-04-26 09:40:12'),
-(130, 'license:2971b20f502ad2b4f2b40d65545cf25df8b29c0a', 'withdraw', 5000, 'license:2971b20f502ad2b4f2b40d65545cf25df8b29c0a', NULL, NULL, '2025-04-26 11:34:23'),
-(131, 'license:d8fd6f841115a49967e95521833602fd1023254b', 'deposit', 900000, 'license:d8fd6f841115a49967e95521833602fd1023254b', NULL, NULL, '2025-04-26 11:34:39'),
-(132, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', 'withdraw', 700, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', NULL, NULL, '2025-04-26 11:46:24'),
-(133, 'license:a7d95dcb35fc915738409379b192a91b80918949', 'withdraw', 1500, 'license:a7d95dcb35fc915738409379b192a91b80918949', NULL, NULL, '2025-04-26 11:52:13'),
-(134, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'deposit', 239300, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', NULL, NULL, '2025-04-26 12:16:15'),
-(135, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'deposit', 2153000, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', NULL, NULL, '2025-04-26 12:16:37'),
-(136, 'license:a87a6ad65e5e62a6e03c9b60e3e3c1c03a4424d6', 'withdraw', 1000, 'license:a87a6ad65e5e62a6e03c9b60e3e3c1c03a4424d6', NULL, NULL, '2025-04-26 13:14:16'),
-(137, 'license:dbd618b367bf465a8aa4bed7630f5c067a0adb56', 'deposit', 149000, 'license:dbd618b367bf465a8aa4bed7630f5c067a0adb56', NULL, NULL, '2025-04-26 13:19:45'),
-(138, 'license:dbd618b367bf465a8aa4bed7630f5c067a0adb56', 'withdraw', 10000, 'license:dbd618b367bf465a8aa4bed7630f5c067a0adb56', NULL, NULL, '2025-04-26 13:19:59'),
-(139, 'license:4df23be37a41be293441e40cf81022ad974f73fa', 'deposit', 10600, 'license:4df23be37a41be293441e40cf81022ad974f73fa', NULL, NULL, '2025-04-26 13:29:39'),
-(140, 'license:a87a6ad65e5e62a6e03c9b60e3e3c1c03a4424d6', 'withdraw', 5000, 'license:a87a6ad65e5e62a6e03c9b60e3e3c1c03a4424d6', NULL, NULL, '2025-04-26 13:32:55'),
-(141, 'license:e45e20910c7dabe3691749dd78efd5998bae4b64', 'deposit', 100000, 'license:e45e20910c7dabe3691749dd78efd5998bae4b64', NULL, NULL, '2025-04-26 13:47:03'),
-(142, 'license:d998b50e91bb3a478a740e412e5f724553a61941', 'deposit', 1000000, 'license:d998b50e91bb3a478a740e412e5f724553a61941', NULL, NULL, '2025-04-26 14:03:02'),
-(143, 'license:d998b50e91bb3a478a740e412e5f724553a61941', 'deposit', 1, 'license:d998b50e91bb3a478a740e412e5f724553a61941', NULL, NULL, '2025-04-26 14:03:13'),
-(144, 'license:62d61ebaac275e851a9ebc30320bfdfaafc81984', 'deposit', 50000, 'license:62d61ebaac275e851a9ebc30320bfdfaafc81984', NULL, NULL, '2025-04-26 14:08:58'),
-(145, 'license:6f20e22ea0436aca953946d8841023487415505c', 'deposit', 1200000, 'license:6f20e22ea0436aca953946d8841023487415505c', NULL, NULL, '2025-04-26 14:09:44'),
-(146, 'license:87c87fb41d7ba3147b6608000858d895ab7b6533', 'deposit', 23000, 'license:87c87fb41d7ba3147b6608000858d895ab7b6533', NULL, NULL, '2025-04-26 14:32:54'),
-(147, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', 'deposit', 13273, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', NULL, NULL, '2025-04-26 14:37:35'),
-(148, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', 'withdraw', 5000, 'license:ade9226cd285b624cab0c50062f7859be63a6e8c', NULL, NULL, '2025-04-26 14:38:10'),
-(149, 'license:119ffd0cdcba3d51f18e96eb3cc46d30a0131069', 'deposit', 300000, 'license:119ffd0cdcba3d51f18e96eb3cc46d30a0131069', NULL, NULL, '2025-04-26 15:04:43'),
-(150, 'license:7f553e36905ea02d3c933e4365abd9b5fa35105f', 'withdraw', 1500, 'license:7f553e36905ea02d3c933e4365abd9b5fa35105f', NULL, NULL, '2025-04-26 15:06:38'),
-(151, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', 'withdraw', 1500, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', NULL, NULL, '2025-04-26 15:18:59'),
-(152, 'license:28a77e9f51f942ad866e7ed63be23121e0f91c67', 'withdraw', 10000, 'license:28a77e9f51f942ad866e7ed63be23121e0f91c67', NULL, NULL, '2025-04-26 15:34:43'),
-(153, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', 'deposit', 180000, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', NULL, NULL, '2025-04-26 16:31:11'),
-(154, 'license:3f36152e73807ccfa6ed3e65dcb325efb8fd42c6', 'withdraw', 8000, 'license:3f36152e73807ccfa6ed3e65dcb325efb8fd42c6', NULL, NULL, '2025-04-26 16:39:30'),
-(155, 'license:b3640903ac0a61e285f9b29f6df860d4f7079b20', 'deposit', 20000, 'license:b3640903ac0a61e285f9b29f6df860d4f7079b20', NULL, NULL, '2025-04-26 17:06:49'),
-(156, 'license:9f448c1074f27ee973af04a9f2b2be247d7c540f', 'withdraw', 20000, 'license:9f448c1074f27ee973af04a9f2b2be247d7c540f', NULL, NULL, '2025-04-26 17:16:30'),
-(157, 'license:c38a5ab14fb255a350dd8c302c2b776f136aed31', 'withdraw', 30000, 'license:c38a5ab14fb255a350dd8c302c2b776f136aed31', NULL, NULL, '2025-04-26 17:17:43'),
-(158, 'license:b3640903ac0a61e285f9b29f6df860d4f7079b20', 'deposit', 5800, 'license:b3640903ac0a61e285f9b29f6df860d4f7079b20', NULL, NULL, '2025-04-26 17:27:46'),
-(159, 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', 'withdraw', 1500, 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', NULL, NULL, '2025-04-26 17:28:59'),
-(160, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', 'withdraw', 3000, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', NULL, NULL, '2025-04-26 17:48:21'),
-(161, 'license:dbd618b367bf465a8aa4bed7630f5c067a0adb56', 'withdraw', 30000, 'license:dbd618b367bf465a8aa4bed7630f5c067a0adb56', NULL, NULL, '2025-04-26 17:48:27'),
-(162, 'license:dbd618b367bf465a8aa4bed7630f5c067a0adb56', 'withdraw', 20000, 'license:dbd618b367bf465a8aa4bed7630f5c067a0adb56', NULL, NULL, '2025-04-26 17:48:43'),
-(163, 'license:dbd618b367bf465a8aa4bed7630f5c067a0adb56', 'withdraw', 20000, 'license:dbd618b367bf465a8aa4bed7630f5c067a0adb56', NULL, NULL, '2025-04-26 17:48:56'),
-(164, 'license:3b58b0d93c7ad0e1524daa356185beba34773e25', 'withdraw', 524000, 'license:3b58b0d93c7ad0e1524daa356185beba34773e25', NULL, NULL, '2025-04-26 18:03:16'),
-(165, 'license:110e09b4d81d58586a0c73862a7b5ea6991fe731', 'deposit', 549000, 'license:110e09b4d81d58586a0c73862a7b5ea6991fe731', NULL, NULL, '2025-04-26 18:04:08'),
-(166, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', 'withdraw', 3000, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', NULL, NULL, '2025-04-26 18:08:32'),
-(167, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', 'withdraw', 1500, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', NULL, NULL, '2025-04-26 18:11:12'),
-(168, 'license:28a77e9f51f942ad866e7ed63be23121e0f91c67', 'deposit', 7861, 'license:28a77e9f51f942ad866e7ed63be23121e0f91c67', NULL, NULL, '2025-04-26 18:12:50'),
-(169, 'license:44e074cc9cad198b7c237e3552aa5f3fa8c5ac24', 'deposit', 227725, 'license:44e074cc9cad198b7c237e3552aa5f3fa8c5ac24', NULL, NULL, '2025-04-26 18:18:05'),
-(170, 'license:4cf69bdf5723b7925cc515253b68f96d0f2cb55d', 'deposit', 70000, 'license:4cf69bdf5723b7925cc515253b68f96d0f2cb55d', NULL, NULL, '2025-04-26 18:24:09'),
-(171, 'license:56ae480a54f3fde8ce8ee39f013a4198096a2931', 'deposit', 24000, 'license:56ae480a54f3fde8ce8ee39f013a4198096a2931', NULL, NULL, '2025-04-26 18:41:01'),
-(172, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', 'withdraw', 5000, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', NULL, NULL, '2025-04-26 18:57:07'),
-(173, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'withdraw', 15000, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', NULL, NULL, '2025-04-26 19:05:06'),
-(174, 'license:3d3150a434e4e0fabef097c0e564362e33bdd10c', 'deposit', 20000, 'license:3d3150a434e4e0fabef097c0e564362e33bdd10c', NULL, NULL, '2025-04-26 19:12:27'),
-(175, 'license:3d3150a434e4e0fabef097c0e564362e33bdd10c', 'deposit', 12000, 'license:3d3150a434e4e0fabef097c0e564362e33bdd10c', NULL, NULL, '2025-04-26 19:12:36'),
-(176, 'license:3d3150a434e4e0fabef097c0e564362e33bdd10c', 'withdraw', 3000, 'license:3d3150a434e4e0fabef097c0e564362e33bdd10c', NULL, NULL, '2025-04-26 19:46:13'),
-(177, 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', 'deposit', 490039, 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', NULL, NULL, '2025-04-26 19:48:16'),
-(178, 'license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'withdraw', 400000, 'license:b4adbf0ba66d9be0b0afa73f361b55c461871506', NULL, NULL, '2025-04-26 20:10:51'),
-(179, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', 'withdraw', 1500, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', NULL, NULL, '2025-04-26 20:12:27'),
-(180, 'license:e5255269094b288f237c38596f5e8f90b3d168ed', 'deposit', 1000000, 'license:e5255269094b288f237c38596f5e8f90b3d168ed', NULL, NULL, '2025-04-26 20:15:40'),
-(181, 'license:d8124fa81d8fd02fc33768bec0ba05c510df5fe2', 'deposit', 345000, 'license:d8124fa81d8fd02fc33768bec0ba05c510df5fe2', NULL, NULL, '2025-04-26 20:15:41'),
-(182, 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', 'withdraw', 1500, 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', NULL, NULL, '2025-04-26 20:26:33'),
-(183, 'license:e5fa3082b5ea55e80e51d347c58ccf304c77658e', 'withdraw', 1500, 'license:e5fa3082b5ea55e80e51d347c58ccf304c77658e', NULL, NULL, '2025-04-26 20:55:36'),
-(184, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', 'deposit', 50000, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', NULL, NULL, '2025-04-26 21:30:20'),
-(185, 'license:44e074cc9cad198b7c237e3552aa5f3fa8c5ac24', 'withdraw', 5000, 'license:44e074cc9cad198b7c237e3552aa5f3fa8c5ac24', NULL, NULL, '2025-04-26 21:59:29'),
-(186, 'license:e5fa3082b5ea55e80e51d347c58ccf304c77658e', 'deposit', 30000, 'license:e5fa3082b5ea55e80e51d347c58ccf304c77658e', NULL, NULL, '2025-04-26 22:14:30'),
-(187, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', 'deposit', 15000, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', NULL, NULL, '2025-04-26 22:18:43'),
-(188, 'license:42ac93f942ed2415dfaf76d72947fc9bda7f5d4e', 'deposit', 20000, 'license:42ac93f942ed2415dfaf76d72947fc9bda7f5d4e', NULL, NULL, '2025-04-26 22:23:47'),
-(189, 'license:e5fa3082b5ea55e80e51d347c58ccf304c77658e', 'deposit', 12000, 'license:e5fa3082b5ea55e80e51d347c58ccf304c77658e', NULL, NULL, '2025-04-27 00:39:32'),
-(190, 'license:82b355d263d8d326df95ec75fb84ec23b5dedd15', 'deposit', 179000, 'license:82b355d263d8d326df95ec75fb84ec23b5dedd15', NULL, NULL, '2025-04-27 01:07:27'),
-(191, 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', 'withdraw', 1500, 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', NULL, NULL, '2025-04-27 08:09:04'),
-(192, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', 'deposit', 77000, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', NULL, NULL, '2025-04-27 09:21:10'),
-(193, 'license:d8124fa81d8fd02fc33768bec0ba05c510df5fe2', 'withdraw', 971000, 'license:d8124fa81d8fd02fc33768bec0ba05c510df5fe2', NULL, NULL, '2025-04-27 09:37:20'),
-(194, 'license:d2c02b8de24354dfa0ad1afb2568ba7bd088b68a', 'withdraw', 500, 'license:d2c02b8de24354dfa0ad1afb2568ba7bd088b68a', NULL, NULL, '2025-04-27 11:03:49'),
-(195, 'license:b060a8c9b6da4678702a5fde63980c72a7d94b76', 'withdraw', 5000, 'license:b060a8c9b6da4678702a5fde63980c72a7d94b76', NULL, NULL, '2025-04-27 11:22:57'),
-(196, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', 'deposit', 470000, 'license:bfa5e5a9d07fc23b6147e6b45cf067c7bd35afc8', NULL, NULL, '2025-04-27 12:53:15'),
-(197, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', 'withdraw', 1500, 'license:bdb03167521489b32f6d62a3c3d10cbbe819e992', NULL, NULL, '2025-04-27 12:57:20'),
-(198, 'license:d2c02b8de24354dfa0ad1afb2568ba7bd088b68a', 'deposit', 5925, 'license:d2c02b8de24354dfa0ad1afb2568ba7bd088b68a', NULL, NULL, '2025-04-27 13:03:49'),
-(199, 'license:cfb18d050a330696ac71008ea1d09f4279c91a0a', 'deposit', 1550000, 'license:cfb18d050a330696ac71008ea1d09f4279c91a0a', NULL, NULL, '2025-04-27 13:16:56'),
-(200, 'license:cfb18d050a330696ac71008ea1d09f4279c91a0a', 'deposit', 500000, 'license:cfb18d050a330696ac71008ea1d09f4279c91a0a', NULL, NULL, '2025-04-27 13:17:16'),
-(201, 'license:cfb18d050a330696ac71008ea1d09f4279c91a0a', 'deposit', 100000, 'license:cfb18d050a330696ac71008ea1d09f4279c91a0a', NULL, NULL, '2025-04-27 13:17:27'),
-(202, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', 'withdraw', 40000, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', NULL, NULL, '2025-04-27 13:27:35'),
-(203, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', 'deposit', 40000, 'license:cccf9c6770b6fcce31672ec6bb6b40e140fb9afb', NULL, NULL, '2025-04-27 13:30:03'),
-(204, 'license:430d0a8677c1ea13776b56560271e460c6a18a9d', 'deposit', 100000, 'license:430d0a8677c1ea13776b56560271e460c6a18a9d', NULL, NULL, '2025-04-27 13:30:13'),
-(205, 'license:d373c81fb2c64427e016a7911c236281e9279936', 'withdraw', 10000, 'license:d373c81fb2c64427e016a7911c236281e9279936', NULL, NULL, '2025-04-27 13:35:09'),
-(206, 'license:65b0659a318f1166cf6e5101863432b3e346f7a3', 'deposit', 247000, 'license:65b0659a318f1166cf6e5101863432b3e346f7a3', NULL, NULL, '2025-04-27 13:44:31'),
-(207, 'license:787289c5e5a3b9e3b8ae6be01460833c6c958484', 'deposit', 35000, 'license:787289c5e5a3b9e3b8ae6be01460833c6c958484', NULL, NULL, '2025-04-27 14:00:52'),
-(208, 'license:1ea8292a8ed118bf560148d864cb5ba9f93c0249', 'deposit', 30000, 'license:1ea8292a8ed118bf560148d864cb5ba9f93c0249', NULL, NULL, '2025-04-27 14:01:04'),
-(209, 'license:787289c5e5a3b9e3b8ae6be01460833c6c958484', 'deposit', 200000, 'license:787289c5e5a3b9e3b8ae6be01460833c6c958484', NULL, NULL, '2025-04-27 14:01:06'),
-(210, 'license:787289c5e5a3b9e3b8ae6be01460833c6c958484', 'deposit', 3000, 'license:787289c5e5a3b9e3b8ae6be01460833c6c958484', NULL, NULL, '2025-04-27 14:01:14'),
-(211, 'license:1ea8292a8ed118bf560148d864cb5ba9f93c0249', 'withdraw', 40000, 'license:1ea8292a8ed118bf560148d864cb5ba9f93c0249', NULL, NULL, '2025-04-27 14:01:26'),
-(212, 'license:787289c5e5a3b9e3b8ae6be01460833c6c958484', 'deposit', 42830, 'license:787289c5e5a3b9e3b8ae6be01460833c6c958484', NULL, NULL, '2025-04-27 14:01:42'),
-(213, 'license:415b0f1c8d732e8f413e5bfb897c9c9c4bba7d7e', 'deposit', 14800000, 'license:415b0f1c8d732e8f413e5bfb897c9c9c4bba7d7e', NULL, NULL, '2025-04-27 14:11:55'),
-(214, 'license:57a961a8112554d8545ce0f16e212f4932dc5722', 'deposit', 123000, 'license:57a961a8112554d8545ce0f16e212f4932dc5722', NULL, NULL, '2025-04-27 14:46:35'),
-(215, 'license:415b0f1c8d732e8f413e5bfb897c9c9c4bba7d7e', 'withdraw', 5000000, 'license:415b0f1c8d732e8f413e5bfb897c9c9c4bba7d7e', NULL, NULL, '2025-04-27 15:21:33'),
-(216, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', 'deposit', 1000000, 'license:4a4bcdde2bfb84410af1466e7d104f4aaea9ad56', NULL, NULL, '2025-04-27 15:38:34'),
-(217, 'license:6648b3c221b9f2db934923bc789b09afd6c83045', 'withdraw', 5000, 'license:6648b3c221b9f2db934923bc789b09afd6c83045', NULL, NULL, '2025-04-27 16:00:51'),
-(218, 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', 'withdraw', 2500, 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', NULL, NULL, '2025-04-27 16:42:29'),
-(219, 'license:71d85170ec93066094d9be4e875187517fb3b0a0', 'deposit', 24000, 'license:71d85170ec93066094d9be4e875187517fb3b0a0', NULL, NULL, '2025-04-27 16:55:42'),
-(220, 'license:57a961a8112554d8545ce0f16e212f4932dc5722', 'withdraw', 3000, 'license:57a961a8112554d8545ce0f16e212f4932dc5722', NULL, NULL, '2025-04-27 17:38:39'),
-(221, 'license:22129576d0bdb9d675f642f1c03bd9d3496babd2', 'withdraw', 1000000, 'license:22129576d0bdb9d675f642f1c03bd9d3496babd2', NULL, NULL, '2025-04-27 17:48:38'),
-(222, 'license:b3640903ac0a61e285f9b29f6df860d4f7079b20', 'withdraw', 1500, 'license:b3640903ac0a61e285f9b29f6df860d4f7079b20', NULL, NULL, '2025-04-27 17:56:26'),
-(223, 'license:d8124fa81d8fd02fc33768bec0ba05c510df5fe2', 'withdraw', 30000, 'license:d8124fa81d8fd02fc33768bec0ba05c510df5fe2', NULL, NULL, '2025-04-27 18:36:54'),
-(224, 'license:a87a6ad65e5e62a6e03c9b60e3e3c1c03a4424d6', 'withdraw', 1500000, 'license:a87a6ad65e5e62a6e03c9b60e3e3c1c03a4424d6', NULL, NULL, '2025-04-27 18:59:41'),
-(225, 'license:3f36152e73807ccfa6ed3e65dcb325efb8fd42c6', 'withdraw', 6000, 'license:3f36152e73807ccfa6ed3e65dcb325efb8fd42c6', NULL, NULL, '2025-04-27 19:03:21'),
-(226, 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', 'withdraw', 992, 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', NULL, NULL, '2025-04-27 19:10:25'),
-(227, 'license:4d04e37eb7b6e6330fefe28db1d1abcf6c42c099', 'deposit', 100000, 'license:4d04e37eb7b6e6330fefe28db1d1abcf6c42c099', NULL, NULL, '2025-04-27 20:34:15'),
-(228, 'license:4d04e37eb7b6e6330fefe28db1d1abcf6c42c099', 'deposit', 48000, 'license:4d04e37eb7b6e6330fefe28db1d1abcf6c42c099', NULL, NULL, '2025-04-27 20:34:27'),
-(229, 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', 'deposit', 500000, 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', NULL, NULL, '2025-04-27 21:23:03'),
-(230, 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', 'deposit', 2342, 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', NULL, NULL, '2025-04-27 21:23:14'),
-(231, 'license:d8fd6f841115a49967e95521833602fd1023254b', 'deposit', 2500000, 'license:d8fd6f841115a49967e95521833602fd1023254b', NULL, NULL, '2025-04-27 22:39:37');
 
 -- --------------------------------------------------------
 
@@ -606,8 +255,6 @@ CREATE TABLE `banlist` (
 -- Déchargement des données de la table `banlist`
 --
 
-INSERT INTO `banlist` (`license`, `ban_id`, `identifier`, `liveid`, `xblid`, `discord`, `playerip`, `targetplayername`, `sourceplayername`, `reason`, `timeat`, `expiration`, `permanent`) VALUES
-('license:2e35218c23bd014dcb89d25164f85957a1af2a7f', '8549-26205', NULL, NULL, NULL, NULL, 'ip:86.221.93.65', 'JteRushEnQuamis', 'H I KYZOO', 'CHEAT', '1757712368', '1757712368', 1);
 
 -- --------------------------------------------------------
 
@@ -637,8 +284,6 @@ CREATE TABLE `banlisthistory` (
 -- Déchargement des données de la table `banlisthistory`
 --
 
-INSERT INTO `banlisthistory` (`id`, `ban_id`, `license`, `identifier`, `liveid`, `xblid`, `discord`, `playerip`, `targetplayername`, `sourceplayername`, `reason`, `timeat`, `added`, `expiration`, `permanent`) VALUES
-(1, '8549-26205', 'license:2e35218c23bd014dcb89d25164f85957a1af2a7f', NULL, NULL, NULL, NULL, 'ip:86.221.93.65', 'JteRushEnQuamis', 'H I KYZOO', 'CHEAT', 1757712368, 'Fri Sep 12 23:26:08 2025', 1757712368, 1);
 
 -- --------------------------------------------------------
 
@@ -660,223 +305,6 @@ CREATE TABLE `billing` (
 -- Déchargement des données de la table `billing`
 --
 
-INSERT INTO `billing` (`id`, `identifier`, `sender`, `target_type`, `target`, `label`, `amount`) VALUES
-(224, 'license:ca0a679b80bb292d86cfb8bad759f1026db4ece0', 'license:129eb4d7228f3ab6ea1af825257f9d5c91e9cf72', 'society', 'mecano2', 'Ls Custom', 185750),
-(249, 'license:5a7ef1803d1599a20ec1b4a833be3eaf66d12e67', 'license:990107d100e47c1876c058d12be837449159f661', 'society', 'unicorn', 'Unicorn', 100000),
-(250, 'license:81ed811166d7d48b18895dd9de3965b6ee9bfb74', 'license:990107d100e47c1876c058d12be837449159f661', 'society', 'unicorn', 'Unicorn', 100000),
-(376, 'license:03d6f0e1765a75f940b46a6dd382e333d6156ad8', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'mecano', 'Benny\'s', 1500),
-(436, 'license:0bf63158a66b4cae5156e32dcff191a2aec13226', 'license:75dcacba70de0958b65834f65c8d5b594ceee500', 'society', 'mecano', 'Benny\'s', 2000),
-(458, 'license:c341b1ab37d1fc8c6c43ca26bab3d42daa29aeac', 'license:3374fdc966455e2070518e284507d66ce2b8d3f2', 'society', 'unicorn', 'Unicorn', 10000),
-(462, 'license:9ce2e1a3bb7d12b813d40a73fc05787d30de206b', 'license:0009f0849ee47d5130455edc8738297b960197eb', 'society', 'mecano', 'Benny\'s', 1000000),
-(472, 'license:6045933713352a4c67cbee619eff87a04d16fbc4', 'license:6a6ff47d5ad13997de84ad2f317be2daf5547a67', 'society', 'unicorn', 'Unicorn', 2500),
-(483, 'license:37f3856425373ae876d1fdac50dd27e4cccd7800', 'license:3374fdc966455e2070518e284507d66ce2b8d3f2', 'society', 'unicorn', 'Unicorn', 150000),
-(496, 'license:ba5d14a677c4e56b35b2d7c0e5b243d388bed888', 'license:dc25f86736c4674860290e70efb3dae974c593fb', 'society', 'autoexotic', 'AutoExotic', 1000),
-(514, 'license:27ef128b15f21b3f4ce85be0e64a182dca7605c6', 'license:3374fdc966455e2070518e284507d66ce2b8d3f2', 'society', 'unicorn', 'Unicorn', 100000),
-(515, 'license:ac4bee262f6a35ad3dd165e7f10283a5c54cf565', 'license:374711dcb39b875e148dac664fdf105bcacffe07', 'society', 'ambulance', 'Ambulance', 4000),
-(573, 'license:9c6a87b2314428779f1ac986ead8e92ca6c84ad0', 'license:4718b7033ae7e67af0781c723abf3e6aeafec7af', 'society', 'ambulance', 'Ambulance', 5000),
-(618, 'license:d6b909ae96f67fdddc79318de4d1c0d9c5c0727a', 'license:4718b7033ae7e67af0781c723abf3e6aeafec7af', 'society', 'ambulance', 'Ambulance', 5000),
-(662, 'license:e7afa32641b12c882eb9ddf0df86579434887274', 'license:fcecfe30e9ae2bb32d40b7fa9e0e4d8c317a540c', 'society', 'mecano2', 'Ls Custom', 750),
-(667, 'license:c0c01dfad835c90acfcd8ca9b638f0d17fdf6259', 'license:8a471e919d7a37c21d2384a0d7f442741a971591', 'society', 'ambulance', 'Ambulance', 5000),
-(675, 'license:565b081cd9306660d4fcedbef8ec34739bb0ed6a', 'license:3374fdc966455e2070518e284507d66ce2b8d3f2', 'society', 'unicorn', 'Unicorn', 150000),
-(692, 'license:4776bfb4a0e6bd4bd87d9a1592602b7ef748ef47', 'license:374711dcb39b875e148dac664fdf105bcacffe07', 'society', 'ambulance', 'Ambulance', 750),
-(694, 'license:76571224eaa308f33d62e07a833868459bad7ff5', 'license:374711dcb39b875e148dac664fdf105bcacffe07', 'society', 'ambulance', 'Ambulance', 750),
-(696, 'license:d3e4fdaac8a3f5be0d0c57f3aabbf24f837c8a69', 'license:1a7fa3d59e04a8fcff8af44482c3d8a920ccc4bf', 'society', 'autoexotic', 'AutoExotic', 500),
-(708, 'license:7c96518c27e6433a61dfaa769e32ff7ce0d58630', 'license:dbb7a2adb46b066ef000720d5ea547a28fb6b959', 'society', 'ambulance', 'Ambulance', 5000),
-(745, 'license:c27e451408bc9e4a164f53f9cebb47fdd1eb2a2e', 'license:c341b1ab37d1fc8c6c43ca26bab3d42daa29aeac', 'society', 'mecano2', 'Ls Custom', 90000),
-(762, 'license:b12aeaa8aada3b0ef9279ab324731c8719d91290', 'license:8a471e919d7a37c21d2384a0d7f442741a971591', 'society', 'ambulance', 'Ambulance', 5000),
-(767, 'license:fe9c1b8252ade87f3843bc96a76ac78d2c510363', 'license:dbb7a2adb46b066ef000720d5ea547a28fb6b959', 'society', 'ambulance', 'Ambulance', 5000),
-(786, 'license:eee70ff1aa6b068938dd907c99a3c0a471dc9b36', 'license:dbb7a2adb46b066ef000720d5ea547a28fb6b959', 'society', 'ambulance', 'Ambulance', 5000),
-(805, 'license:3320e9bb626fab38915fa74197d776c08226f147', 'license:dbb7a2adb46b066ef000720d5ea547a28fb6b959', 'society', 'ambulance', 'Ambulance', 5000),
-(912, 'license:4479920449b43bdb0e85783b821d6851e1f65f33', 'license:719eb63806746adc24d3372df6767bfa6c111200', 'society', 'ambulance', 'Ambulance', 1000),
-(914, 'license:8bebf20d39581893d711490aed3ab1bf7a6c8fde', 'license:374711dcb39b875e148dac664fdf105bcacffe07', 'society', 'ambulance', 'Ambulance', 750),
-(918, 'license:3028583825416c22d2984ff8d01a7635e6b9a086', 'license:183813b8ebdb1f447bd7e2c04197693a5848d629', 'society', 'ambulance', 'Ambulance', 2000),
-(926, 'license:628f94310c7d29d5ae57900f338f39298f14babd', 'license:183813b8ebdb1f447bd7e2c04197693a5848d629', 'society', 'ambulance', 'Ambulance', 2000),
-(934, 'license:d886151932b075cbb28299c2c270cca13901a990', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 4700),
-(949, 'license:8704caa90e2753cd520518c00933dcd9bc21db87', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 4700),
-(955, 'license:064adad8d9e530c58988e9156c3131a0165bcc7a', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 9000),
-(969, 'license:e4c436ca67440cbae089be85768c43c63c53e295', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 5700),
-(972, 'license:591c19a5735234db550c19f61e2a66550b98d4da', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 5700),
-(977, 'license:0a3d16c6266d57c9b2e8e60796e8eea668360eec', 'license:719eb63806746adc24d3372df6767bfa6c111200', 'society', 'ambulance', 'Ambulance', 4000),
-(982, 'license:1761cecc3b8f13b5f95d7359a46af832721f301d', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 9999),
-(986, 'license:84ec14209589bad343164d0a3599fa08b2fdeeb7', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 5700),
-(992, 'license:f6e2921adee6b787d40e5e3bf595feccedc641ac', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 5700),
-(994, 'license:f0faa5d8c5c6d3eb62df44354693993d7470c26b', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 5700),
-(1005, 'license:7cbe74316a86d67d000e7142a73926028e2175be', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 5700),
-(1007, 'license:db8a7b452736736cef6aa9155d1660080814b411', 'license:719eb63806746adc24d3372df6767bfa6c111200', 'society', 'ambulance', 'Ambulance', 4500),
-(1013, 'license:6f4fc32173ff863c4a8213b0b5a535e478f1e8b6', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 5700),
-(1028, 'license:c89c7c309b634afbd3a3b7075e570d75f6cc7995', 'license:183813b8ebdb1f447bd7e2c04197693a5848d629', 'society', 'ambulance', 'Ambulance', 3000),
-(1037, 'license:c864ed5a5b44b8aa12aabc5d6ebfe0edfeef841a', 'license:dbb7a2adb46b066ef000720d5ea547a28fb6b959', 'society', 'ambulance', 'Ambulance', 5000),
-(1068, 'license:4b81abc4cfd85ef52855bdd6b24d8bfcbf7968f9', 'license:3dd827b24892a4dbf8e0b90abbfaad1bb4878cee', 'society', 'ambulance', 'Ambulance', 5000),
-(1079, 'license:67d7f6ef151d9bd1b9c473c662e7f430aeacf379', 'license:6caeec777267cd716b8ef935b01864deab9718eb', 'society', 'taxi', 'Taxi', 1400),
-(1115, 'license:4fc86a0bf1b67ed7d321e9a3d55279deab279848', 'license:37b09e2fdb6def73168ed6ee4e3d24d230dccb33', 'society', 'mecano2', 'Ls Custom', 2000),
-(1127, 'license:56c15d157074c06405dc948a48f050279e692ef8', 'license:c809fbef7fa84bf978a4492ba7257ff684027b98', 'society', 'mecano', 'Benny\'s', 1000),
-(1213, 'license:509502d482dd4d0bd295379210215bf0cfbcbf9d', 'license:3f2ef4438c1bebffbff938d3cd5992ecccc2a5cf', 'society', 'mecano', 'Benny\'s', 1000),
-(1218, 'license:d84842d26aa8d3a5ff824ddc9ae93cb98d14401d', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 9999),
-(1259, 'license:1527292f990d8ae74439b3535554786d30e30fe3', 'license:219c8b66bbd8c9abc7c7a9c91986b1e38ef1f911', 'society', 'ambulance', 'Ambulance', 9999),
-(1329, 'license:acf4fe77ea7abd4da15afa92572771f1a6bf4bb5', 'license:374711dcb39b875e148dac664fdf105bcacffe07', 'society', 'ambulance', 'Ambulance', 2500),
-(1336, 'license:1a5edabfbaa0a37286ede8d6326077f1f6c4992a', 'license:44276e3cf553d18a2ecb062b8b620c1ba356698d', 'society', 'ambulance', 'Ambulance', 3500),
-(1338, 'license:b6a960185c55b4e8107d71f58731a01c180c1e35', 'license:374711dcb39b875e148dac664fdf105bcacffe07', 'society', 'ambulance', 'Ambulance', 3500),
-(1345, 'license:e29614725bd8940c530a48380a123f45f4ba0cba', 'license:49000ac324e1035712ee9868346629d208e6406d', 'society', 'ambulance', 'Ambulance', 6500),
-(1346, 'license:6cb39d4bcd9bc5ca4d63e3e69258de48acbd35c3', 'license:49000ac324e1035712ee9868346629d208e6406d', 'society', 'ambulance', 'Ambulance', 5000),
-(1351, 'license:026dd8e9eae83c66997eceab25a98f926165a89c', 'license:49000ac324e1035712ee9868346629d208e6406d', 'society', 'ambulance', 'Ambulance', 5000),
-(1357, 'license:3ccc6fa0dde65c5d806f1ee1c7bc24714e18c812', 'license:e8702506de4c6a3e3008202c69b72d362c69c31d', 'society', 'ambulance', 'Ambulance', 5000),
-(1393, 'license:f75a049392ac7b270ea31e22028ecf9b82e96f51', 'license:6caeec777267cd716b8ef935b01864deab9718eb', 'society', 'taxi', 'Taxi', 2000),
-(1398, 'license:c1ad3138b7392eee9650d4eee03833185a2c4530', 'license:44276e3cf553d18a2ecb062b8b620c1ba356698d', 'society', 'ambulance', 'Ambulance', 1250),
-(1405, 'license:743d21263d5cdd3a48706da7b882880a3a72d1ab', 'license:e900ee8198b90f286f2be3155f98e75e9659daba', 'society', 'mecano2', 'Ls Custom', 999),
-(1413, 'license:6bf617a08791ebe5e21565a9db84506d6fee444d', 'license:22f81345d6a4cfd83cdb6bf9d6f37301cbf95de6', 'society', 'ambulance', 'Ambulance', 2000),
-(1422, 'license:44cb666cd87ae164030dfd27e8ad0facd7f972b4', 'license:22f81345d6a4cfd83cdb6bf9d6f37301cbf95de6', 'society', 'ambulance', 'Ambulance', 3000),
-(1425, 'license:e0a77ce62ad3e36dce5a4dcfce132f5cd3b30fc0', 'license:03a54d22cb209e462f317fdeb3cf7be1a0b50129', 'society', 'mecano', 'Benny\'s', 1000),
-(1435, 'license:06f4b4ce9150237eb38e5e3569a28c757d0b3fda', 'license:22f81345d6a4cfd83cdb6bf9d6f37301cbf95de6', 'society', 'ambulance', 'Ambulance', 5000),
-(1438, 'license:0efc24db5c6dbc070f6e609b6f05ff6dc053bab5', 'license:10332b10077007aa5b33d0d417cd2e099472b776', 'society', 'mecano', 'Benny\'s', 1000),
-(1465, 'license:cdaa467be92fe01a12b76249605492526f3dda92', 'license:374711dcb39b875e148dac664fdf105bcacffe07', 'society', 'ambulance', 'Ambulance', 2500),
-(1501, 'license:ad30473bb6c166cd5ac66e5e70e683e4a7b610b2', 'license:10332b10077007aa5b33d0d417cd2e099472b776', 'society', 'mecano', 'Benny\'s', 1000),
-(1520, 'license:0a3d16c6266d57c9b2e8e60796e8eea668360eec', 'license:a4947ba20d1a5fa98421b026043c2d5363861e1e', 'society', 'society_realestateagent', 'AgenceImmo', 1000),
-(1587, 'license:615ba725cd60785a38038d2d9262c3213b0cef02', 'license:03a54d22cb209e462f317fdeb3cf7be1a0b50129', 'society', 'mecano', 'Benny\'s', 1000),
-(1598, 'license:565f40b6131bd5a70585204303aad8dd6f0aaea6', 'license:ea02dd49e5ae38393ced082242eff25477419fc1', 'society', 'mecano', 'Benny\'s', 1000),
-(1625, 'license:93b24fee5e7c9298ca2c447ce9aca335fe69880a', 'license:22129576d0bdb9d675f642f1c03bd9d3496babd2', 'society', 'society_realestateagent', 'AgenceImmo', 450000),
-(1649, 'license:03a54d22cb209e462f317fdeb3cf7be1a0b50129', 'license:2c223add12b238d468ce710084ce4cc69228f482', 'society', 'mecano', 'Benny\'s', 1000),
-(1678, 'license:1d8207adce4e589c14ce2260202f49545a8efa6f', 'license:2c223add12b238d468ce710084ce4cc69228f482', 'society', 'mecano', 'Benny\'s', 1000),
-(1707, 'license:b7cce05eaf258dbabd28b59a4f5b6ea197079a47', 'license:1d8c692f0d8ecee989180bfa84f46a0f6dba2c84', 'society', 'mecano', 'Benny\'s', 1000),
-(1713, 'license:8a6f69f3d1f5ccab1c8646cede229a17767d3234', 'license:6caeec777267cd716b8ef935b01864deab9718eb', 'society', 'taxi', 'Taxi', 500),
-(1721, 'license:16edb28bb9865fa17cdd5ddf5d819891f9e9056d', 'license:ea02dd49e5ae38393ced082242eff25477419fc1', 'society', 'mecano', 'Benny\'s', 1000),
-(1726, 'license:91581bee68a441db771cfe2ffb9cff8192a0935b', 'license:6caeec777267cd716b8ef935b01864deab9718eb', 'society', 'taxi', 'Taxi', 300),
-(1824, 'license:fd8d4acf64e88d8dcf3de8cf05c959d059be8762', 'license:03a54d22cb209e462f317fdeb3cf7be1a0b50129', 'society', 'mecano', 'Benny\'s', 1000),
-(1916, 'license:17cd7c6834adae53bb7d7b2f5e8ee3b6f0cc58a1', 'license:7e0859d9f8aca1be3690587295e3c0dd0bf9d197', 'society', 'mecano', 'Benny\'s', 2000),
-(1931, 'license:3f6ef20ca71a174440be809d1944a4d9fa79c446', 'license:992a9d318863137fba6c8c551ec018a37029d2d9', 'society', 'mecano', 'Benny\'s', 1000),
-(1981, 'license:71b69e41cdbadaf61a1fecfaecd0541fd3754fb0', 'license:f54cdb9b833eaa8f530e45b15fde0fd4c694553d', 'society', 'autoexotic', 'AutoExotic', 1500),
-(2040, 'license:136f4d49a5ca6d661b124793b1d64cd2a1556328', 'license:b4648b9f3ccc8aaa6eb4f48db3909657eaabd19b', 'society', 'bahamas', 'Bahamas', 5000),
-(2073, 'license:f4953ec8f186768f4487201c6cf0c3c0170fb2da', 'license:056d2b334a5d1ed5690d75ac46cc95d52a0a5269', 'society', 'autoexotic', 'AutoExotic', 1000),
-(2089, 'license:f693e6c81ca1ff1af2afbd74602fb61d7a5e70cd', 'license:0407e7867d027a51a521be7612e0b9dc468f1eaa', 'society', 'mecano', 'Benny\'s', 1000),
-(2099, 'license:3374fdc966455e2070518e284507d66ce2b8d3f2', 'license:44276e3cf553d18a2ecb062b8b620c1ba356698d', 'society', 'ambulance', 'Ambulance', 5000),
-(2119, 'license:9d2a40629adbdead220df2a17dba7985790df476', 'license:992a9d318863137fba6c8c551ec018a37029d2d9', 'society', 'mecano', 'Benny\'s', 1000),
-(2164, 'license:27bdef4aa356434c2e0f69e2df3309551c112999', 'license:992a9d318863137fba6c8c551ec018a37029d2d9', 'society', 'mecano', 'Benny\'s', 1000),
-(2211, 'license:10110287e6ecc4778f2bc8f5f97627dfc7589e8d', 'license:ff839fc77285da0b57cede9d3db8a4cb8e56a2a6', 'society', 'ambulance', 'Ambulance', 1500),
-(2212, 'license:ebe09475ad6362c2a11c1f0b8b771f907fe7e348', 'license:ff839fc77285da0b57cede9d3db8a4cb8e56a2a6', 'society', 'ambulance', 'Ambulance', 3000),
-(2213, 'license:5d2c09ff6860c27dd957b0b8e271150d9456702c', 'license:ff839fc77285da0b57cede9d3db8a4cb8e56a2a6', 'society', 'ambulance', 'Ambulance', 1500),
-(2238, 'license:bae7b6506e2ae28227ee21a3c2b8a9793bedb184', 'license:4718b7033ae7e67af0781c723abf3e6aeafec7af', 'society', 'ambulance', 'Ambulance', 2500),
-(2279, 'license:0af895c4b3bc639e87026f8fbe8a266d456862f9', 'license:b4efa4731c8814dcb0ec1cdaf474691dae11ced8', 'society', 'larrys', 'Larrys', 5000),
-(2293, 'license:f2cf8eba26e4d51804ddc3aa995ca6284f6493a2', 'license:c67194b37651887c5aa0d0d87203cb4e0ff4aebf', 'society', 'larrys', 'Larrys', 2000),
-(2329, 'license:90e900b3193844942a468689878713661ba3d8b2', 'license:b4efa4731c8814dcb0ec1cdaf474691dae11ced8', 'society', 'larrys', 'Larrys', 5000),
-(2331, 'license:34e396a86038d0284c501081df7ea236ec9bdcbc', 'license:d50f38ed148f510704665eb07a56b0b43e544d3f', 'society', 'ambulance', 'Ambulance', 9999),
-(2344, 'license:5af3b9984b3d232010c98756b24f61d4a469700f', 'license:22f81345d6a4cfd83cdb6bf9d6f37301cbf95de6', 'society', 'ambulance', 'Ambulance', 1500),
-(2427, 'license:4fc436db975a990c4ae3b0268938dd7f2f20a279', 'license:6aa69b1bc8c1f5af088caec06c3081b96405b6d7', 'society', 'mecano', 'Benny\'s', 1000),
-(2468, 'license:5f16b6c670e16f29b02879f6ea41471a6d968258', 'license:6aa69b1bc8c1f5af088caec06c3081b96405b6d7', 'society', 'mecano', 'Benny\'s', 1000),
-(2495, 'license:2b9f35918134bf6b18934d4cadec59a9170fcde3', 'license:beb4eb988f059358cd353141084078ef93c1ea14', 'society', 'mecano', 'Benny\'s', 1000),
-(2524, 'license:ab2b60115becec221399c0e6dfe9d2fbc4e05580', 'license:22f81345d6a4cfd83cdb6bf9d6f37301cbf95de6', 'society', 'ambulance', 'Ambulance', 1500),
-(2536, 'license:5bcba2e7e734a68645bdbf505269b8d6f9fcb319', 'license:55633c5ed820cfa78ab36f6bc9b02d5f522ec077', 'society', 'beanmachine', 'beanmachine', 3500),
-(2611, 'license:ead057abd554a7ae78ea08662615aac2455e4241', 'license:ec2d51a212f6270509f2c98e86c09a2bd9789e09', 'society', 'mecano2', 'Ls Custom', 2000),
-(2615, 'license:131826acf42c1edac524ef3b282765d84a7dd26b', 'license:10381fe556e6da8a45406d4072ec7412b973064c', 'society', 'beanmachine', 'beanmachine', 25000),
-(2697, 'license:2497ebb2936312f9a94657ec987072da3e5d5581', 'license:ec196f64c46825160e071e1b9858b0f2f4796573', 'society', 'mecano', 'Benny\'s', 1000),
-(2726, 'license:23afbbd589c4a3d76a924e372670b2cc20ff3c2a', 'license:0c9beb9cf016c5d203b0719841f1b2e800d07f13', 'society', 'mecano', 'Benny\'s', 1000),
-(2775, 'license:25dc9f5b254029c813e68101c978c50cf6eef79d', 'license:44276e3cf553d18a2ecb062b8b620c1ba356698d', 'society', 'ambulance', 'Ambulance', 2546),
-(2782, 'license:5ecb5a8a936175ea5a45534c9578b477bd3025be', 'license:0c9beb9cf016c5d203b0719841f1b2e800d07f13', 'society', 'mecano', 'Benny\'s', 486000),
-(2870, 'license:4c842e40c28e119060f14920ed95fbe2974539ff', 'license:3a227ba87af9bc048544e4687e8122b9d1cb406f', 'society', 'ambulance', 'Ambulance', 4000),
-(2963, 'license:9ae264d1064b3879e3e5465a7238421b5288f661', 'license:992a9d318863137fba6c8c551ec018a37029d2d9', 'society', 'mecano', 'Benny\'s', 1000),
-(2967, 'license:9b007cc82e9a4b741a983e6871b5d1f613aa5fd2', 'license:992a9d318863137fba6c8c551ec018a37029d2d9', 'society', 'mecano', 'Benny\'s', 1000),
-(3024, 'license:b647678adc6850cee0748a023566024915d01622', 'license:3a227ba87af9bc048544e4687e8122b9d1cb406f', 'society', 'ambulance', 'Ambulance', 3000),
-(3034, 'license:9e9625dbe1c52887b49186c6b7a83fe00c6cd843', 'license:d0f8955047c52b2c790800921f1f2a64ae751ab5', 'society', 'mecano', 'Benny\'s', 1000),
-(3053, 'license:647558ca81d0293d270d0b7b1ebbf3590eca8d3a', 'license:7ab8b58018a73b18f7957ab1561356a25d0dba3d', 'society', 'ambulance', 'Ambulance', 2000),
-(3072, 'license:a3d351bd85411971f3caea17b3d0525df97ba0a7', 'license:7ab8b58018a73b18f7957ab1561356a25d0dba3d', 'society', 'ambulance', 'Ambulance', 3000),
-(3092, 'license:6fcdc544aff8f71ab82a23852a8e13c93ed590a7', 'license:3a227ba87af9bc048544e4687e8122b9d1cb406f', 'society', 'ambulance', 'Ambulance', 5000),
-(3134, 'license:d6f08a616b57148cfb03a58df2e16f00d12abab7', 'license:7ab8b58018a73b18f7957ab1561356a25d0dba3d', 'society', 'ambulance', 'Ambulance', 7500),
-(3149, 'license:339e81f40461530dd31745e934c464b105eb7692', 'license:22f81345d6a4cfd83cdb6bf9d6f37301cbf95de6', 'society', 'ambulance', 'Ambulance', 9999),
-(3154, 'license:4faa1713f864350530de4017039d642f3e23c749', 'license:eac3acc90fe8a8d7ac3a5a7e907ebdcfcf33d69c', 'society', 'larrys', 'Larrys', 2500),
-(3156, 'license:c8dfb382d85182735dafe5dfc43e820652ee767d', 'license:3e3d74b19f5c599b793ac15f2a5f2c3236dd5e96', 'society', 'mecano2', 'Ls Custom', 3000),
-(3205, 'license:b963ff6faee7316e3fbb04429e0713653c4120c4', 'license:d5252a0307ab96eadf534c7f8faadbbd28668e47', 'society', 'autoexotic', 'AutoExotic', 1500),
-(3238, 'license:f242941454bb237c504be93949b9c62a291967b0', 'license:22f81345d6a4cfd83cdb6bf9d6f37301cbf95de6', 'society', 'ambulance', 'Ambulance', 2500),
-(3240, 'license:09714c4a2e8d658c9cb02201995db4fe16318d85', 'license:22f81345d6a4cfd83cdb6bf9d6f37301cbf95de6', 'society', 'ambulance', 'Ambulance', 9999),
-(3258, 'license:d62dc4051888d49cd507e6d3f4cfbe9a6943ec57', 'license:44276e3cf553d18a2ecb062b8b620c1ba356698d', 'society', 'ambulance', 'Ambulance', 5000),
-(3368, 'license:2cc95e821de90e7688665f53d2e67f3a77efcaf5', 'license:fa46be5a111eec5439f5affcf943af27a178055c', 'society', 'club77', 'club77', 200000),
-(3379, 'license:0b1fcac18b4491e1626de19a0f7ad75bc9c1c12a', 'license:415b0f1c8d732e8f413e5bfb897c9c9c4bba7d7e', 'society', 'ambulance', 'Ambulance', 2000),
-(3388, 'license:5215e309424b0dd3114d97e0c2bd199fc11e3d5f', 'license:6caeec777267cd716b8ef935b01864deab9718eb', 'society', 'taxi', 'Taxi', 500),
-(3426, 'license:2b254fef35ae6f7895dd796249d5e302945b078e', 'license:c46da29705b3d7f695ec7f0286374bee88d346c5', 'society', 'unicorn', 'Unicorn', 2000),
-(3456, 'license:5906ab8d14619dc3a5e9ae6e1c0779651f9bec85', 'license:7ab8b58018a73b18f7957ab1561356a25d0dba3d', 'society', 'ambulance', 'Ambulance', 2000),
-(3465, 'license:820280bc67d6d94cf0eab4b7d3a82f1cb8c1423c', 'license:dd2c8b9f986592b23b2ff12552eed0f54b283148', 'society', 'autoexotic', 'AutoExotic', 1500),
-(3474, 'license:c34c20d4d38f8e4f73dbd5bd7cb96448cac7e2c2', 'license:c36a6508c9e2092c1c4e6890177a097e58355a72', 'society', 'ambulance', 'Ambulance', 7500),
-(3525, 'license:b7ae87640b66b6e80bb706e05b23718e78ccf740', 'license:3581cd17d91447461f4aabb52a869ae0860cdf68', 'society', 'mecano', 'Benny\'s', 1000),
-(3558, 'license:fc90a365cc7c2a9bef32b1f14138ba5fb4374d99', 'license:7ab8b58018a73b18f7957ab1561356a25d0dba3d', 'society', 'ambulance', 'Ambulance', 1000),
-(3653, 'license:0c44bf893d6f576ee5dc2ae01becd54890188bc0', 'license:6caeec777267cd716b8ef935b01864deab9718eb', 'society', 'taxi', 'Taxi', 3500),
-(3712, 'license:e62c49b1f25daa5c680298dc847a791b487f35a5', 'license:0bde5bddafebe7d6ad93b9056dfef81b4548aa1e', 'society', 'mecano', 'Benny\'s', 1000),
-(3724, 'license:40cacf25038269e92cf3b1ff98ced5e7b04f74f8', 'license:e901b63e5dc5b846047228e05086cef701ffa2f5', 'society', 'mecano', 'Benny\'s', 1000),
-(3825, 'license:95189451efc91b6806358476fe067966e1f3cf9d', 'license:6caeec777267cd716b8ef935b01864deab9718eb', 'society', 'taxi', 'Taxi', 3100),
-(3834, 'license:e3f2404e2d0c9cd5a7fb3042b5f1fcc9fc06b459', 'license:ec65e13383b200edb35d3e681a77933190c0a356', 'society', 'bahamas', 'Bahamas', 5000),
-(3863, 'license:4c6b9b46ead8081ec6e86bc35cd2e5abe0260fcb', 'license:543d0aa836aeba3f4bd3055db4c8af2d8d5202a5', 'society', 'ambulance', 'Ambulance', 2000),
-(3919, 'license:f3a40f9527471e302c725d4b03b0717a4fdda2cb', 'license:dd2c8b9f986592b23b2ff12552eed0f54b283148', 'society', 'autoexotic', 'AutoExotic', 2000),
-(3967, 'license:8ad74deee5308bca3e45c2adc0504a3b24088259', 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', 'society', 'mecano', 'Benny\'s', 10000),
-(4059, 'license:834449e64d145140300b96d03f7b99d0f5c24b54', 'license:51cf1b7cb57bc96338d9a088c36bb739cedabdd9', 'society', 'mecano', 'Benny\'s', 1000),
-(4060, 'license:fba03d83799a1ba8cebacc25026c26526677d0c8', 'license:7ab8b58018a73b18f7957ab1561356a25d0dba3d', 'society', 'ambulance', 'Ambulance', 2000),
-(4062, 'license:c8c5482e836dd0f0395a751d1f8dcd930036f8c7', 'license:6caeec777267cd716b8ef935b01864deab9718eb', 'society', 'taxi', 'Taxi', 800),
-(4077, 'license:34bcd123b2d9e62b46a8b09680162d896fd79373', 'license:6caeec777267cd716b8ef935b01864deab9718eb', 'society', 'taxi', 'Taxi', 1500),
-(4135, 'license:90b6978d83b1773678b30ce73fce2c97d4c20f83', 'license:dd2c8b9f986592b23b2ff12552eed0f54b283148', 'society', 'autoexotic', 'AutoExotic', 1500),
-(4143, 'license:a02d9882ed9c88a411edaab411bf3b28c537895c', 'license:bd35490d07fd1ec674542556120484f9bea8ba0a', 'society', 'mecano2', 'Ls Custom', 2000),
-(4188, 'license:0974cc20f24351275169343977d272a1df161229', 'license:90b6d322321076505465330066dab133b8ed455f', 'society', 'mecano', 'Benny\'s', 1000),
-(4235, 'license:82c39336a2961c35905574eec37fa7b20533b9c1', 'license:3f1a4c833c17ae336328509d0c94d835be945429', 'society', 'mecano', 'Benny\'s', 1000),
-(4260, 'license:5be4628db24ed1757c4f08f033cf1ba748ffea65', 'license:b5ed48cdb76ab94137cbdad6b19a806b7e23ef54', 'society', 'autoexotic', 'AutoExotic', 1000),
-(4265, 'license:7cf82beea2751b4869ad544c1081ce11e8be93c0', 'license:4a88154ee9f7220e83fe57a1c47b5747279fbd01', 'society', 'mecano', 'Benny\'s', 1000),
-(4346, 'license:1a093deee7cef3065bc667825354c71f4f657707', 'license:22f81345d6a4cfd83cdb6bf9d6f37301cbf95de6', 'society', 'mecano', 'Benny\'s', 1000),
-(4429, 'license:0c120bada226523224cacd497f4d6db0a43948e9', 'license:888cc6a4e84b4d4920423a5c913ebb6ad69f3548', 'society', 'gouv', 'Gouvernement', 7000000),
-(4434, 'license:26aa2225d3ed32fa2a75ebcd24f21f1310feddd1', 'license:44276e3cf553d18a2ecb062b8b620c1ba356698d', 'society', 'mecano', 'Benny\'s', 2000),
-(4436, 'license:9c7a3bae70695b66bf901598ed8e7d99be3a0ace', 'license:7f41d245b3956ceb329909a07e1f029697b42f0c', 'society', 'realestateagent', 'Agence Immobilier', 150000),
-(4602, 'license:32c7dc8eedaaa33bd8fbc894467ce0ee909a1e41', 'license:5be940699b383252a8f73d6bd29f8b5095ae427c', 'society', 'mecano', 'Benny\'s', 1000),
-(4675, 'license:3e24f3704024eba06bb414abfac5b59e48ea9948', 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', 'society', 'mecano', 'Benny\'s', 2500),
-(4686, 'license:bbf87eed68647e37f7be1c70bf3bbc531a5e298e', 'license:5be940699b383252a8f73d6bd29f8b5095ae427c', 'society', 'mecano', 'Benny\'s', 1000),
-(4723, 'license:98e1a942b5b7e8d7bd004e012a69ba8ba37f9dae', 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', 'society', 'mecano', 'Benny\'s', 1000),
-(4731, 'license:888cc6a4e84b4d4920423a5c913ebb6ad69f3548', 'license:2ebad25eb0458ca2d770ffe59ed8a723f6ff3be6', 'society', 'bahamas', 'Bahamas', 3000),
-(4796, 'license:9fac6e8df6183c48e5667afa73c48c1f6134820d', 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', 'society', 'mecano', 'Benny\'s', 1000),
-(4800, 'license:faf511cd1ad929a9bde02dfc922c32c7514eaa27', 'license:5be940699b383252a8f73d6bd29f8b5095ae427c', 'society', 'mecano', 'Benny\'s', 3000),
-(4801, 'license:4ca5817b7d439847d1c6eac93042e1641b57a55e', 'license:5be940699b383252a8f73d6bd29f8b5095ae427c', 'society', 'mecano', 'Benny\'s', 1000),
-(4891, 'license:5222a97946bb4bf0dfab758930cc890482681dd1', 'license:f853ce8e5c4562dedfafe96cf6c82532ea95b821', 'society', 'ambulance', 'Ambulance', 1500),
-(4893, 'license:f6e50e6c8141d6cca89cd3a63761394836f29edc', 'license:5be940699b383252a8f73d6bd29f8b5095ae427c', 'society', 'mecano', 'Benny\'s', 2000),
-(4895, 'license:25c568740dfac8759625519a430022a23ec7ba8d', 'license:ca6f4243cbbf5c8e41b8eb3cc42203be0ec20eba', 'society', 'mecano', 'Benny\'s', 1000),
-(4896, 'license:c4a22d44053962b0c4bf7236a5db1b8a3376ae58', 'license:f6fea662c55bbfa743b6bec3e79684489e464cbb', 'society', 'mecano', 'Benny\'s', 1000),
-(4907, 'license:9b3681f4a95b832bd98134b82b8bb4d23ed45eb7', 'license:f853ce8e5c4562dedfafe96cf6c82532ea95b821', 'society', 'ambulance', 'Ambulance', 2000),
-(4915, 'license:f6835f8a13d308a480a328e2a5b0e1b759b48994', 'license:4a88154ee9f7220e83fe57a1c47b5747279fbd01', 'society', 'mecano', 'Benny\'s', 1000),
-(4929, 'license:d3248eff5c84a0051aa489e5039dea2f78f5bd12', 'license:05577ec12d74dc746e65997c37c7309e45606477', 'society', 'autoexotic', 'AutoExotic', 1000),
-(4958, 'license:bcdb97b64ecfd09b1a80680beadf070d604a8486', 'license:ea0fdfaa9953923b795488bd427cb8d873fa6eb1', 'society', 'autoexotic', 'AutoExotic', 1000),
-(5028, 'license:d546a155645b5d7b644b68ac0f2a860bd5ca7cc2', 'license:f853ce8e5c4562dedfafe96cf6c82532ea95b821', 'society', 'ambulance', 'Ambulance', 7000),
-(5089, 'license:13480bb92a2cd60284d6e1d7022b9636e4b33b18', 'license:9b577d35369450138f2093470d09aeb179ef8f71', 'society', 'beanmachine', 'beanmachine', 200),
-(5100, 'license:ae596b89dac62ce714caf53e68c6c96237fa9eb4', 'license:1b64a60e8afbd2d4ccaad54dd1563f228d2b9ff0', 'society', 'ambulance', 'Ambulance', 2000),
-(5137, 'license:06a4f1786e86ebb1491235341d02d7484476772e', 'license:06c2298ac60d5e2e77a54566e8d2c2e28e5dec62', 'society', 'ambulance', 'Ambulance', 5000),
-(5169, 'license:74fab3a85633700d73a5de1f0e166dc91175b63c', 'license:d5252a0307ab96eadf534c7f8faadbbd28668e47', 'society', 'ambulance', 'Ambulance', 6000),
-(5205, 'license:89754f4d308af96ff6072cdb94dbf08dcee1bb2a', 'license:ffc23e20938923b24fa21d4d3d40bb220fae2217', 'society', 'autoexotic', 'AutoExotic', 1000000),
-(5338, 'license:0744e2910e964c1115f035ddf5ce5b4959926c53', 'license:f689565b783cca7dcc818f6a189e8f6e5d8eab1e', 'society', 'ambulance', 'Ambulance', 5000),
-(5413, 'license:79b6ac8a0afa99495fdae3a64e6b444c487f5ec0', 'license:1b64a60e8afbd2d4ccaad54dd1563f228d2b9ff0', 'society', 'ambulance', 'Ambulance', 2000),
-(5414, 'license:c286f8f52c9ffbc429d3e3b082b783a7dfb1de92', 'license:1b64a60e8afbd2d4ccaad54dd1563f228d2b9ff0', 'society', 'ambulance', 'Ambulance', 2000),
-(5444, 'license:818ea21e315a5d2c0def5e75563dc69c38abcf53', 'license:1b64a60e8afbd2d4ccaad54dd1563f228d2b9ff0', 'society', 'ambulance', 'Ambulance', 2000),
-(5468, 'license:c736c01a266205f6b8974ef686d2e9c680c0fc3e', 'license:30f6a3c80e73247d807bc72ef33c81bac49fd1e8', 'society', 'ambulance', 'Ambulance', 5000),
-(5495, 'license:d4e0ac1a9eea37b59e313e86b82f4933d99d3e60', 'license:88398899f0bc1863cf9bef5ffe982bc59d2b4eb4', 'society', 'ambulance', 'Ambulance', 1000),
-(5501, 'license:228ebfc00cd98f249db5bb6912d7800f3a55709d', 'license:ad4b9585640ad49bcbe7ea6d72c1592396340b7c', 'society', 'ambulance', 'Ambulance', 5000),
-(5519, 'license:0d288cd2b0e6793f0eaef35c8bf9a7653853c612', 'license:ae029d5841a7c755d1066ceaa27b66ff62d4fa8d', 'society', 'ambulance', 'Ambulance', 5000),
-(5522, 'license:e79f26cf47ea8adbdfba4940669ba67a5e20ed74', 'license:1b64a60e8afbd2d4ccaad54dd1563f228d2b9ff0', 'society', 'ambulance', 'Ambulance', 2000),
-(5523, 'license:7421a93943205771f33512318d26b8522d5d632a', 'license:1b64a60e8afbd2d4ccaad54dd1563f228d2b9ff0', 'society', 'ambulance', 'Ambulance', 2000),
-(5554, 'license:11a3f15ef0cd80026d6ea88ea854219e1ecd651d', 'license:bc58ff344d7e583db6aa110dbfeb9e5bbf744f23', 'society', 'mecano2', 'Ls Custom', 3500),
-(5559, 'license:06890d384ded385eed1eda3d8197866c838a97e8', 'license:13ef6d4582dffd11d26ec5d26770710eeb1a83a3', 'society', 'realestateagent', 'Agence Immobilière', 2100000),
-(5718, 'license:0546649e4992daaa34226cdcb4a38a5ce0c41840', 'license:bcfcdc249deb1676289e39f8bb4840ebc9c76988', 'society', 'mecano2', 'Ls Custom', 2000),
-(5733, 'license:6e4f6407a93db6c78f288aa3845d2fdece46becb', 'license:53ef27ba383d6ff93f6fbff7ba0ccec922f5e8ea', 'society', 'bahamas', 'Bahamas', 5000),
-(5735, 'license:10d674664fee45d7d628ae8135ddc7cb9bf70d44', 'license:53ef27ba383d6ff93f6fbff7ba0ccec922f5e8ea', 'society', 'bahamas', 'Bahamas', 5000),
-(5841, 'license:c38a5ab14fb255a350dd8c302c2b776f136aed31', 'license:1b64a60e8afbd2d4ccaad54dd1563f228d2b9ff0', 'society', 'ambulance', 'ambulance', 2000),
-(5842, 'license:a0f89b508fe2114bb851fe158e7230f81a9a4a1d', 'license:4aba057457609fe331df77868154a09c45734a41', 'society', 'ambulance', 'ambulance', 5000),
-(5845, 'license:5a3e99f6a49157609cf760ea0c9284a9c6f5ca5b', 'license:4aba057457609fe331df77868154a09c45734a41', 'society', 'ambulance', 'ambulance', 5000),
-(5846, 'license:1bcb2f8f413ebb3f30b437dc7e7017fb54d9c0f8', 'license:4aba057457609fe331df77868154a09c45734a41', 'society', 'ambulance', 'ambulance', 6000),
-(5847, 'license:89191c5cac8003bb1b84bf830175727a5a396fa4', 'license:4aba057457609fe331df77868154a09c45734a41', 'society', 'ambulance', 'ambulance', 6000),
-(5877, 'license:91c3d8104c4ed79ebf96ed65e0a6cbf9cf5a9906', 'license:eb6acfecca23d96283a2868b7d81c5785ab89b81', 'society', 'ambulance', 'ambulance', 1000),
-(5887, 'license:78ad300022fdb7091ecbb5b41e1cab35d7571737', 'license:eb6acfecca23d96283a2868b7d81c5785ab89b81', 'society', 'ambulance', 'ambulance', 1000),
-(5888, 'license:38906927c25d9b3d6d1fcb32d50149f833bb6f2c', 'license:eb6acfecca23d96283a2868b7d81c5785ab89b81', 'society', 'ambulance', 'ambulance', 1000),
-(5894, 'license:bb7febe3db4453a238e02e61b4961948496933dd', 'license:084e5cfe5971795695079135ff5315b1574c8461', 'society', 'mecano2', 'Ls Custom', 2000),
-(5896, 'license:d4c048cadac08972334dae10a31d424f8177f457', 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', 'society', 'ambulance', 'ambulance', 6000),
-(5915, 'license:cfb18d050a330696ac71008ea1d09f4279c91a0a', 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', 'society', 'ambulance', 'ambulance', 1000),
-(5916, 'license:82b355d263d8d326df95ec75fb84ec23b5dedd15', 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', 'society', 'ambulance', 'ambulance', 1000),
-(5933, 'license:f931b67fe313990d73f5046b0f78907742766c8e', 'license:eb6acfecca23d96283a2868b7d81c5785ab89b81', 'society', 'ambulance', 'ambulance', 5000),
-(5936, 'license:dbe0b6fb18724ad4c03f9b55726f299679d1138d', 'license:3e3d74b19f5c599b793ac15f2a5f2c3236dd5e96', 'society', 'mecano2', 'Ls Custom', 1),
-(5943, 'license:ff839fc77285da0b57cede9d3db8a4cb8e56a2a6', 'license:c73c2874e8d94975757b3bc0c290686db3203c43', 'society', 'gouv', 'Gouvernement', 5000),
-(5946, 'license:114eb614acbeefbe23972c8c770f77e2c0980a49', 'license:430d0a8677c1ea13776b56560271e460c6a18a9d', 'society', 'realestateagent', 'Agence Immobilière', 5000),
-(5969, 'license:c809fbef7fa84bf978a4492ba7257ff684027b98', 'license:1b64a60e8afbd2d4ccaad54dd1563f228d2b9ff0', 'society', 'ambulance', 'ambulance', 5000),
-(5978, 'license:6648b3c221b9f2db934923bc789b09afd6c83045', 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', 'society', 'ambulance', 'ambulance', 1000),
-(5984, 'license:889f0d96d7e5b365c6921a856b44258bb17c0868', 'license:9f448c1074f27ee973af04a9f2b2be247d7c540f', 'player', 'license:9f448c1074f27ee973af04a9f2b2be247d7c540f', 'Ambulance', 500),
-(6002, 'license:b2b58b25147bd6bb7367da9e6d606d9dbfb5ae28', 'license:42b4ed4d68aa4c1e3698985fdc4140d6614cbbd1', 'society', 'ambulance', 'ambulance', 1000),
-(6054, 'license:1bebe471acd8cc3240d8e8dd727bbfd180025b6a', 'license:9f448c1074f27ee973af04a9f2b2be247d7c540f', 'player', 'license:9f448c1074f27ee973af04a9f2b2be247d7c540f', 'Ambulance', 6000),
-(6055, 'license:c6bb1583ac7c5c84670d018f4608bc48fb087046', 'license:9f448c1074f27ee973af04a9f2b2be247d7c540f', 'player', 'license:9f448c1074f27ee973af04a9f2b2be247d7c540f', 'Ambulance', 6000),
-(6063, 'license:eea19740d2664f85d7a3705dc776140c9e6353d8', 'license:1b64a60e8afbd2d4ccaad54dd1563f228d2b9ff0', 'society', 'ambulance', 'ambulance', 2000);
 
 -- --------------------------------------------------------
 
@@ -1027,210 +455,6 @@ CREATE TABLE `casier` (
 -- Déchargement des données de la table `casier`
 --
 
-INSERT INTO `casier` (`identifier`, `Prenom`, `Nom`, `naissance`, `raison`, `auteur`) VALUES
-('license:8b397c8cedfb167692f68b452e110f4fdf1d7350', 'emiliano', 'fernandez', '29/11/2000', 'braquage de superette', 'lborg'),
-('license:8b397c8cedfb167692f68b452e110f4fdf1d7350', 'ibrahim', 'larech', '07/02/2000', 'outrage a agent, delit de fuite, refue d\'obtemperer', 'lborg'),
-('license:8b397c8cedfb167692f68b452e110f4fdf1d7350', 'basile', 'galette', '23/01/2000', 'intimidation physique sur agent de l\'etat', 'lborg'),
-('license:8b397c8cedfb167692f68b452e110f4fdf1d7350', 'ousseman', 'smith', '04/12/1999', 'tentative de meutre sur agent de l\'etat, refus d\'obtemperer, trouble l\'rodre publique', 'lborg'),
-('license:7645077e3f89b072131b7a9366e0abe070926fc5', 'Antoine', 'Ravier', '17/12/1997', 'road rage/ port d\'arme illegal', 'Captus'),
-('license:8b397c8cedfb167692f68b452e110f4fdf1d7350', 'raes', 'diaz', '11/06/1999', 'port d\'armes illegal', 'lborg'),
-('license:8b397c8cedfb167692f68b452e110f4fdf1d7350', 'yzcine', 'lassari', '11/04/1999', 'prise d\'otage sur agent de l\'etat, tentative de meutre sur agent de l\'etat, deluit de fuite', 'lborg'),
-('license:f8c6e6dae9b85089114fe7b75f090a79d28caf06', 'Rayan', 'Santana', '11/11/1999', 'Tentative de meurtre sur agent de l\'etat, Tire sur agent de l\'etat, refus d\'obtemperer ', 'baro'),
-('license:8b397c8cedfb167692f68b452e110f4fdf1d7350', 'Mouloude', 'aboudabi', '23/01/1987', 'braquage de superette', 'ouioui'),
-('license:a5681a4b1474ef335eaf9630953801494d0f6026', 'Rayan', 'Medosa', '23/06/1999', 'Tentative de meutre sur agent de l\'etat x2 , recidiviste', 'Mathieu Valbuena'),
-('license:1477427e34b223d110381ccdc3efb3d152b749ec', 'Leo', 'Garcia', '12/077/1995', 'refus obtempere ', 'tymeo'),
-('license:f8c6e6dae9b85089114fe7b75f090a79d28caf06', 'Abdel', 'Chtaref', '19/02/1980', 'Tire sur Agent de l\'etat, braquage de superrete, refus d\'obtemperer.', 'baro'),
-('license:8b397c8cedfb167692f68b452e110f4fdf1d7350', 'yusuf', 'jebarry', '13/03/2010', 'tentatif de meutre sur agent de l\'etat,  tire sur agent de l\'etat, braquage de superette', 'lborg'),
-('license:7645077e3f89b072131b7a9366e0abe070926fc5', 'croco', 'Davi', 'x/x/x', 'suspicion port d arme', 'Captus'),
-('license:7645077e3f89b072131b7a9366e0abe070926fc5', 'croco', 'Davi', 'x/x/x', 'suspicion port d arme', 'Captus'),
-('license:7645077e3f89b072131b7a9366e0abe070926fc5', 'Alvaro ', 'Rodriguez', 'x/x/x', 'suspicion port d arme', 'Captus'),
-('license:7645077e3f89b072131b7a9366e0abe070926fc5', 'Jack', 'Urus', 'x/x/x', 'suspicion port d arme', 'Captus'),
-('license:7645077e3f89b072131b7a9366e0abe070926fc5', 'Livio', 'Lopez', 'x/x/x', 'suspicion port d arme', 'Captus'),
-('license:f8c6e6dae9b85089114fe7b75f090a79d28caf06', 'Leo', 'Lipton', '02/06/2000', 'Braquage de supperrete et tire sur agent de l\'etat.', 'Hayder'),
-('license:528f9c4d17eb9727f1b38c173a31ed210bdd5cc1', 'Baro', 'Madrazo', '27/02/2000', 'braquage a main armee, outrage a agent, tentaive de meurtre sur agent de l\'etat ', 'Strolex'),
-('license:9ff7566dd165d36b78c13857c81dce01a7ba4347', 'Adam ', 'Salawi', '27/06/1999', 'Complicité de braquage, détention d\'arme de type fusil d\'assault, argent supérieur a 10000$, outrage', 'johan'),
-('license:528f9c4d17eb9727f1b38c173a31ed210bdd5cc1', 'Travis', 'Brooks', '10/10/2000', 'Tentative de meutre sur agent de l\'etat, port d\'arme illegale ', 'Strolex'),
-('license:8a471e919d7a37c21d2384a0d7f442741a971591', 'Miguel', 'Mirandez', '04/04/2001', 'Prise d\'otage sur agent d\'état', 'Pomme'),
-('license:528f9c4d17eb9727f1b38c173a31ed210bdd5cc1', 'HAIDEN', 'valencia', '02/05/2000', 'Delit de fuite', 'Strolex'),
-('license:4396d8be1382e3f181eb063516e35bcf45675581', 'Pablo', 'Bonito', '16/01/2000', 'conduite dangereuse + outrage a agent + delit de fuite ', 'Blue'),
-('license:c92f70e392e104daeb65b30f416537a9d9592aef', 'rayan', 'bortye', '23/01/2006', 'tire sur agent de l\'état', 'neykoz.gf'),
-('license:a4947ba20d1a5fa98421b026043c2d5363861e1e', 'Kays ', 'Kays', 'Kays', 'Kays', 'Kays'),
-('license:a4947ba20d1a5fa98421b026043c2d5363861e1e', 'Kays ', 'Kays', 'Kays', 'Kays', 'Kays'),
-('license:2eca20666e149434da58b6bdeb8e99c562532095', 'james', 'stark', '', 'controlle routier', 'Lawideee'),
-('license:eee70ff1aa6b068938dd907c99a3c0a471dc9b36', 'andrew', 'pearce', '04/12/1990', 'braquage refus de contempairer ', 'yassin besaid'),
-('license:2eca20666e149434da58b6bdeb8e99c562532095', 'JACKSON', 'SANTA', '08/09/1999', 'délit de fuite port d\'arme illégal', 'Lawideee'),
-('license:dcf14d9b6bdfe16b1ab6d543330673908c8ab956', 'RILEY', 'LAWS', '10/12/1995', 'Prise d otage sur etat major plus delit de fuite ', 'OUELASTREET'),
-('license:617dd87c57a13dc8bb8b403d52954e28af07562e', 'Jeans', 'Hary', '03/05/2000', 'Arreter le 15/12/2024 pour tir sur civil,refus d entanperer', 'alexb'),
-('license:9da41b6ed4e61699340fb881663ff2073c5cb490', 'walid', 'brabus', '01/01/2000', 'gay', 'ILIES'),
-('license:d5e92a346416599b9ce550a88873e8f5ca58c73d', 'Pablo', 'Diaz', '30/01/2005', 'delit de fuite argent non declarer', 'Sous3gDeJaune'),
-('license:617dd87c57a13dc8bb8b403d52954e28af07562e', 'Jay', 'Woodley', '11/02/2000', 'Interpeller le 19/12/2024 pour prise d otage contre un LSPD et delui de fuite.', 'Adil Bahar'),
-('license:c455c23736957833eeda27560964f5d0ee408096', 'Cris', 'Woder', '24/12/2000', 'Braquage + prise d\'otage', 'lorio_zy0mi7x'),
-('license:fc90a365cc7c2a9bef32b1f14138ba5fb4374d99', 'CARLOS', 'DOSSANTOS', '01/02/2000', 'prise d\'otage, refus d\'obtemperer, posesion d\'arme a feu', 'Seña'),
-('license:35037513499ad1e3b99ceb77fef6dd912572651d', 'NESTOR', 'LAWSON', '02/12/1990', 'Tir sur agent de l\'etat (lspd) + port d\'arme illegal', 'YarrHaut'),
-('license:2fc1dd3876051ef90635482914e99e2e8b7ac21d', 'pablo ', 'diaz', '30/11/2007', 'arme illegal tentative de meurtre ', 'auria'),
-('license:6caeec777267cd716b8ef935b01864deab9718eb', 'MEREYA', 'MARCO', '28/08/1996', 'fleeca deli de fuite', 'FHOVIX'),
-('license:6caeec777267cd716b8ef935b01864deab9718eb', 'JUSKO', 'ORYAK', '12/12/2004', 'Délit de fuit', 'FHOVIX'),
-('license:6caeec777267cd716b8ef935b01864deab9718eb', 'JUSKO', 'ORYAK', '12/12/2004', 'Délit de fuit', 'FHOVIX'),
-('license:6caeec777267cd716b8ef935b01864deab9718eb', 'ALVAROS', 'TITO', '09/02/1986', 'Délit de fuit + pas de permis', 'FHOVIX'),
-('license:666f90bfe9da71b245b0ccbe40925df87d2cf53d', 'RAYZER', 'LEROY', '26/04/2004', 'la personne a fait un braquage et ensuite a fait une course poursuite. il avait une batte sur lui', 'Alexoun17'),
-('license:666f90bfe9da71b245b0ccbe40925df87d2cf53d', 'Lucas', 'MOHARY', '18/06/2000', 'la personne a fait un braquage de superete a main arme et a fait une course poursuite en passager.', 'Alexoun17'),
-('license:666f90bfe9da71b245b0ccbe40925df87d2cf53d', 'Predro', 'Sanchez', '07/07/2000', 'braquage d\'une maison', 'Alexoun17'),
-('license:63866f9a798530d4015f3e2e0f6942472ab2ac5f', 'akai', 'lingard', '20/12/2002', 'prise otage agent de l\'etat,braquage de banque,porte d\'arme illegal', 'SLAZE'),
-('license:83603ce8fe59bfbea6d2ce46f146782c73f26a70', 'VAGOS', 'PUTOS', '11-10-2001', 'LA DARON A L UNDERSHERIF CETRTE PUTE ', 'RP? c quoi ? ^^ '),
-('license:ddd7768a1f89ce68a4b7801c160bdc06ec7f8b0f', 'ZACK', 'FERNANDO', '10/08/2000', 'braquage de bangue et refus d\'obtemperer', 'dokisqr'),
-('license:81aeae9b61c001a28ca87f9aa059b3d218f87e75', 'andrea', 'BART', '01/02/2000', 'cambriolage delit de fuite ', 'LAMIMI'),
-('license:c91b60202aa79ca8cea5dcb9c9e4b5280502ec39', 'Kevyn', 'Doklas', '22/04/2000', 'braquage magasin Pas de permis d\'arme', 'M | Pchenitchnikov Alex LoKuZ'),
-('license:f9c84195cc32d799d1ead76b8d494ec566e5f5e6', 'émille', 'louis', '01/05/2000', 'passager de course pursuite a de la weed sur lui et de la coke n\'a pas le ppa', 'vino itacho'),
-('license:0c9beb9cf016c5d203b0719841f1b2e800d07f13', 'baro', 'ash', '27/02/2000', ' conduite sans permis', ' alexy lastar'),
-('license:10381fe556e6da8a45406d4072ec7412b973064c', 'GABRIEL', 'Renée', '28/08/2000', 'Refus d\'optemperer , Delit de fuite , Exces de vitesse ', ' Snoww'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Stanislas', 'Dako', '26/01/2002', 'Braquage de superette , Délit de fuite , Argent salle sur lui', 'HTD'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Stanislas', 'Dako', '26/01/2002', 'Braquage de superette , Délit de fuite , Argent salle sur lui', 'HTD'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Louis ', 'Fournel', '17/02/1997', 'Braquage des superette , Délit de fuite , Prise d\'otage sur civil', 'HTD'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Louis ', 'Fournel', '17/02/1997', 'Braquage des superette , Délit de fuite , Prise d\'otage sur civil', 'HTD'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Jackson', 'Teller', '01/01/1997', 'Braquage des superette , Délit de fuite , Prise d\'otage sur civil', 'HTD'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Jackson', 'Teller', '01/01/1997', 'Braquage des superette , Délit de fuite , Prise d\'otage sur civil', 'HTD'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Mologusto ', 'Volkov', '25/08/2000', 'Délit de fuite ', 'HTD'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Mologusto ', 'Volkov', '25/08/2000', 'Délit de fuite ', 'HTD'),
-('license:7e9e98e4cb32b328bb1a4113ec72e707ac7a30d0', 'neyvadius', 'demun', '27/02/2005', 'bracage de supérette', 'mathew'),
-('license:7e9e98e4cb32b328bb1a4113ec72e707ac7a30d0', 'neyvadius', 'demun', '27/02/2005', 'bracage de supérette', 'mathew'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Maiky', 'Gleeson', '01/01/1999', 'Braquage de banque , Prise d\'oatge sur civil , Délit de fuite *', 'machu'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Maiky', 'Gleeson', '01/01/1999', 'Braquage de banque , Prise d\'oatge sur civil , Délit de fuite *', 'machu'),
-('license:ba502a86ae219ceeedf1754fb520eb580a528783', 'Shawn', 'hood', '11/12/1999', 'Délit de fuite,refus d\'optemberer', 'eternel'),
-('license:ba502a86ae219ceeedf1754fb520eb580a528783', 'Shawn', 'hood', '11/12/1999', 'Délit de fuite,refus d\'optemberer', 'eternel'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Yan', 'Ako', '05/06/1998', 'Refus d\'op + tire sur agent', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Yan', 'Ako', '05/06/1998', 'Refus d\'op + tire sur agent', 'léo pheter'),
-('license:ba502a86ae219ceeedf1754fb520eb580a528783', 'John ', 'Carter', '02/01/1999', 'délit de fuite,refus d\'op,meurtre sur agent de l\'état', 'eternel'),
-('license:ba502a86ae219ceeedf1754fb520eb580a528783', 'John ', 'Carter', '02/01/1999', 'délit de fuite,refus d\'op,meurtre sur agent de l\'état', 'eternel'),
-('license:ba502a86ae219ceeedf1754fb520eb580a528783', 'Ashka', 'fony', '14/03/2000', 'délit de fuite,refus d\'op,meurtre sur agent de l\'état', 'eternel'),
-('license:ba502a86ae219ceeedf1754fb520eb580a528783', 'Ashka', 'fony', '14/03/2000', 'délit de fuite,refus d\'op,meurtre sur agent de l\'état', 'eternel'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'ZACK', 'JOHN', '25/06/2000', 'possetion de drogue', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'ZACK', 'JOHN', '25/06/2000', 'possetion de drogue', 'léo pheter'),
-('license:7e9e98e4cb32b328bb1a4113ec72e707ac7a30d0', 'Yanis', 'Kader', '29/07/2006', 'complice de déli de fuite', 'mathew'),
-('license:7e9e98e4cb32b328bb1a4113ec72e707ac7a30d0', 'Yanis', 'Kader', '29/07/2006', 'complice de déli de fuite', 'mathew'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Bilal', 'Lalib', '09/12/1943', 'Tire sur agent et délit de fuite ', 'machu'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Bilal', 'Lalib', '09/12/1943', 'Tire sur agent et délit de fuite ', 'machu'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Léo', 'Garcia', '12/05/1995', 'Refus d\"optempérer', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Léo', 'Garcia', '12/05/1995', 'Refus d\"optempérer', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Pedro', 'Alvaro', '16/20/1998', 'Refus d\'optempérer, port d\'arme illégal, pas de ppa', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Pedro', 'Alvaro', '16/20/1998', 'Refus d\'optempérer, port d\'arme illégal, pas de ppa', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Jean Joseph', 'Garoux', '13/10/2004', 'Détention de stupéfiant +10', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Jean Joseph', 'Garoux', '13/10/2004', 'Détention de stupéfiant +10', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Marcus', 'Stone', '11/10/1997', 'Détention de stupéfiant +10', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Marcus', 'Stone', '11/10/1997', 'Détention de stupéfiant +10', 'Neuneuil11'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Serguei', 'Kriskolvie', '16/03/1970', 'Délit de fuite , Arme de catégorie 4', 'machu'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Serguei', 'Kriskolvie', '16/03/1970', 'Délit de fuite , Arme de catégorie 4', 'machu'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Travis', 'Stone', '17/04/1999', 'REfus d\'op', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Travis', 'Stone', '17/04/1999', 'REfus d\'op', 'léo pheter'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Rickys', 'Azimov', '20/01/2000', 'Délit de fuite , arme de catégorie 2', 'machu'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Rickys', 'Azimov', '20/01/2000', 'Délit de fuite , arme de catégorie 2', 'machu'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Hervé', 'Alacote', '16/08/2003', 'Délit de fuite', 'machu'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Hervé', 'Alacote', '16/08/2003', 'Délit de fuite', 'machu'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Bario', 'Garcia', '24/03/1995', 'Prise d\'otage sur agent de l\'état', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Bario', 'Garcia', '24/03/1995', 'Prise d\'otage sur agent de l\'état', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Pablo', 'Escuchar', '09/06/2000', 'Prise d\'otage sur agent de l\'état', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Pablo', 'Escuchar', '09/06/2000', 'Prise d\'otage sur agent de l\'état', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Travis', 'Stone', '17/04/1999', 'Prise d\'otage sur agent de l\'état', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Travis', 'Stone', '17/04/1999', 'Prise d\'otage sur agent de l\'état', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Mac', 'Conor', '01/01/2000', 'Conduite dangeureuse, excés de vitesse.', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Mac', 'Conor', '01/01/2000', 'Conduite dangeureuse, excés de vitesse.', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Mac', 'Conor', '01/01/2000', 'Conduite dangeureuse, excés de vitesse.', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Mac', 'Conor', '01/01/2000', 'Conduite dangeureuse, excés de vitesse.', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Aron', 'Cooper', '28/05/2003', 'Prise d\'otage sur civil, braquage de supérette, détention d\'arme sur voie publique.', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Aron', 'Cooper', '28/05/2003', 'Prise d\'otage sur civil, braquage de supérette, détention d\'arme sur voie publique.', 'Neuneuil11'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Yan', 'Ako', '05/06/1998', 'Refus d\'op, Outrage X11, msie en danger de la vie d\'autrui', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Yan', 'Ako', '05/06/1998', 'Refus d\'op, Outrage X11, msie en danger de la vie d\'autrui', 'léo pheter'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Sofiane', 'La Pommade', '02/06/2003', 'Braquage de supérette, éxhibition', 'Neuneuil11'),
-('license:418e452ebf287002cad9d0d43333c5686cbc0047', 'Sofiane', 'La Pommade', '02/06/2003', 'Braquage de supérette, éxhibition', 'Neuneuil11'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Rickys', 'Azimov', '20/01/2000', 'Délit de fuite ', 'HTD'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Rickys', 'Azimov', '20/01/2000', 'Délit de fuite ', 'HTD'),
-('license:bfd67c8eba4cb2d6c87709b78db3b904130f4a3b', 'Jay', 'Wood', '20/02/1991', 'port d\'arme illégal sorti en ville et également gilet pare-balles lourd porter ', 'LaMach00'),
-('license:bfd67c8eba4cb2d6c87709b78db3b904130f4a3b', 'Jay', 'Wood', '20/02/1991', 'port d\'arme illégal sorti en ville et également gilet pare-balles lourd porter ', 'LaMach00'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Dino', 'Buzzati', '16/02/1999', 'Braquage de superette , Port d\'arme de categorie 1 sans PPA , Argent salle sur lui ', 'HTD'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Dino', 'Buzzati', '16/02/1999', 'Braquage de superette , Port d\'arme de categorie 1 sans PPA , Argent salle sur lui ', 'HTD'),
-('license:de097d7cb07af2171545f71cefc055300b638e6d', 'Jose', 'Russo', '01.01.2003', '- Refus d\'optempéré ; - Conduite dangereuse ; - Détention d\'une grande quantité d\'argent sale ', 'nonoa'),
-('license:de097d7cb07af2171545f71cefc055300b638e6d', 'Jose', 'Russo', '01.01.2003', '- Refus d\'optempéré ; - Conduite dangereuse ; - Détention d\'une grande quantité d\'argent sale ', 'nonoa'),
-('license:920cfa818da694bde1738a1985e6e73770bdb4b1', 'Jose', 'Russo', '01/01/2003', 'Possesion d\'argent sale delit de fuite', 'ducdylden'),
-('license:920cfa818da694bde1738a1985e6e73770bdb4b1', 'Jose', 'Russo', '01/01/2003', 'Possesion d\'argent sale delit de fuite', 'ducdylden'),
-('license:b0bcfd7ec39253bca3e1159e606652767427b955', 'RAYAN', 'LEZOUI', '01/02/2000', 'PORT DARME ILLEGAL ARME ILEEGAL MENACE SUR AGENT ', 'John Anderson | Maxou88'),
-('license:b0bcfd7ec39253bca3e1159e606652767427b955', 'RAYAN', 'LEZOUI', '01/02/2000', 'PORT DARME ILLEGAL ARME ILEEGAL MENACE SUR AGENT ', 'John Anderson | Maxou88'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Sofian', 'Benzou', '12/10/2000', 'Refus d\'op', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Sofian', 'Benzou', '12/10/2000', 'Refus d\'op', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Karim', 'Walili', '05/06/2000', 'Refus d\'op + braquage a main armé + Prise d\'otage', 'newyo'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Karim', 'Walili', '05/06/2000', 'Refus d\'op + braquage a main armé + Prise d\'otage', 'newyo'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Karim', 'Walili', '05/06/2000', 'Refus d\'op + braquage a main armé + Prise d\'otage', 'newyo'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Karim', 'Walili', '05/06/2000', 'Refus d\'op + braquage a main armé + Prise d\'otage', 'newyo'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Many', 'Santane', '22/01/2003', 'Refus d\'op + braquage a main armé + prise d\'otage', 'newyo'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Many', 'Santane', '22/01/2003', 'Refus d\'op + braquage a main armé + prise d\'otage', 'newyo'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Leroy', 'Walker', '23/06/1997', 'Délit de fuite , braquage de banque , prise d\'otage sur civil ', 'HTD'),
-('license:b4adbf0ba66d9be0b0afa73f361b55c461871506', 'Leroy', 'Walker', '23/06/1997', 'Délit de fuite , braquage de banque , prise d\'otage sur civil ', 'HTD'),
-('license:de097d7cb07af2171545f71cefc055300b638e6d', 'Jay', 'Stone', 'xx.xx.xxxx', 'Delit de fuite ; Dégradation de la voie publique ; conduite à contre sens', 'nonoa'),
-('license:de097d7cb07af2171545f71cefc055300b638e6d', 'Jay', 'Stone', 'xx.xx.xxxx', 'Delit de fuite ; Dégradation de la voie publique ; conduite à contre sens', 'nonoa'),
-('license:de097d7cb07af2171545f71cefc055300b638e6d', 'Juan', 'West', '03.02.2006', 'Détention d\'argent illégale ; Présence sur un lieu illégale', 'nonoa'),
-('license:de097d7cb07af2171545f71cefc055300b638e6d', 'Juan', 'West', '03.02.2006', 'Détention d\'argent illégale ; Présence sur un lieu illégale', 'nonoa'),
-('license:fd4dfcce9b84b62c03153382186fb35342614a44', 'Dexter', 'Zulu', '11/09/2000', 'tentative d\'omicide a main armé, tentative de meurtre ', 'Nozerqlf'),
-('license:fd4dfcce9b84b62c03153382186fb35342614a44', 'Dexter', 'Zulu', '11/09/2000', 'tentative d\'omicide a main armé, tentative de meurtre ', 'Nozerqlf'),
-('license:19ffcb9c010c72236a139fdaff6ce9057196778b', 'enes', 'treak', '04/03/1999', 'vole voiture tentavie de meurtre vole voiture refu dop ectt', 'YOUTUBE'),
-('license:19ffcb9c010c72236a139fdaff6ce9057196778b', 'enes', 'treak', '04/03/1999', 'vole voiture tentavie de meurtre vole voiture refu dop ectt', 'YOUTUBE'),
-('license:19ffcb9c010c72236a139fdaff6ce9057196778b', 'WOOD', 'SMITH', '24/05/2000', 'delit de fuite , tire sur agent , possétion d\'affaire illégal', 'YOUTUBE'),
-('license:19ffcb9c010c72236a139fdaff6ce9057196778b', 'WOOD', 'SMITH', '24/05/2000', 'delit de fuite , tire sur agent , possétion d\'affaire illégal', 'YOUTUBE'),
-('license:19ffcb9c010c72236a139fdaff6ce9057196778b', 'WOOD', 'SMITH', '24/05/2000', 'corruption , outrage ', 'YOUTUBE'),
-('license:19ffcb9c010c72236a139fdaff6ce9057196778b', 'WOOD', 'SMITH', '24/05/2000', 'corruption , outrage ', 'YOUTUBE'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Léon', 'Lévis', 'XX/XX/XXXX', 'Tentative de meurte sur agent de l\'état + Outrage a agent', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Léon', 'Lévis', 'XX/XX/XXXX', 'Tentative de meurte sur agent de l\'état + Outrage a agent', 'léo pheter'),
-('license:478458b22cf3159847d43b2ac16637e04d8eabf1', 'Salah', 'Abdelsalam', '03/05/2003', 'tire sur argent de la police', 'Aggrah | Marc Marletti'),
-('license:478458b22cf3159847d43b2ac16637e04d8eabf1', 'Salah', 'Abdelsalam', '03/05/2003', 'tire sur argent de la police', 'Aggrah | Marc Marletti'),
-('license:478458b22cf3159847d43b2ac16637e04d8eabf1', 'Salah', 'Abdelsalam', '03/05/2003', 'tire sur argent de la police', 'Aggrah | Marc Marletti'),
-('license:478458b22cf3159847d43b2ac16637e04d8eabf1', 'Salah', 'Abdelsalam', '03/05/2003', 'tire sur argent de la police', 'Aggrah | Marc Marletti'),
-('license:478458b22cf3159847d43b2ac16637e04d8eabf1', 'Salah', 'Abdelsalam', '03/05/2003', 'tire sur argent de la police', 'Aggrah | Marc Marletti'),
-('license:478458b22cf3159847d43b2ac16637e04d8eabf1', 'Salah', 'Abdelsalam', '03/05/2003', 'tire sur argent de la police', 'Aggrah | Marc Marletti'),
-('license:1c38932ae5d335f39ffdddc2e4899800621dd479', 'Marlon', 'Jackson', '05/07/2008', 'Refus d\'optempérer , Délit de fuite, Port d\'arme illégal TTC : 77.000$', '🧢'),
-('license:1c38932ae5d335f39ffdddc2e4899800621dd479', 'Marlon', 'Jackson', '05/07/2008', 'Refus d\'optempérer , Délit de fuite, Port d\'arme illégal TTC : 77.000$', '🧢'),
-('license:ee4b06121ee2cd486bd0a0144fac2bb7c4b3b9fb', 'OMAR', 'DARINGSON', '01/01/2000', 'MENACE VERS UN CIVIL ', 'crbtkeliane'),
-('license:ee4b06121ee2cd486bd0a0144fac2bb7c4b3b9fb', 'OMAR', 'DARINGSON', '01/01/2000', 'MENACE VERS UN CIVIL ', 'crbtkeliane'),
-('license:58abec24d406d72dcd7480da521606450fde43fd', 'Johson', 'Carter', '02/01/1999', 'Prise otage sasp', 'Yashog'),
-('license:58abec24d406d72dcd7480da521606450fde43fd', 'Johson', 'Carter', '02/01/1999', 'Prise otage sasp', 'Yashog'),
-('license:e804ed68b654ba2cda298d844af95f8e573bbf54', 'Steve', 'Williams', '13/05/1989', 'test', 'French.Off'),
-('license:e804ed68b654ba2cda298d844af95f8e573bbf54', 'Steve', 'Williams', '13/05/1989', 'test', 'French.Off'),
-('license:63866f9a798530d4015f3e2e0f6942472ab2ac5f', 'rio', 'garcia', '24/03/1995', 'vente de drogue', 'slaze le meilleur'),
-('license:63866f9a798530d4015f3e2e0f6942472ab2ac5f', 'rio', 'garcia', '24/03/1995', 'vente de drogue', 'slaze le meilleur'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Peter', 'Wace', '20/07/1985', 'Refus de se soumettre', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Peter', 'Wace', '20/07/1985', 'Refus de se soumettre', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Abdel', 'Ernandez', '12/12/2000', 'Refus d\'op + mise en danger de la vie d\'autrui + racisme X2 + outrage a agent', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Abdel', 'Ernandez', '12/12/2000', 'Refus d\'op + mise en danger de la vie d\'autrui + racisme X2 + outrage a agent', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Matheo', 'Bouchet', '12/10/1984', 'Braquage de superette', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Matheo', 'Bouchet', '12/10/1984', 'Braquage de superette', 'léo pheter'),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'TOM', 'CORTEZ', '13/07/2000', 'PREND SON TELEPHONE EN CELLULE OUTRAGE A AGENT ', 'KLN '),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'TOM', 'CORTEZ', '13/07/2000', 'PREND SON TELEPHONE EN CELLULE OUTRAGE A AGENT ', 'KLN '),
-('license:f44038374d1b070c2d9c22d6c5e04432bc559bd7', 'Oni', 'Bedo', '03/03/2006', 'Braquage de superette', 'Bobytacos'),
-('license:f44038374d1b070c2d9c22d6c5e04432bc559bd7', 'Oni', 'Bedo', '03/03/2006', 'Braquage de superette', 'Bobytacos'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Yan ', 'Ako', '05/06/1998', 'Refus d\'op + mise en danger de la vie d\'autrui + possesion de drogue', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Yan ', 'Ako', '05/06/1998', 'Refus d\'op + mise en danger de la vie d\'autrui + possesion de drogue', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Carlos', 'Alvareza', '02/06/1995', 'Refus d\'op', 'léo pheter'),
-('license:e64f85e5c04512a45ff67e3c3cb4a3d111c7ae6a', 'Carlos', 'Alvareza', '02/06/1995', 'Refus d\'op', 'léo pheter'),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'JOSH', 'MAYERS', '12/12/2000', 'REFUS D\'OBTEMPERER ', 'KLN '),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'JOSH', 'MAYERS', '12/12/2000', 'REFUS D\'OBTEMPERER ', 'KLN '),
-('license:5b84f344d279b98a876c70b9ac5df54a1c5fef04', 'walid', 'gonzales', 'inconnu', 'mort du gouverneur + braquage + prise d otage', 'snayzox'),
-('license:5b84f344d279b98a876c70b9ac5df54a1c5fef04', 'walid', 'gonzales', 'inconnu', 'mort du gouverneur + braquage + prise d otage', 'snayzox'),
-('license:495468996223a6bc3b211e42d660239283f49fac', 'Sofianne', 'LA POMMADE', '02/06/2003', 'Refus d\'obtempérer, Conduite hors route / hors piste, circulation à contresens, outrage à l\'agent x5', 'BibiTheGhost'),
-('license:495468996223a6bc3b211e42d660239283f49fac', 'Sofianne', 'LA POMMADE', '02/06/2003', 'Refus d\'obtempérer, Conduite hors route / hors piste, circulation à contresens, outrage à l\'agent x5', 'BibiTheGhost'),
-('license:495468996223a6bc3b211e42d660239283f49fac', 'Bob', 'Taiyo', '08/01/2004', 'Cambriolage maison, refus d\'obtempérer.', 'BibiTheGhost'),
-('license:495468996223a6bc3b211e42d660239283f49fac', 'Bob', 'Taiyo', '08/01/2004', 'Cambriolage maison, refus d\'obtempérer.', 'BibiTheGhost'),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'SOFIAN ', 'BENZOU', '13/07/2000', 'REFUS D\'OBTEMPERER ET TENTATIVE DE BRAQUAGE SUR AGENT US MARSAHL', 'KLN '),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'SOFIAN ', 'BENZOU', '13/07/2000', 'REFUS D\'OBTEMPERER ET TENTATIVE DE BRAQUAGE SUR AGENT US MARSAHL', 'KLN '),
-('license:b060a8c9b6da4678702a5fde63980c72a7d94b76', 'Ryan', 'Jefferson', '31/10/2000', 'Complicité braquage de bank', 'na2s.dp'),
-('license:b060a8c9b6da4678702a5fde63980c72a7d94b76', 'Ryan', 'Jefferson', '31/10/2000', 'Complicité braquage de bank', 'na2s.dp'),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'keys', 'johnson', '13/07/2000', 'refus d\'obtemperer et confiscation de canon scié', 'KLN '),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'keys', 'johnson', '13/07/2000', 'refus d\'obtemperer et confiscation de canon scié', 'KLN '),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'NATHAN', 'ORTEGA', '13/07/2000', 'CONPLICE SUR TIRE SUR AGENT DE L\'ETAT', 'KLN '),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'NATHAN', 'ORTEGA', '13/07/2000', 'CONPLICE SUR TIRE SUR AGENT DE L\'ETAT', 'KLN '),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'YAN', 'AKO', '13/07/2000', 'TIR SUR AGENT US MARSHALS ET CIVIL', 'KLN '),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'YAN', 'AKO', '13/07/2000', 'TIR SUR AGENT US MARSHALS ET CIVIL', 'KLN '),
-('license:6377d543cbadbece72966db1542a263063442ecc', 'Dylan', 'ARBRERO', '08/04/2005', 'prise d\'otage sur agent sasp plus civil', 'fcaro'),
-('license:6377d543cbadbece72966db1542a263063442ecc', 'Dylan', 'ARBRERO', '08/04/2005', 'prise d\'otage sur agent sasp plus civil', 'fcaro'),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'MATHIEU', 'RAYMOND', '13/03/2000', 'AGGRESSION SUR AGENT US MARSHAL( GIFLE ) refus d\'obtemperer et outrage agent', 'KLN '),
-('license:fa46be5a111eec5439f5affcf943af27a178055c', 'MATHIEU', 'RAYMOND', '13/03/2000', 'AGGRESSION SUR AGENT US MARSHAL( GIFLE ) refus d\'obtemperer et outrage agent', 'KLN '),
-('license:889f0d96d7e5b365c6921a856b44258bb17c0868', 'sq', 'Miptr', '10/03/2000', 'Soert', 'Oest'),
-('license:889f0d96d7e5b365c6921a856b44258bb17c0868', 'sq', 'Miptr', '10/03/2000', 'Soert', 'Oest');
 
 -- --------------------------------------------------------
 
@@ -1308,8 +532,6 @@ CREATE TABLE `clothes_societies` (
 -- Déchargement des données de la table `clothes_societies`
 --
 
-INSERT INTO `clothes_societies` (`id`, `label`, `skin`, `identifier`, `type`, `equip`) VALUES
-(3, 'tene 1', '{\"tshirt_1\":15,\"torso_1\":73,\"arms_2\":0,\"arms\":0,\"decals_2\":0,\"ears_2\":0,\"shoes_2\":0,\"glasses_1\":0,\"bproof_2\":0,\"shoes_1\":274,\"mask_2\":0,\"ears_1\":-1,\"chain_1\":0,\"bags_2\":0,\"glasses_2\":0,\"pants_1\":25,\"helmet_1\":-1,\"tshirt_2\":0,\"pants_2\":1,\"bags_1\":0,\"decals_1\":0,\"chain_2\":0,\"torso_2\":0,\"bproof_1\":65,\"mask_1\":0}', 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 'vetement', 'n');
 
 -- --------------------------------------------------------
 
@@ -1397,30 +619,6 @@ CREATE TABLE `datastore_data` (
 -- Déchargement des données de la table `datastore_data`
 --
 
-INSERT INTO `datastore_data` (`id`, `name`, `data`, `owner`) VALUES
-(9561, 'society_gouv', '{\"weapons\":[{\"count\":1,\"name\":\"WEAPON_SPECIALCARBINE\"},{\"count\":1,\"name\":\"WEAPON_FN502\"},{\"count\":1,\"name\":\"WEAPON_BAT\"},{\"name\":\"WEAPON_PISTOL\",\"count\":1},{\"name\":\"WEAPON_MACHETE\",\"count\":3},{\"name\":\"WEAPON_SCARSC\",\"count\":1},{\"name\":\"WEAPON_KNR\",\"count\":1}]}', NULL),
-(11012, 'society_police', '{\"weapons\":[{\"name\":\"WEAPON_ANARCHY\",\"count\":1},{\"name\":\"WEAPON_PISTOL\",\"count\":12},{\"name\":\"WEAPON_LR300\",\"count\":1},{\"name\":\"WEAPON_SNSPISTOL\",\"count\":2},{\"name\":\"WEAPON_PISTOL50\",\"count\":4},{\"name\":\"WEAPON_SAWNOFFSHOTGUN\",\"count\":1},{\"name\":\"WEAPON_PISTOL_MK2\",\"count\":1},{\"name\":\"WEAPON_REVOLVER\",\"count\":2},{\"name\":\"WEAPON_KNIFE\",\"count\":2},{\"name\":\"WEAPON_G3_2\",\"count\":1},{\"name\":\"WEAPON_FN502\",\"count\":3},{\"name\":\"WEAPON_MACHETE\",\"count\":4},{\"name\":\"WEAPON_KNR\",\"count\":1},{\"name\":\"WEAPON_H2SMG\",\"count\":1},{\"name\":\"WEAPON_MICROSMG\",\"count\":1},{\"name\":\"WEAPON_MACHINEPISTOL\",\"count\":1},{\"name\":\"WEAPON_BAT\",\"count\":1}]}', NULL),
-(13814, 'society_15', '[]', NULL),
-(29932, 'society_ambulance', '{}', NULL),
-(29933, 'society_Kays', '{}', NULL),
-(29934, 'society_avocat', '{}', NULL),
-(29935, 'society_bahamas', '{}', NULL),
-(29936, 'society_boatshop', '{}', NULL),
-(29937, 'society_brinks', '{}', NULL),
-(29938, 'society_carshop', '{}', NULL),
-(29939, 'society_k2r', '{}', NULL),
-(29940, 'society_kk', '{}', NULL),
-(29941, 'society_mecano', '{}', NULL),
-(29942, 'society_mecano2', '{}', NULL),
-(29943, 'society_planeshop', '{}', NULL),
-(29944, 'society_roxsherif', '{}', NULL),
-(29945, 'society_realestateagent', '{}', NULL),
-(29946, 'society_taxi', '{}', NULL),
-(29947, 'society_test1', '{}', NULL),
-(29948, 'society_test10', '{}', NULL),
-(29949, 'society_testk', '{}', NULL),
-(29950, 'society_unicorn', '{}', NULL),
-(29951, 'society_vigne', '{}', NULL);
 
 -- --------------------------------------------------------
 
@@ -1466,11 +664,6 @@ CREATE TABLE `drugs` (
 -- Déchargement des données de la table `drugs`
 --
 
-INSERT INTO `drugs` (`id`, `createdBy`, `createdAt`, `label`, `drugsInfos`) VALUES
-(10, 'none', 'none', 'Bitcoin', '{\"harvest\":{\"x\":1273.3175048828126,\"y\":-1711.863037109375,\"z\":54.77141952514648},\"sellCount\":\"1\",\"treatedItem\":\"bitcoin\",\"harvestCount\":\"1\",\"rawItem\":\"bitcoin\",\"treatmentReward\":\"1\",\"name\":\"Bitcoin\",\"treatement\":{\"x\":6945.98388671875,\"y\":-668.0714721679688,\"z\":-188.35848999023438},\"treatmentCount\":\"1\",\"sale\":\"0\",\"sellRewardPerCount\":\"90\",\"vendor\":{\"x\":605.7781372070313,\"y\":-3088.163330078125,\"z\":6.06926107406616}}'),
-(11, 'none', 'none', 'Tabac', '{\"sellCount\":\"1\",\"harvestCount\":\"1\",\"name\":\"Tabac\",\"harvest\":{\"y\":4597.51220703125,\"x\":2854.02587890625,\"z\":47.86069107055664},\"treatmentCount\":\"2\",\"treatedItem\":\"tabacbrun\",\"sellRewardPerCount\":\"170\",\"treatement\":{\"y\":3039.24,\"x\":1997.21,\"z\":47.02},\"treatmentReward\":\"1\",\"vendor\":{\"y\":3842.948974609375,\"x\":1953.5892333984376,\"z\":32.18350982666015},\"rawItem\":\"tabac\",\"sale\":\"0\"}'),
-(19, 'none', 'none', 'coke', '{\"vendor\":{\"x\":1728.43359375,\"y\":4730.76953125,\"z\":42.06525039672851},\"harvest\":{\"x\":1388.9068603515626,\"y\":3605.141845703125,\"z\":38.94192886352539},\"sellRewardPerCount\":\"176\",\"sellCount\":\"2\",\"rawItem\":\"coke\",\"sale\":\"1\",\"treatmentReward\":\"2\",\"treatmentCount\":\"3\",\"name\":\"coke\",\"treatement\":{\"x\":3823.250244140625,\"y\":4442.19189453125,\"z\":2.80632281303405},\"harvestCount\":\"4\",\"treatedItem\":\"coke_pooch\"}'),
-(20, 'none', 'none', 'meth', '{\"vendor\":{\"x\":-291.1665344238281,\"y\":2525.2265625,\"z\":74.63885498046875},\"harvest\":{\"x\":1342.6734619140626,\"y\":4388.25732421875,\"z\":44.34379959106445},\"sellRewardPerCount\":\"196\",\"sellCount\":\"2\",\"rawItem\":\"meth\",\"sale\":\"1\",\"treatmentReward\":\"2\",\"treatmentCount\":\"3\",\"name\":\"meth\",\"treatement\":{\"x\":425.0657958984375,\"y\":2999.30126953125,\"z\":40.38022232055664},\"harvestCount\":\"4\",\"treatedItem\":\"meth_pooch\"}');
 
 -- --------------------------------------------------------
 
@@ -1579,25 +772,6 @@ CREATE TABLE `gang2_car` (
 -- Déchargement des données de la table `gang2_car`
 --
 
-INSERT INTO `gang2_car` (`gang_name`, `plate`, `model`, `properties`, `stored`, `time_out`) VALUES
-('Kays', '0068JTBE', 'sultan', '{\"color\":2}', 0, '2025-04-23 12:29:50'),
-('Kays', '3491BQYC', 'sultan', '{\"color\":6}', 0, '2025-04-23 12:30:32'),
-('Kays', '4642ASKR', 'sultan', '{\"color\":1}', 0, '2025-04-23 12:28:24'),
-('Kays', '9422LWWE', 'sultan', '{\"color\":30}', 0, '2025-04-23 12:31:12'),
-('Kays', 'GANG1085', 'buffalo', '{\"color\":1}', 0, '2025-04-23 04:43:50'),
-('Kays', 'GANG9647', 'baller', '{\"color\":1}', 0, '2025-04-23 04:44:11'),
-('kk', '2102KOSE', '970598228', '{\"color\":1}', 0, '2025-04-23 05:41:50'),
-('kk', '3580HLTL', '970598228', '{\"color\":2}', 0, '2025-04-23 05:36:30'),
-('kk', '3635IRLA', 'sultan', '{\"color\":1}', 1, NULL),
-('kk', '4718STLF', '970598228', '{\"color\":1}', 1, NULL),
-('kk', '4896XNNP', '970598228', '{\"color\":1}', 0, '2025-04-23 05:20:46'),
-('kk', '5310OJWR', 'sultan', '{\"color\":1}', 0, '2025-04-23 05:46:12'),
-('kk', '7277GBKS', '970598228', '{\"color\":1}', 0, '2025-04-23 05:40:17'),
-('kk', '9406MNGO', '970598228', '{\"color\":1}', 0, '2025-04-23 05:39:40'),
-('test1', '2049ASPU', 'sultan', '{\"color\":1}', 0, '2025-04-23 12:49:27'),
-('test1', '3511WDUH', 'sultan', '{\"color\":111}', 0, '2025-04-23 12:34:41'),
-('test10', 'GANG9240', 'kuruma', '{\"color\":1}', 1, NULL),
-('testk', '7287CPEE', 'sultan', '{\"color\":1}', 0, '2025-04-23 12:49:19');
 
 -- --------------------------------------------------------
 
@@ -1616,9 +790,6 @@ CREATE TABLE `gang2_chest` (
 -- Déchargement des données de la table `gang2_chest`
 --
 
-INSERT INTO `gang2_chest` (`gang_name`, `type`, `item`, `count`) VALUES
-('test1', 'item_standard', 'drill', 1),
-('test1', 'item_weapon', 'WEAPON_ASSAULTRIFLE', 0);
 
 -- --------------------------------------------------------
 
@@ -1637,9 +808,6 @@ CREATE TABLE `gang2_clothes` (
 -- Déchargement des données de la table `gang2_clothes`
 --
 
-INSERT INTO `gang2_clothes` (`gang`, `label`, `skin`, `creator`) VALUES
-('Kays', 'clow', '{\"makeup_1\":0,\"eyebrows_2\":10,\"eyebrows_4\":0,\"blemishes_2\":0,\"eye_color\":0,\"skin_md_weight\":0,\"dad\":1,\"eyebrows_6\":0,\"complexion_1\":0,\"chin_3\":0,\"pants_2\":2,\"decals_1\":0,\"nose_2\":0,\"hair_2\":0,\"moles_1\":0,\"bodyb_4\":0,\"eyebrows_1\":0,\"eyebrows_3\":0,\"chest_2\":0,\"cheeks_1\":0,\"mask_1\":95,\"beard_1\":0,\"pants_1\":29,\"watches_2\":0,\"sun_1\":0,\"torso_2\":0,\"arms_2\":0,\"bproof_1\":0,\"helmet_2\":0,\"cheeks_2\":0,\"bracelets_2\":0,\"chin_2\":0,\"makeup_4\":0,\"moles_2\":0,\"lipstick_1\":0,\"jaw_1\":0,\"age_2\":0,\"arms\":15,\"nose_5\":0,\"hair_color_2\":0,\"blush_3\":0,\"hair_color_1\":0,\"chin_4\":0,\"bracelets_1\":-1,\"ears_2\":0,\"decals_2\":0,\"glasses_2\":0,\"bodyb_3\":-1,\"makeup_3\":0,\"chain_1\":271,\"glasses_1\":0,\"sex\":0,\"blemishes_1\":0,\"hair_1\":0,\"makeup_2\":0,\"shoes_1\":199,\"blush_2\":0,\"bproof_2\":0,\"chain_2\":0,\"shoes_2\":0,\"nose_6\":0,\"nose_1\":0,\"helmet_1\":0,\"lipstick_3\":0,\"bags_2\":0,\"ears_1\":-1,\"bodyb_2\":0,\"tshirt_2\":0,\"bags_1\":0,\"neck_thickness\":0,\"lip_thickness\":0,\"nose_4\":0,\"age_1\":0,\"mask_2\":6,\"cheeks_3\":0,\"watches_1\":-1,\"chest_1\":0,\"lipstick_2\":0,\"chest_3\":0,\"nose_3\":0,\"jaw_2\":0,\"beard_4\":0,\"tshirt_1\":15,\"lipstick_4\":0,\"beard_3\":0,\"mom\":36,\"complexion_2\":0,\"beard_2\":0,\"blush_1\":0,\"sun_2\":0,\"face_md_weight\":93,\"bodyb_1\":-1,\"torso_1\":45,\"eyebrows_5\":0,\"chin_1\":0,\"eye_squint\":0}', 'Enzo Lipton'),
-('test1', 'bas', '{\"chest_3\":0,\"watches_2\":0,\"blush_2\":0,\"nose_1\":0,\"sun_2\":0,\"bodyb_3\":-1,\"torso_2\":2,\"cheeks_2\":0,\"beard_2\":0,\"eyebrows_5\":0,\"eye_squint\":0,\"hair_2\":0,\"eyebrows_3\":0,\"blush_3\":0,\"bproof_2\":0,\"glasses_1\":0,\"bproof_1\":0,\"cheeks_1\":0,\"beard_4\":0,\"nose_6\":0,\"torso_1\":3,\"beard_1\":0,\"lip_thickness\":0,\"bodyb_1\":-1,\"eyebrows_4\":0,\"arms\":6,\"hair_color_1\":0,\"jaw_1\":0,\"hair_color_2\":0,\"tshirt_1\":23,\"jaw_2\":0,\"chain_2\":0,\"pants_1\":388,\"blemishes_1\":0,\"chin_1\":0,\"blush_1\":0,\"lipstick_3\":0,\"mask_2\":0,\"beard_3\":0,\"chest_2\":0,\"complexion_1\":0,\"age_1\":0,\"nose_2\":0,\"moles_2\":0,\"makeup_1\":0,\"bodyb_2\":0,\"helmet_2\":0,\"skin_md_weight\":50,\"nose_5\":0,\"pants_2\":0,\"arms_2\":0,\"mask_1\":0,\"lipstick_4\":0,\"makeup_3\":0,\"watches_1\":-1,\"tshirt_2\":0,\"makeup_4\":0,\"blemishes_2\":0,\"bags_1\":44,\"chin_3\":0,\"chin_4\":0,\"neck_thickness\":0,\"eyebrows_1\":0,\"face_md_weight\":50,\"eyebrows_6\":0,\"eyebrows_2\":0,\"bracelets_2\":0,\"bags_2\":0,\"complexion_2\":0,\"ears_2\":0,\"lipstick_2\":0,\"nose_3\":0,\"helmet_1\":-1,\"bracelets_1\":-1,\"dad\":4,\"glasses_2\":0,\"shoes_2\":2,\"hair_1\":60,\"shoes_1\":160,\"lipstick_1\":0,\"ears_1\":-1,\"nose_4\":0,\"sex\":0,\"decals_1\":0,\"moles_1\":0,\"chin_2\":0,\"makeup_2\":0,\"cheeks_3\":0,\"eye_color\":0,\"decals_2\":0,\"sun_1\":0,\"age_2\":0,\"chest_1\":0,\"mom\":25,\"bodyb_4\":0,\"chain_1\":0}', 'Kays Lamoula');
 
 -- --------------------------------------------------------
 
@@ -1755,16 +923,6 @@ CREATE TABLE `gofast_cooldown` (
 -- Déchargement des données de la table `gofast_cooldown`
 --
 
-INSERT INTO `gofast_cooldown` (`identifier`, `cooldown`) VALUES
-('license:80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f', 1745549141),
-('steam:110000111e0b9ce', 1744501408),
-('steam:1100001320d66f8', 1745289806),
-('steam:11000013be76958', 1745099229),
-('steam:110000149b59db1', 1744501414),
-('steam:11000014cd51f21', 1743698391),
-('steam:110000154777afc', 1745667925),
-('steam:11000015e5434b9', 1745357523),
-('steam:11000015edaed33', 1745183145);
 
 -- --------------------------------------------------------
 
@@ -1869,8 +1027,6 @@ CREATE TABLE `inventory_4_items` (
 -- Déchargement des données de la table `inventory_4_items`
 --
 
-INSERT INTO `inventory_4_items` (`uniqueID`, `type`, `items`, `originX`, `originY`, `originZ`, `expires`) VALUES
-('license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'player', '[]', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -2264,59 +1420,6 @@ CREATE TABLE `izey_clothes` (
 -- Déchargement des données de la table `izey_clothes`
 --
 
-INSERT INTO `izey_clothes` (`id`, `type`, `identifier`, `name`, `data`, `trunk`) VALUES
-(1, 'bags', '2447SMMS', 'Sac', '{\"bags_2\":0,\"bags_1\":82}', NULL),
-(6, 'helmet', 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'Chapeau', '{\"helmet_1\":104,\"helmet_2\":20}', NULL),
-(7, 'glasses', 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'Lunette', '{\"glasses_1\":24,\"glasses_2\":2}', NULL),
-(8, 'bags', 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'Sac', '{\"bags_2\":0,\"bags_1\":81}', NULL),
-(9, 'mask', 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'Masque 169', '{\"mask_1\":169,\"mask_2\":0}', NULL),
-(10, 'shoes', 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'Chaussure ', '{\"shoes_1\":6,\"shoes_2\":0}', NULL),
-(11, 'bags', 'license:52953829a66104dfd4a1cf30f3ef7f5990714968', 'Sac', '{\"bags_1\":82,\"bags_2\":0}', NULL),
-(12, 'outfit', 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 'en amont', '{\"shoes_2\":0,\"helmet_1\":-1,\"pants_1\":10,\"tshirt_1\":15,\"mask_2\":0,\"bproof_1\":0,\"shoes_1\":10,\"pants_2\":0,\"decals_2\":0,\"torso_1\":139,\"chain_2\":0,\"tshirt_2\":0,\"arms\":22,\"mask_1\":0,\"bproof_2\":0,\"chain_1\":0,\"helmet_2\":0,\"torso_2\":3,\"decals_1\":0,\"arms_2\":0}', NULL),
-(13, 'outfit', 'license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 'Josh', '{\"shoes_2\":2,\"helmet_1\":-1,\"pants_1\":388,\"tshirt_1\":2,\"mask_2\":0,\"bproof_1\":0,\"shoes_1\":160,\"pants_2\":0,\"decals_2\":0,\"torso_1\":69,\"chain_2\":0,\"tshirt_2\":0,\"arms\":6,\"mask_1\":0,\"torso_2\":0,\"chain_1\":0,\"helmet_2\":0,\"bproof_2\":0,\"decals_1\":0,\"arms_2\":0}', NULL),
-(14, 'outfit', 'license:a3f90caeb2011bbe94ead4782b3ff5832d39bdf1', 'Bg', '{\"chain_1\":-1,\"decals_2\":0,\"bproof_2\":0,\"mask_1\":0,\"chain_2\":0,\"pants_1\":56,\"torso_1\":680,\"arms_2\":0,\"helmet_1\":-1,\"torso_2\":1,\"decals_1\":0,\"mask_2\":0,\"shoes_2\":13,\"pants_2\":0,\"helmet_2\":0,\"tshirt_2\":0,\"tshirt_1\":15,\"arms\":11,\"shoes_1\":-1,\"bproof_1\":0}', NULL),
-(15, 'shoes', 'license:a3f90caeb2011bbe94ead4782b3ff5832d39bdf1', 'Chaussure ', '{\"shoes_2\":13,\"shoes_1\":150}', NULL),
-(16, 'glasses', 'license:a3f90caeb2011bbe94ead4782b3ff5832d39bdf1', 'Lunette', '{\"glasses_1\":45,\"glasses_2\":13}', NULL),
-(17, 'pants', 'license:52953829a66104dfd4a1cf30f3ef7f5990714968', 'Pantalon ', '{\"pants_1\":181,\"pants_2\":5}', NULL),
-(18, 'outfit', 'license:52953829a66104dfd4a1cf30f3ef7f5990714968', 'KYZOO', '{\"chain_1\":-1,\"decals_2\":0,\"bproof_2\":0,\"helmet_2\":0,\"chain_2\":0,\"pants_1\":181,\"torso_1\":712,\"arms_2\":0,\"helmet_1\":83,\"torso_2\":0,\"decals_1\":0,\"mask_2\":0,\"shoes_2\":25,\"mask_1\":0,\"arms\":5,\"pants_2\":5,\"tshirt_1\":23,\"shoes_1\":134,\"tshirt_2\":0,\"bproof_1\":0}', NULL),
-(19, 'outfit', 'license:52953829a66104dfd4a1cf30f3ef7f5990714968', 'KYZOOW', '{\"chain_1\":-1,\"decals_2\":0,\"bproof_2\":0,\"helmet_2\":0,\"chain_2\":0,\"pants_1\":181,\"torso_1\":712,\"arms_2\":0,\"helmet_1\":83,\"torso_2\":0,\"decals_1\":0,\"mask_2\":0,\"shoes_2\":25,\"mask_1\":0,\"arms\":8,\"pants_2\":5,\"tshirt_1\":23,\"shoes_1\":134,\"tshirt_2\":0,\"bproof_1\":0}', NULL),
-(20, 'pants', 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'Pantalon ', '{\"pants_1\":25,\"pants_2\":1}', NULL),
-(21, 'shoes', 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'Chaussure ', '{\"shoes_2\":1,\"shoes_1\":279}', NULL),
-(22, 'helmet', 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'Chapeau', '{\"helmet_1\":237,\"helmet_2\":1}', NULL),
-(23, 'glasses', 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'Lunette', '{\"glasses_1\":46,\"glasses_2\":1}', NULL),
-(25, 'outfit', 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 'kays', '{\"chain_1\":0,\"decals_2\":0,\"bproof_2\":0,\"helmet_2\":1,\"chain_2\":0,\"pants_1\":25,\"torso_1\":73,\"arms_2\":0,\"helmet_1\":237,\"arms\":0,\"decals_1\":0,\"mask_2\":0,\"shoes_2\":1,\"torso_2\":0,\"pants_2\":1,\"tshirt_2\":0,\"tshirt_1\":15,\"shoes_1\":279,\"mask_1\":169,\"bproof_1\":146}', NULL),
-(26, 'outfit', 'license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 'Jsh', '{\"shoes_1\":269,\"decals_2\":0,\"bproof_2\":0,\"helmet_2\":0,\"chain_2\":0,\"pants_1\":56,\"torso_1\":237,\"arms_2\":0,\"helmet_1\":-1,\"torso_2\":0,\"decals_1\":0,\"mask_2\":0,\"shoes_2\":0,\"mask_1\":0,\"chain_1\":207,\"pants_2\":0,\"tshirt_1\":15,\"arms\":5,\"tshirt_2\":0,\"bproof_1\":0}', NULL),
-(27, 'outfit', 'license:a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a', 'dgdf', '{\"torso_2\":1,\"bproof_1\":0,\"shoes_1\":273,\"helmet_2\":0,\"pants_2\":0,\"helmet_1\":-1,\"arms\":6,\"decals_1\":0,\"bproof_2\":4,\"shoes_2\":0,\"chain_1\":0,\"chain_2\":0,\"decals_2\":0,\"mask_2\":0,\"mask_1\":0,\"tshirt_1\":5,\"torso_1\":251,\"pants_1\":98,\"tshirt_2\":0,\"arms_2\":0}', NULL),
-(28, 'outfit', 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 'lspd', '{\"chain_2\":0,\"torso_2\":0,\"tshirt_1\":15,\"decals_1\":0,\"bproof_2\":0,\"helmet_2\":0,\"torso_1\":26,\"arms_2\":0,\"decals_2\":0,\"pants_2\":0,\"chain_1\":0,\"bproof_1\":65,\"arms\":5,\"tshirt_2\":0,\"shoes_1\":25,\"shoes_2\":0,\"helmet_1\":-1,\"mask_2\":0,\"pants_1\":121,\"mask_1\":0}', NULL),
-(29, 'outfit', 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 'ems', '{\"chain_2\":0,\"torso_2\":0,\"tshirt_1\":15,\"decals_1\":0,\"bproof_2\":0,\"helmet_2\":0,\"torso_1\":726,\"arms_2\":0,\"decals_2\":0,\"pants_2\":0,\"chain_1\":0,\"bproof_1\":58,\"arms\":5,\"tshirt_2\":0,\"shoes_1\":25,\"shoes_2\":0,\"helmet_1\":-1,\"mask_2\":0,\"pants_1\":121,\"mask_1\":0}', NULL),
-(30, 'outfit', 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 'lspd', '{\"chain_2\":0,\"torso_2\":0,\"tshirt_1\":15,\"decals_1\":0,\"bproof_2\":0,\"helmet_2\":0,\"torso_1\":318,\"arms_2\":0,\"decals_2\":0,\"pants_2\":0,\"chain_1\":0,\"bproof_1\":58,\"arms\":5,\"tshirt_2\":0,\"shoes_1\":25,\"shoes_2\":0,\"helmet_1\":-1,\"mask_2\":0,\"pants_1\":121,\"mask_1\":0}', NULL),
-(31, 'outfit', 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 'lspd', '{\"chain_2\":0,\"torso_2\":0,\"tshirt_1\":15,\"decals_1\":0,\"bproof_2\":0,\"helmet_2\":0,\"torso_1\":190,\"arms_2\":0,\"decals_2\":0,\"pants_2\":0,\"chain_1\":0,\"bproof_1\":58,\"arms\":5,\"tshirt_2\":0,\"shoes_1\":25,\"shoes_2\":0,\"helmet_1\":-1,\"mask_2\":0,\"pants_1\":121,\"mask_1\":0}', NULL),
-(32, 'outfit', 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 'benny', '{\"chain_2\":0,\"torso_2\":0,\"tshirt_1\":15,\"decals_1\":0,\"bproof_2\":0,\"helmet_2\":0,\"torso_1\":65,\"arms_2\":0,\"decals_2\":0,\"pants_2\":0,\"chain_1\":0,\"bproof_1\":58,\"arms\":5,\"tshirt_2\":0,\"shoes_1\":25,\"shoes_2\":0,\"helmet_1\":-1,\"mask_2\":0,\"pants_1\":121,\"mask_1\":0}', NULL),
-(33, 'pants', 'license:85e8937833a05423627d78865cb0da6ab013652b', 'Pantalon ', '{\"pants_1\":283,\"pants_2\":1}', NULL),
-(34, 'outfit', 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 's', '{\"chain_2\":0,\"torso_2\":0,\"tshirt_1\":15,\"decals_1\":0,\"bproof_2\":0,\"helmet_2\":0,\"torso_1\":34,\"arms_2\":0,\"decals_2\":0,\"pants_2\":0,\"chain_1\":0,\"bproof_1\":58,\"arms\":5,\"tshirt_2\":0,\"shoes_1\":7,\"shoes_2\":0,\"helmet_1\":-1,\"mask_2\":0,\"pants_1\":24,\"mask_1\":0}', NULL),
-(35, 'top', 'license:85e8937833a05423627d78865cb0da6ab013652b', 'Haut 575', '{\"arms\":11,\"arms_2\":0,\"tshirt_1\":164,\"bproof_2\":0,\"tshirt_2\":0,\"torso_2\":0,\"torso_1\":575,\"bproof_1\":0}', NULL),
-(36, 'shoes', 'license:85e8937833a05423627d78865cb0da6ab013652b', 'Chaussure ', '{\"shoes_1\":129,\"shoes_2\":1}', NULL),
-(37, 'glasses', 'license:85e8937833a05423627d78865cb0da6ab013652b', 'Lunette', '{\"glasses_2\":3,\"glasses_1\":53}', NULL),
-(38, 'watches', 'license:85e8937833a05423627d78865cb0da6ab013652b', 'Montre', '{\"watches_2\":29,\"watches_1\":20}', NULL),
-(39, 'mask', 'license:85e8937833a05423627d78865cb0da6ab013652b', 'Masque 54', '{\"mask_1\":54,\"mask_2\":30}', NULL),
-(40, 'mask', 'license:85e8937833a05423627d78865cb0da6ab013652b', 'Masque 54', '{\"mask_1\":54,\"mask_2\":30}', NULL),
-(41, 'mask', 'license:85e8937833a05423627d78865cb0da6ab013652b', 'Masque 54', '{\"mask_1\":54,\"mask_2\":30}', NULL),
-(42, 'outfit', 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 'lunettes', '{\"chain_2\":0,\"torso_2\":0,\"tshirt_1\":15,\"decals_1\":6,\"bproof_2\":0,\"helmet_2\":0,\"torso_1\":34,\"arms_2\":0,\"decals_2\":0,\"pants_2\":0,\"chain_1\":63,\"bproof_1\":58,\"arms\":5,\"tshirt_2\":0,\"shoes_1\":7,\"shoes_2\":0,\"helmet_1\":0,\"mask_2\":0,\"pants_1\":24,\"mask_1\":0}', NULL),
-(43, 'outfit', 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 'lunettes', '{\"chain_2\":0,\"torso_2\":0,\"tshirt_1\":15,\"decals_1\":6,\"bproof_2\":0,\"helmet_2\":0,\"torso_1\":34,\"arms_2\":0,\"decals_2\":0,\"pants_2\":0,\"chain_1\":63,\"bproof_1\":58,\"arms\":5,\"tshirt_2\":0,\"shoes_1\":7,\"shoes_2\":0,\"helmet_1\":0,\"mask_2\":0,\"pants_1\":24,\"mask_1\":0}', NULL),
-(44, 'outfit', 'license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', 'tenu 1', '{\"chain_2\":0,\"torso_2\":0,\"shoes_1\":-1,\"mask_1\":0,\"bproof_2\":0,\"helmet_2\":0,\"arms_2\":0,\"tshirt_1\":207,\"decals_2\":0,\"pants_2\":0,\"chain_1\":0,\"bproof_1\":0,\"arms\":0,\"tshirt_2\":0,\"decals_1\":0,\"shoes_2\":0,\"helmet_1\":-1,\"mask_2\":0,\"pants_1\":300,\"torso_1\":661}', NULL),
-(45, 'shoes', 'license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', 'Chaussure ', '{\"shoes_1\":76,\"shoes_2\":26}', NULL),
-(46, 'helmet', 'license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', 'Chapeau', '{\"helmet_1\":237,\"helmet_2\":0}', NULL),
-(47, 'helmet', 'license:88830294ccd5ffe723158350adb3f2046b1fe30c', 'Chapeau', '{\"helmet_1\":52,\"helmet_2\":0}', NULL),
-(48, 'chain', 'license:88830294ccd5ffe723158350adb3f2046b1fe30c', 'Chaine', '{\"chain_2\":0,\"chain_1\":188}', NULL),
-(49, 'shoes', 'license:88830294ccd5ffe723158350adb3f2046b1fe30c', 'Chaussure ', '{\"shoes_2\":3,\"shoes_1\":156}', NULL),
-(50, 'helmet', 'license:88830294ccd5ffe723158350adb3f2046b1fe30c', 'Chapeau', '{\"helmet_1\":-1,\"helmet_2\":0}', NULL),
-(51, 'top', 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c', 'Haut 724', '{\"arms\":1,\"arms_2\":0,\"torso_2\":0,\"bproof_2\":0,\"torso_1\":724,\"tshirt_2\":0,\"bproof_1\":0,\"tshirt_1\":4}', NULL),
-(52, 'pants', 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c', 'Pantalon ', '{\"pants_2\":0,\"pants_1\":10}', NULL),
-(53, 'shoes', 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c', 'Chaussure ', '{\"shoes_2\":0,\"shoes_1\":10}', NULL),
-(54, 'glasses', 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c', 'Lunette', '{\"glasses_2\":0,\"glasses_1\":8}', NULL),
-(55, 'ears', 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c', 'Oreille', '{\"ears_2\":0,\"ears_1\":4}', NULL),
-(56, 'outfit', 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 'Tenu 1', '{\"arms_2\":0,\"chain_1\":0,\"bproof_2\":0,\"chain_2\":0,\"decals_1\":0,\"helmet_2\":0,\"pants_1\":25,\"pants_2\":1,\"mask_1\":0,\"tshirt_2\":0,\"mask_2\":0,\"torso_1\":73,\"helmet_1\":-1,\"bproof_1\":65,\"arms\":0,\"shoes_2\":0,\"decals_2\":0,\"tshirt_1\":15,\"torso_2\":0,\"shoes_1\":-1}', NULL),
-(57, 'shoes', 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 'Chaussure ', '{\"shoes_2\":0,\"shoes_1\":274}', NULL);
 
 -- --------------------------------------------------------
 
@@ -2334,12 +1437,6 @@ CREATE TABLE `izey_trunk` (
 -- Déchargement des données de la table `izey_trunk`
 --
 
-INSERT INTO `izey_trunk` (`info`, `data`, `id`) VALUES
-('{\"weight\":0.0,\"maxweight\":50,\"plate\":\"2447SMMS\"}', '{\"weapons\":[],\"accounts\":[],\"clothes\":[{\"weight\":0.0,\"count\":1,\"label\":\"Sac\",\"name\":\"bags\",\"id\":1}],\"items\":[]}', 73512),
-('{\"plate\":\"1235LWON\",\"maxweight\":50,\"weight\":0.0}', '{\"items\":[],\"weapons\":[],\"clothes\":[],\"accounts\":[]}', 268785),
-('{\"plate\":\"LOCA3978\",\"maxweight\":10,\"weight\":0}', '{\"accounts\":{\"cash\":{\"count\":-10000000000001}},\"items\":[],\"clothes\":[],\"weapons\":[]}', 268952),
-('{\"plate\":\"3535XZNO\",\"maxweight\":50,\"weight\":13.0}', '{\"items\":{\"jerican\":{\"weight\":4,\"count\":1,\"label\":\"Jerican\",\"name\":\"jerican\"},\"kq_outfitbag\":{\"weight\":4,\"count\":1,\"label\":\"Outfit bag\",\"name\":\"kq_outfitbag\"},\"medikit\":{\"weight\":5.0,\"count\":10,\"label\":\"Medikit\",\"name\":\"medikit\"}},\"weapons\":[],\"clothes\":[],\"accounts\":[]}', 513801),
-('{\"weight\":0.0,\"maxweight\":10,\"plate\":\"29FBZ744\"}', '{\"weapons\":[],\"accounts\":{\"dirtycash\":{\"count\":1310}},\"clothes\":[],\"items\":[]}', 989623);
 
 -- --------------------------------------------------------
 
@@ -2922,10 +2019,6 @@ CREATE TABLE `koy_afk_players` (
 -- Déchargement des données de la table `koy_afk_players`
 --
 
-INSERT INTO `koy_afk_players` (`UniqueID`, `points`, `time`, `inZone`, `skin`, `playerName`) VALUES
-('license:1419b137c7211a1e0a7d25079f68a9050287b9a1', '5', '3', 0, '{\"chest_1\":0,\"moles_2\":0,\"torso_2\":0,\"skin_md_weight\":50,\"nose_5\":0,\"bags_1\":0,\"nose_2\":0,\"bodyb_1\":-1,\"decals_1\":0,\"lipstick_1\":0,\"sun_2\":0,\"chest_2\":0,\"mask_1\":0,\"lip_thickness\":0,\"ears_2\":0,\"eyebrows_2\":0,\"helmet_1\":-1,\"mask_2\":0,\"makeup_1\":0,\"makeup_3\":0,\"blemishes_2\":0,\"blush_1\":0,\"pants_1\":25,\"tshirt_2\":0,\"hair_1\":0,\"beard_4\":0,\"mom\":21,\"age_2\":0,\"pants_2\":1,\"lipstick_4\":0,\"hair_color_2\":0,\"torso_1\":73,\"arms\":0,\"age_1\":0,\"makeup_4\":0,\"dad\":0,\"bags_2\":0,\"watches_2\":0,\"eyebrows_3\":0,\"beard_3\":0,\"bproof_1\":65,\"eyebrows_4\":0,\"glasses_2\":0,\"cheeks_2\":0,\"jaw_2\":0,\"eyebrows_6\":0,\"bracelets_2\":0,\"shoes_2\":0,\"nose_1\":0,\"eyebrows_1\":0,\"chin_4\":0,\"cheeks_3\":0,\"chain_1\":0,\"ears_1\":-1,\"glasses_1\":0,\"helmet_2\":0,\"bproof_2\":0,\"beard_1\":0,\"chain_2\":0,\"sun_1\":0,\"blemishes_1\":0,\"beard_2\":0,\"hair_color_1\":0,\"bodyb_3\":-1,\"sex\":0,\"neck_thickness\":0,\"eyebrows_5\":0,\"eye_color\":0,\"bodyb_4\":0,\"tshirt_1\":15,\"watches_1\":-1,\"nose_3\":0,\"jaw_1\":0,\"bodyb_2\":0,\"nose_4\":0,\"arms_2\":0,\"cheeks_1\":0,\"moles_1\":0,\"nose_6\":0,\"chin_3\":0,\"chin_1\":0,\"chin_2\":0,\"chest_3\":0,\"blush_2\":0,\"decals_2\":0,\"shoes_1\":274,\"face_md_weight\":50,\"lipstick_3\":0,\"makeup_2\":0,\"complexion_2\":0,\"complexion_1\":0,\"hair_2\":0,\"lipstick_2\":0,\"blush_3\":0,\"bracelets_1\":-1,\"eye_squint\":0}', 'Shyroz'),
-('license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', '0', '0', 0, '{\"bproof_2\":0,\"bracelets_1\":-1,\"eyebrows_6\":0,\"pants_1\":12,\"makeup_3\":0,\"nose_2\":0,\"nose_1\":0,\"eyebrows_2\":0,\"eye_color\":0,\"lipstick_2\":0,\"dad\":2,\"bodyb_3\":-1,\"pants_2\":7,\"age_1\":0,\"mask_1\":169,\"age_2\":0,\"bracelets_2\":0,\"torso_2\":0,\"makeup_2\":0,\"glasses_2\":2,\"eyebrows_5\":0,\"watches_2\":0,\"chest_2\":0,\"hair_1\":0,\"glasses_1\":24,\"torso_1\":5,\"sun_2\":0,\"chain_1\":-1,\"bproof_1\":0,\"cheeks_2\":0,\"bodyb_1\":-1,\"nose_5\":0,\"blush_1\":0,\"beard_2\":10,\"chin_3\":0,\"blemishes_1\":0,\"chin_2\":0,\"makeup_1\":0,\"skin_md_weight\":100,\"mom\":23,\"helmet_1\":104,\"makeup_4\":0,\"arms_2\":0,\"nose_4\":0,\"mask_2\":0,\"tshirt_1\":15,\"sun_1\":0,\"tshirt_2\":0,\"sex\":0,\"beard_4\":0,\"helmet_2\":20,\"hair_2\":0,\"beard_3\":0,\"blemishes_2\":0,\"bodyb_2\":0,\"chest_1\":0,\"lipstick_4\":0,\"cheeks_3\":0,\"bags_1\":81,\"complexion_2\":0,\"moles_2\":0,\"decals_2\":0,\"jaw_2\":0,\"moles_1\":0,\"jaw_1\":0,\"chain_2\":0,\"eyebrows_1\":0,\"complexion_1\":0,\"watches_1\":-1,\"decals_1\":0,\"eye_squint\":0,\"lip_thickness\":0,\"eyebrows_4\":0,\"blush_2\":0,\"hair_color_2\":0,\"bodyb_4\":0,\"blush_3\":0,\"eyebrows_3\":0,\"chin_4\":0,\"lipstick_3\":0,\"chin_1\":0,\"nose_6\":0,\"ears_2\":0,\"neck_thickness\":0,\"beard_1\":3,\"shoes_1\":6,\"chest_3\":0,\"nose_3\":0,\"shoes_2\":0,\"arms\":5,\"face_md_weight\":71,\"cheeks_1\":0,\"ears_1\":-1,\"bags_2\":0,\"hair_color_1\":0,\"lipstick_1\":0}', 'Shyroz'),
-('license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', '1365', '819', 1, '{\"hair_color_2\":9,\"eyebrows_5\":0,\"moles_2\":0,\"bodyb_3\":-1,\"bags_2\":0,\"blemishes_1\":0,\"torso_2\":2,\"lip_thickness\":0,\"nose_5\":0,\"chain_1\":0,\"watches_2\":0,\"sun_1\":0,\"bodyb_2\":0,\"makeup_4\":0,\"glasses_2\":0,\"blush_2\":0,\"eyebrows_6\":0,\"ears_1\":-1,\"decals_2\":0,\"cheeks_1\":0,\"beard_3\":17,\"chin_4\":0,\"beard_1\":10,\"bodyb_1\":-1,\"bags_1\":0,\"pants_1\":388,\"lipstick_4\":0,\"sex\":0,\"moles_1\":0,\"eye_squint\":0,\"nose_1\":0,\"cheeks_3\":0,\"mask_1\":0,\"tshirt_1\":23,\"decals_1\":0,\"bracelets_1\":-1,\"blush_1\":0,\"hair_1\":337,\"makeup_2\":0,\"blemishes_2\":0,\"beard_2\":10,\"hair_2\":0,\"nose_6\":0,\"makeup_3\":0,\"nose_2\":0,\"blush_3\":0,\"makeup_1\":0,\"complexion_1\":0,\"skin_md_weight\":78,\"lipstick_2\":0,\"chest_3\":0,\"chest_1\":0,\"watches_1\":-1,\"sun_2\":0,\"chest_2\":0,\"jaw_2\":0,\"helmet_2\":0,\"chin_3\":0,\"eye_color\":4,\"jaw_1\":0,\"hair_color_1\":17,\"cheeks_2\":0,\"ears_2\":0,\"nose_3\":0,\"tshirt_2\":0,\"lipstick_1\":0,\"beard_4\":0,\"mask_2\":0,\"eyebrows_2\":10,\"arms_2\":0,\"chin_1\":0,\"chain_2\":0,\"age_1\":0,\"shoes_2\":2,\"shoes_1\":160,\"torso_1\":3,\"age_2\":0,\"neck_thickness\":0,\"bproof_2\":0,\"complexion_2\":0,\"bracelets_2\":0,\"helmet_1\":-1,\"arms\":6,\"bodyb_4\":0,\"mom\":31,\"eyebrows_3\":0,\"chin_2\":0,\"dad\":44,\"face_md_weight\":100,\"glasses_1\":0,\"lipstick_3\":0,\"nose_4\":0,\"bproof_1\":0,\"pants_2\":0,\"eyebrows_1\":1,\"eyebrows_4\":0}', 'egger');
 
 -- --------------------------------------------------------
 
@@ -3382,8 +2475,6 @@ CREATE TABLE `lbtablet_police_accounts` (
 -- Déchargement des données de la table `lbtablet_police_accounts`
 --
 
-INSERT INTO `lbtablet_police_accounts` (`id`, `display_name`, `avatar`, `callsign`) VALUES
-('license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 'Angel Holl', NULL, '74-3207');
 
 -- --------------------------------------------------------
 
@@ -3952,8 +3043,6 @@ CREATE TABLE `lbtablet_tablets` (
 -- Déchargement des données de la table `lbtablet_tablets`
 --
 
-INSERT INTO `lbtablet_tablets` (`id`, `tablet_name`, `settings`, `battery`, `is_setup`) VALUES
-('license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 'Shyroz\'s Tablet', '{\"lockscreen\":{\"color\":\"gradient\",\"fontStyle\":1},\"time\":{\"twelveHourClock\":false},\"sound\":{\"silent\":false,\"volume\":0.45},\"airplaneMode\":false,\"locale\":\"fr\",\"display\":{\"theme\":\"dark\",\"frameColor\":\"#bc8d8d\",\"brightness\":1},\"wallpaper\":{\"background\":\"gradient\",\"blur\":false},\"streamerMode\":false,\"doNotDisturb\":false,\"apps\":[[\"Notes\",\"Mail\",\"Camera\",\"Photos\"],[\"Settings\",\"Browser\",\"Maps\",\"Ambulance\",\"Police\",\"Calculator\",\"Apps\",\"VoiceMemo\",\"Services\",\"Clock\",\"Registration\"]]}', 100, 1);
 
 -- --------------------------------------------------------
 
@@ -3991,9 +3080,6 @@ CREATE TABLE `leboncoin` (
 -- Déchargement des données de la table `leboncoin`
 --
 
-INSERT INTO `leboncoin` (`id`, `owner`, `plate`, `vehicle`, `price`, `location`, `locationId`, `buyed`) VALUES
-(10, 'license:a4947ba20d1a5fa98421b026043c2d5363861e1e', '47ZLI236', '{\"modFender\":-1,\"modHood\":-1,\"modOrnaments\":-1,\"windowsBroken\":{\"0\":true,\"1\":true,\"2\":true,\"3\":true,\"4\":true,\"5\":true,\"6\":false,\"7\":true},\"modBackWheels\":-1,\"modSeats\":-1,\"modEngine\":-1,\"modAPlate\":-1,\"modAerials\":-1,\"modLivery\":1,\"neonEnabled\":[false,false,false,false],\"modTrunk\":-1,\"extras\":[],\"modGrille\":-1,\"modStruts\":-1,\"doorsBroken\":{\"0\":false,\"1\":false},\"color2\":0,\"neonColor\":[0,0,0],\"dirtLevel\":4.0,\"wheels\":6,\"modRearBumper\":-1,\"tyreSmokeColor\":[255,255,255],\"modXenon\":false,\"modExhaust\":-1,\"windowTint\":-1,\"modFrontWheels\":-1,\"modPlateHolder\":-1,\"color1\":0,\"modRightFender\":-1,\"tankHealth\":995.0,\"model\":-891462355,\"plateIndex\":0,\"modDashboard\":-1,\"modSideSkirt\":-1,\"modTurbo\":false,\"modTrimA\":-1,\"modTank\":-1,\"modArmor\":-1,\"modFrontBumper\":-1,\"modFrame\":-1,\"modVanityPlate\":-1,\"pearlescentColor\":0,\"modEngineBlock\":-1,\"tyreBurst\":{\"0\":false,\"4\":false},\"modShifterLeavers\":-1,\"plate\":\"47ZLI236\",\"modTrimB\":-1,\"modHorns\":-1,\"modSmokeEnabled\":false,\"engineHealth\":1000.0,\"modDial\":-1,\"modDoorR\":-1,\"modAirFilter\":-1,\"xenonColor\":255,\"modLightbar\":-1,\"modSuspension\":-1,\"wheelColor\":156,\"modBrakes\":-1,\"bodyHealth\":990.0,\"modSteeringWheel\":-1,\"modSpoilers\":-1,\"modDoorSpeaker\":-1,\"modRoof\":-1,\"modTransmission\":-1,\"fuelLevel\":64.4,\"modArchCover\":-1,\"modSpeakers\":-1,\"modHydrolic\":-1}', '50000', 'sandyshore', 4, 0),
-(16, 'license:76978bbead67870129be8762c48e67f6ca28ac2a', '29OSE286', '{\"modRightFender\":-1,\"windowsBroken\":{\"1\":false,\"2\":false,\"7\":false,\"0\":false,\"5\":true,\"6\":false,\"3\":false,\"4\":true},\"windowTint\":-1,\"modTrimB\":-1,\"modEngineBlock\":-1,\"tankHealth\":996.2,\"modRearBumper\":-1,\"modRoof\":-1,\"modHood\":-1,\"modTank\":-1,\"color2\":1,\"modTrimA\":-1,\"modSpoilers\":-1,\"tyreBurst\":{\"5\":false,\"0\":false,\"1\":false,\"4\":false},\"modSideSkirt\":-1,\"plate\":\"29OSE286\",\"neonColor\":[0,0,0],\"engineHealth\":999.0,\"modShifterLeavers\":-1,\"modGrille\":-1,\"wheelColor\":0,\"modSpeakers\":-1,\"modFrontWheels\":-1,\"modSeats\":-1,\"modDoorR\":-1,\"modFender\":-1,\"pearlescentColor\":2,\"modStruts\":-1,\"modAirFilter\":-1,\"modHorns\":-1,\"dirtLevel\":0.9,\"plateIndex\":0,\"modSuspension\":-1,\"customSecondaryColor\":[0,0,0],\"modXenon\":false,\"modDashboard\":-1,\"tyreSmokeColor\":[255,255,255],\"extras\":[],\"modDial\":-1,\"modVanityPlate\":-1,\"modTransmission\":-1,\"modBackWheels\":-1,\"modBrakes\":-1,\"modLightbar\":-1,\"modHydrolic\":-1,\"neonEnabled\":[false,false,false,false],\"modArmor\":-1,\"modAerials\":-1,\"modEngine\":-1,\"modFrontBumper\":-1,\"modLivery\":-1,\"modTrunk\":-1,\"modExhaust\":-1,\"fuelLevel\":46.9,\"modSteeringWheel\":-1,\"customPrimaryColor\":[0,0,0],\"modArchCover\":-1,\"doorsBroken\":{\"1\":false,\"2\":false,\"0\":false,\"3\":false,\"4\":false},\"color1\":0,\"wheels\":0,\"modOrnaments\":-1,\"modPlateHolder\":-1,\"modAPlate\":-1,\"bodyHealth\":977.6,\"modFrame\":-1,\"model\":1304459735,\"modSmokeEnabled\":false,\"modTurbo\":false,\"modDoorSpeaker\":-1,\"xenonColor\":255}', '65000', 'lossantos', 3, 0);
 
 -- --------------------------------------------------------
 
@@ -4063,17 +3149,6 @@ CREATE TABLE `open_car` (
 -- Déchargement des données de la table `open_car`
 --
 
-INSERT INTO `open_car` (`id`, `owner`, `plate`, `NB`) VALUES
-(1, 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', '03DMV263', 0),
-(2, 'license:a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a', '01UJG649', 0),
-(3, 'license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', '86TCP858', 0),
-(4, 'license:80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f', '29FBZ744', 0),
-(5, 'license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 'BYQP9511', 0),
-(6, 'license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 'UKSF8727', 0),
-(7, 'license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 'PLGX9519', 0),
-(8, 'license:7ff6f1946f2f1bfe40b860ecf6100019f1a71bc6', '28DLO741', 0),
-(9, 'license:88830294ccd5ffe723158350adb3f2046b1fe30c', '25TGN879', 0),
-(10, 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 'FJQO3943', 0);
 
 -- --------------------------------------------------------
 
@@ -4111,17 +3186,6 @@ CREATE TABLE `owned_vehicles` (
 -- Déchargement des données de la table `owned_vehicles`
 --
 
-INSERT INTO `owned_vehicles` (`owner`, `plate`, `vehicle`, `type`, `state`, `boutique`, `selling`, `carseller`, `stored`, `propertyID`, `vehicletv`) VALUES
-('license:a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a', '01UJG649', '{\"modDoorSpeaker\":-1,\"modArmor\":-1,\"modFrame\":-1,\"extras\":{\"12\":false,\"10\":false},\"modAPlate\":-1,\"wheels\":0,\"neonColor\":[255,0,255],\"color1\":7,\"modFender\":-1,\"modSideSkirt\":-1,\"neonEnabled\":[false,false,false,false],\"modHood\":-1,\"modRearBumper\":-1,\"tyreSmokeColor\":[255,255,255],\"modTransmission\":-1,\"modShifterLeavers\":-1,\"doorsBroken\":{\"0\":false,\"1\":false,\"2\":false,\"3\":false,\"4\":false},\"modFrontWheels\":-1,\"fuelLevel\":65.0,\"modTrimA\":-1,\"modSmokeEnabled\":false,\"engineHealth\":1000.0,\"windowsBroken\":{\"0\":false,\"1\":false,\"2\":false,\"3\":false,\"4\":true,\"5\":true,\"6\":false,\"7\":false},\"modSpoilers\":-1,\"modSuspension\":-1,\"modArchCover\":-1,\"modTrimB\":-1,\"modStruts\":-1,\"windowTint\":-1,\"tyreBurst\":{\"0\":false,\"1\":false,\"4\":false,\"5\":false},\"modLightbar\":-1,\"xenonColor\":255,\"modTurbo\":false,\"modRightFender\":-1,\"modTrunk\":-1,\"modSeats\":-1,\"plateIndex\":0,\"modBackWheels\":-1,\"modTank\":-1,\"color2\":0,\"wheelColor\":156,\"modFrontBumper\":-1,\"modAirFilter\":-1,\"modEngine\":-1,\"modExhaust\":-1,\"modSpeakers\":-1,\"dirtLevel\":0.0,\"modHydrolic\":-1,\"modDial\":-1,\"modEngineBlock\":-1,\"modPlateHolder\":-1,\"modOrnaments\":-1,\"pearlescentColor\":5,\"modHorns\":-1,\"bodyHealth\":1000.0,\"modRoof\":-1,\"modGrille\":-1,\"modLivery\":-1,\"model\":-344943009,\"modBrakes\":-1,\"modXenon\":false,\"modVanityPlate\":-1,\"plate\":\"01UJG649\",\"tankHealth\":1000.0,\"modDoorR\":-1,\"modSteeringWheel\":-1,\"modDashboard\":-1,\"modAerials\":-1}', 'car', 0, 0, 0, 0, 1, 0, 0),
-('license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', '03DMV263', '{\"tyreSmokeColor\":[255,255,255],\"engineHealth\":1000.0,\"modSteeringWheel\":-1,\"modTurbo\":false,\"modTransmission\":-1,\"modBackWheels\":-1,\"modDoorR\":-1,\"modShifterLeavers\":-1,\"modLightbar\":-1,\"doorsBroken\":{\"2\":false,\"3\":false,\"0\":false,\"1\":false},\"modHydrolic\":-1,\"modGrille\":-1,\"modSmokeEnabled\":false,\"modAerials\":-1,\"model\":1987142870,\"modHorns\":-1,\"modStruts\":-1,\"modPlateHolder\":-1,\"modEngine\":-1,\"modTank\":-1,\"modRoof\":-1,\"modLivery\":-1,\"tankHealth\":1000.0,\"modAPlate\":-1,\"modExhaust\":-1,\"modSuspension\":-1,\"modTrunk\":-1,\"modSeats\":-1,\"bodyHealth\":1000.0,\"modArchCover\":-1,\"modDial\":-1,\"plate\":\"03DMV263\",\"modFrontBumper\":-1,\"windowsBroken\":{\"2\":false,\"3\":false,\"0\":false,\"1\":false,\"6\":false,\"7\":false,\"4\":true,\"5\":true},\"color1\":99,\"modHood\":-1,\"modRightFender\":-1,\"modSpeakers\":-1,\"fuelLevel\":64.8,\"neonEnabled\":[false,false,false,false],\"pearlescentColor\":3,\"windowTint\":-1,\"modAirFilter\":-1,\"modEngineBlock\":-1,\"xenonColor\":255,\"modFrontWheels\":-1,\"modOrnaments\":-1,\"extras\":[],\"modDoorSpeaker\":-1,\"modTrimA\":-1,\"modArmor\":-1,\"modTrimB\":-1,\"modFrame\":-1,\"neonColor\":[255,0,255],\"color2\":1,\"dirtLevel\":2.0,\"modSideSkirt\":-1,\"modBrakes\":-1,\"modVanityPlate\":-1,\"wheelColor\":0,\"modXenon\":false,\"plateIndex\":0,\"modSpoilers\":-1,\"modDashboard\":-1,\"modRearBumper\":-1,\"tyreBurst\":{\"1\":false,\"0\":false,\"4\":false,\"5\":false},\"wheels\":7,\"modFender\":-1}', 'car', 0, 0, 0, 0, 1, 0, 0),
-('license:88830294ccd5ffe723158350adb3f2046b1fe30c', '25TGN879', '{\"modHood\":-1,\"modRoof\":-1,\"engineHealth\":952.0,\"modArchCover\":-1,\"modTurbo\":false,\"pearlescentColor\":0,\"model\":-114291515,\"modFrontBumper\":-1,\"extras\":[],\"modEngineBlock\":-1,\"modShifterLeavers\":-1,\"modDoorR\":-1,\"modDoorSpeaker\":-1,\"modSpeakers\":-1,\"modSeats\":-1,\"modTrimA\":-1,\"windowsBroken\":{\"4\":true,\"3\":true,\"6\":false,\"5\":true,\"0\":true,\"7\":true,\"2\":true,\"1\":true},\"modHorns\":-1,\"color1\":27,\"modTank\":-1,\"color2\":27,\"plateIndex\":3,\"modDial\":-1,\"modTrimB\":-1,\"modLivery\":-1,\"bodyHealth\":998.5,\"modTransmission\":-1,\"modGrille\":-1,\"modExhaust\":-1,\"tankHealth\":999.3,\"modSuspension\":-1,\"modAerials\":-1,\"modSpoilers\":-1,\"plate\":\"25TGN879\",\"fuelLevel\":96.2,\"windowTint\":-1,\"neonEnabled\":[false,false,false,false],\"modVanityPlate\":-1,\"tyreBurst\":{\"0\":false,\"4\":false},\"modOrnaments\":-1,\"modTrunk\":-1,\"modAPlate\":-1,\"modXenon\":false,\"modPlateHolder\":-1,\"xenonColor\":255,\"modFender\":-1,\"modBrakes\":-1,\"modBackWheels\":-1,\"modAirFilter\":-1,\"modEngine\":-1,\"modDashboard\":-1,\"wheelColor\":27,\"modSideSkirt\":-1,\"dirtLevel\":6.1,\"modLightbar\":-1,\"modSmokeEnabled\":false,\"modRearBumper\":-1,\"modFrontWheels\":-1,\"modSteeringWheel\":-1,\"doorsBroken\":{\"0\":false,\"1\":false},\"tyreSmokeColor\":[255,255,255],\"wheels\":6,\"modStruts\":-1,\"modArmor\":-1,\"modHydrolic\":-1,\"modRightFender\":-1,\"modFrame\":-1,\"neonColor\":[255,0,255]}', 'car', 0, 0, 0, 0, 1, 0, 0),
-('license:7ff6f1946f2f1bfe40b860ecf6100019f1a71bc6', '28DLO741', '{\"modSuspension\":-1,\"engineHealth\":1000.0,\"neonEnabled\":[false,false,false,false],\"tyreSmokeColor\":[255,255,255],\"modTank\":-1,\"modHood\":-1,\"modPlateHolder\":-1,\"modFrontBumper\":-1,\"modHorns\":-1,\"fuelLevel\":65.0,\"modDial\":-1,\"modDoorSpeaker\":-1,\"modRearBumper\":-1,\"modTransmission\":-1,\"modAPlate\":-1,\"modTrimB\":-1,\"modArmor\":-1,\"wheelColor\":156,\"customPrimaryColor\":[0,0,0],\"doorsBroken\":{\"0\":false,\"2\":false,\"1\":false,\"4\":false,\"3\":false,\"6\":false,\"5\":false},\"modLightbar\":-1,\"modSmokeEnabled\":false,\"pearlescentColor\":57,\"extras\":[],\"modTrimA\":-1,\"modXenon\":false,\"modArchCover\":-1,\"modShifterLeavers\":-1,\"modSeats\":-1,\"neonColor\":[255,0,255],\"modBackWheels\":-1,\"xenonColor\":255,\"windowsBroken\":{\"0\":false,\"7\":false,\"2\":false,\"1\":false,\"4\":true,\"3\":false,\"6\":false,\"5\":true},\"modEngineBlock\":-1,\"model\":872704284,\"color1\":50,\"modGrille\":-1,\"modRoof\":-1,\"modEngine\":-1,\"modVanityPlate\":-1,\"modLivery\":-1,\"windowTint\":-1,\"modSpoilers\":-1,\"modFrontWheels\":-1,\"customSecondaryColor\":[0,0,0],\"modStruts\":-1,\"modOrnaments\":-1,\"modSideSkirt\":-1,\"modBrakes\":-1,\"plateIndex\":0,\"modFender\":-1,\"tyreBurst\":{\"4\":false,\"0\":false,\"1\":false,\"5\":false},\"dirtLevel\":0.0,\"modFrame\":-1,\"modAirFilter\":-1,\"tankHealth\":1000.0,\"wheels\":5,\"modDashboard\":-1,\"modRightFender\":-1,\"modExhaust\":-1,\"bodyHealth\":1000.0,\"color2\":50,\"modAerials\":-1,\"modSteeringWheel\":-1,\"plate\":\"28DLO741\",\"modHydrolic\":-1,\"modTrunk\":-1,\"modSpeakers\":-1,\"modDoorR\":-1,\"modTurbo\":false}', 'car', 0, 0, 0, 0, 0, 0, 0),
-('license:80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f', '29FBZ744', '{\"color1\":132,\"modArchCover\":-1,\"pearlescentColor\":132,\"modBrakes\":-1,\"modBackWheels\":-1,\"modRightFender\":-1,\"modTrimA\":-1,\"modTrunk\":-1,\"plateIndex\":0,\"tyreBurst\":{\"4\":false,\"0\":false},\"windowsBroken\":{\"5\":true,\"6\":false,\"3\":true,\"4\":true,\"1\":true,\"2\":true,\"7\":true,\"0\":true},\"dirtLevel\":3.0,\"modHorns\":-1,\"tyreSmokeColor\":[255,255,255],\"wheels\":6,\"fuelLevel\":65.0,\"windowTint\":-1,\"doorsBroken\":{\"1\":false,\"0\":false},\"modFender\":-1,\"modSuspension\":-1,\"model\":11251904,\"neonEnabled\":[false,false,false,false],\"modArmor\":-1,\"modVanityPlate\":-1,\"modHydrolic\":-1,\"neonColor\":[255,0,255],\"modDoorSpeaker\":-1,\"extras\":[],\"modFrontWheels\":-1,\"modSteeringWheel\":-1,\"modTurbo\":false,\"modLivery\":-1,\"modSeats\":-1,\"modAerials\":-1,\"modHood\":-1,\"modAirFilter\":-1,\"modOrnaments\":-1,\"xenonColor\":255,\"modEngineBlock\":-1,\"modDashboard\":-1,\"modExhaust\":-1,\"bodyHealth\":1000.0,\"wheelColor\":156,\"modRoof\":-1,\"modGrille\":-1,\"modTank\":-1,\"modShifterLeavers\":-1,\"modStruts\":-1,\"modXenon\":false,\"modPlateHolder\":-1,\"modDial\":-1,\"plate\":\"29FBZ744\",\"modSideSkirt\":-1,\"modAPlate\":-1,\"modTrimB\":-1,\"modRearBumper\":-1,\"modLightbar\":-1,\"tankHealth\":1000.0,\"modEngine\":-1,\"modFrontBumper\":-1,\"color2\":132,\"modFrame\":-1,\"modSpeakers\":-1,\"modSpoilers\":-1,\"modTransmission\":-1,\"modDoorR\":-1,\"engineHealth\":1000.0,\"modSmokeEnabled\":false}', 'car', 0, 0, 0, 0, 0, 0, 0),
-('license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', '86TCP858', '{\"modAPlate\":-1,\"modShifterLeavers\":-1,\"modSpeakers\":-1,\"modArchCover\":-1,\"modTurbo\":false,\"modEngineBlock\":-1,\"modSeats\":-1,\"modDoorSpeaker\":-1,\"color1\":10,\"model\":65402552,\"modTrunk\":-1,\"windowTint\":-1,\"modEngine\":-1,\"modRearBumper\":-1,\"wheels\":5,\"modXenon\":false,\"extras\":[],\"modRightFender\":-1,\"modFrame\":-1,\"modHorns\":-1,\"modTrimA\":-1,\"dirtLevel\":7.2,\"modHood\":-1,\"tankHealth\":997.8,\"modSmokeEnabled\":false,\"neonColor\":[255,0,255],\"modAerials\":-1,\"modTank\":-1,\"modFender\":-1,\"doorsBroken\":{\"0\":false,\"5\":false,\"3\":false,\"4\":false,\"1\":false,\"2\":false},\"modSteeringWheel\":-1,\"modArmor\":-1,\"modLivery\":-1,\"modGrille\":-1,\"modSpoilers\":-1,\"modOrnaments\":-1,\"modSuspension\":-1,\"modBackWheels\":-1,\"pearlescentColor\":5,\"fuelLevel\":53.8,\"modTransmission\":-1,\"modHydrolic\":-1,\"windowsBroken\":{\"7\":true,\"0\":false,\"5\":true,\"6\":false,\"3\":false,\"4\":true,\"1\":false,\"2\":false},\"modDial\":-1,\"modExhaust\":-1,\"neonEnabled\":[false,false,false,false],\"modAirFilter\":-1,\"modSideSkirt\":-1,\"modBrakes\":-1,\"color2\":0,\"bodyHealth\":978.3,\"modLightbar\":-1,\"modTrimB\":-1,\"modVanityPlate\":-1,\"modDashboard\":-1,\"xenonColor\":255,\"modDoorR\":-1,\"wheelColor\":156,\"engineHealth\":17000.0,\"modPlateHolder\":-1,\"plate\":\"86TCP858\",\"modRoof\":-1,\"plateIndex\":3,\"tyreSmokeColor\":[255,255,255],\"modFrontBumper\":-1,\"modStruts\":-1,\"modFrontWheels\":-1,\"tyreBurst\":{\"1\":false,\"0\":false,\"5\":false,\"4\":false}}', 'car', 0, 0, 0, 0, 1, 0, 0),
-('license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 'BYQP9511', '{\"model\":333640189,\"plate\":\"BYQP9511\"}', 'car', 1, 1, 0, 0, 1, 0, 0),
-('license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 'FJQO3943', '{\"modVanityPlate\":-1,\"modFrontWheels\":-1,\"tyreSmokeColor\":[255,255,255],\"modSmokeEnabled\":false,\"modDashboard\":-1,\"modBrakes\":-1,\"modRightFender\":-1,\"modTrunk\":-1,\"modHood\":-1,\"modLivery\":-1,\"tyreBurst\":{\"1\":false,\"5\":false,\"0\":false,\"4\":false},\"engineHealth\":955.2,\"pearlescentColor\":10,\"modGrille\":-1,\"modSteeringWheel\":-1,\"modSpeakers\":-1,\"modSideSkirt\":-1,\"doorsBroken\":{\"0\":false,\"2\":false,\"1\":false,\"4\":false,\"3\":false},\"modFrontBumper\":-1,\"modPlateHolder\":-1,\"modEngine\":-1,\"dirtLevel\":7.1,\"modFender\":-1,\"wheels\":0,\"modExhaust\":-1,\"extras\":[],\"modTransmission\":-1,\"modXenon\":false,\"bodyHealth\":996.5,\"modBackWheels\":-1,\"modHydrolic\":-1,\"modRearBumper\":-1,\"modShifterLeavers\":-1,\"modTrimB\":-1,\"wheelColor\":156,\"color2\":88,\"modSeats\":-1,\"neonEnabled\":[false,false,false,false],\"modDoorR\":-1,\"fuelLevel\":64.4,\"modAPlate\":-1,\"modHorns\":-1,\"modLightbar\":-1,\"neonColor\":[255,0,255],\"modDoorSpeaker\":-1,\"windowTint\":-1,\"modFrame\":-1,\"windowsBroken\":{\"6\":false,\"5\":true,\"0\":true,\"7\":false,\"2\":false,\"1\":false,\"4\":true,\"3\":false},\"modRoof\":-1,\"modArmor\":-1,\"xenonColor\":255,\"modDial\":-1,\"modTank\":-1,\"color1\":111,\"plate\":\"FJQO3943\",\"modTrimA\":-1,\"modStruts\":-1,\"modTurbo\":false,\"modSpoilers\":-1,\"modOrnaments\":-1,\"modAerials\":-1,\"modAirFilter\":-1,\"plateIndex\":0,\"model\":1759947181,\"modSuspension\":-1,\"modArchCover\":-1,\"modEngineBlock\":-1,\"tankHealth\":999.6}', 'car', 1, 1, 0, 0, 1, 0, 0),
-('license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 'PLGX9519', '{\"model\":1075432268,\"plate\":\"PLGX9519\"}', 'aircraft', 1, 1, 0, 0, 1, 0, 0),
-('license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 'UKSF8727', '{\"model\":1861786828,\"plate\":\"UKSF8727\"}', 'boat', 1, 1, 0, 0, 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -4155,8 +3219,6 @@ CREATE TABLE `phone_backups` (
 -- Déchargement des données de la table `phone_backups`
 --
 
-INSERT INTO `phone_backups` (`id`, `phone_number`) VALUES
-('license:1419b137c7211a1e0a7d25079f68a9050287b9a1', '5550690');
 
 -- --------------------------------------------------------
 
@@ -4259,8 +3321,6 @@ CREATE TABLE `phone_instagram_accounts` (
 -- Déchargement des données de la table `phone_instagram_accounts`
 --
 
-INSERT INTO `phone_instagram_accounts` (`display_name`, `username`, `password`, `profile_image`, `bio`, `post_count`, `story_count`, `follower_count`, `following_count`, `phone_number`, `private`, `verified`, `date_joined`) VALUES
-('Kays', 'kaysservice', '$2a$11$k8SdIChV2cS7i30hstg74uLz2X7zCIyS1fVxeSKcc5wJLrhbFKnK.', NULL, NULL, 0, 0, 0, 0, '5550690', 0, 0, '2025-10-09 14:10:36');
 
 -- --------------------------------------------------------
 
@@ -4413,9 +3473,6 @@ CREATE TABLE `phone_logged_in_accounts` (
 -- Déchargement des données de la table `phone_logged_in_accounts`
 --
 
-INSERT INTO `phone_logged_in_accounts` (`phone_number`, `app`, `username`, `active`) VALUES
-('5550690', 'Instagram', 'kaysservice', 1),
-('5550690', 'Twitter', 'kaysservice', 1);
 
 -- --------------------------------------------------------
 
@@ -4622,8 +3679,6 @@ CREATE TABLE `phone_phones` (
 -- Déchargement des données de la table `phone_phones`
 --
 
-INSERT INTO `phone_phones` (`id`, `owner_id`, `phone_number`, `name`, `pin`, `face_id`, `settings`, `is_setup`, `assigned`, `battery`, `last_seen`) VALUES
-('license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', '5550690', 'Téléphone de Angel', '2211', 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', '{\"streamerMode\":false,\"name\":\"Téléphone de Angel\",\"locale\":\"fr\",\"wallpaper\":{\"blur\":false,\"background\":\"cloud\"},\"sound\":{\"volume\":0.5,\"texttone\":\"default\",\"callVolume\":0.5,\"ringtone\":\"default\",\"silent\":false},\"airplaneMode\":false,\"latestVersion\":\"2.3.7\",\"weather\":{\"celcius\":false},\"notifications\":[],\"time\":{\"twelveHourClock\":false},\"doNotDisturb\":false,\"apps\":[[\"Phone\",\"Messages\",\"Camera\",\"Photos\"],[\"Settings\",\"AppStore\",\"Clock\",\"Mail\",\"Weather\",\"Wallet\",\"Garage\",\"Home\",\"Maps\",\"Notes\",\"Calculator\",\"VoiceMemo\",\"Music\",\"Services\",\"Instagram\",\"Tinder\",\"Twitter\",\"TikTok\"]],\"storage\":{\"used\":8800028.920000002,\"total\":128000000},\"display\":{\"size\":0.7,\"theme\":\"dark\",\"automatic\":false,\"brightness\":1},\"security\":{\"faceId\":false,\"pinCode\":false},\"lockscreen\":{\"fontStyle\":1,\"color\":\"gradient\",\"layout\":1},\"phone\":{\"showCallerId\":true},\"version\":\"0.0.1\"}', 1, 0, 100, '2025-10-10 22:28:22');
 
 -- --------------------------------------------------------
 
@@ -4706,10 +3761,6 @@ CREATE TABLE `phone_photos` (
 -- Déchargement des données de la table `phone_photos`
 --
 
-INSERT INTO `phone_photos` (`id`, `phone_number`, `link`, `is_video`, `size`, `metadata`, `is_favourite`, `timestamp`) VALUES
-(1, '5550690', 'https://r2.fivemanage.com/jgREfMNsQFdTGra1rVbsw/AYrqNFt9dZLF.webp', 0, 156.08, NULL, 0, '2025-10-09 14:48:27'),
-(2, '5550690', 'https://r2.fivemanage.com/jgREfMNsQFdTGra1rVbsw/K7VU9HlEzbgh.webp', 0, 326.21, NULL, 0, '2025-10-09 15:18:04'),
-(3, '5550690', 'https://r2.fivemanage.com/jgREfMNsQFdTGra1rVbsw/ort1ymQgsCzq.webp', 0, 215.63, NULL, 0, '2025-10-09 17:03:01');
 
 -- --------------------------------------------------------
 
@@ -4764,8 +3815,6 @@ CREATE TABLE `phone_services_channels` (
 -- Déchargement des données de la table `phone_services_channels`
 --
 
-INSERT INTO `phone_services_channels` (`id`, `phone_number`, `company`, `last_message`, `timestamp`) VALUES
-(1, '5550690', 'sasp', 'kay', '2025-10-10 22:29:40');
 
 -- --------------------------------------------------------
 
@@ -4787,8 +3836,6 @@ CREATE TABLE `phone_services_messages` (
 -- Déchargement des données de la table `phone_services_messages`
 --
 
-INSERT INTO `phone_services_messages` (`id`, `channel_id`, `sender`, `message`, `x_pos`, `y_pos`, `timestamp`) VALUES
-(1, 1, '5550690', 'kay', -373, -130, '2025-10-10 22:29:40');
 
 -- --------------------------------------------------------
 
@@ -5059,8 +4106,6 @@ CREATE TABLE `phone_twitter_accounts` (
 -- Déchargement des données de la table `phone_twitter_accounts`
 --
 
-INSERT INTO `phone_twitter_accounts` (`display_name`, `username`, `password`, `phone_number`, `bio`, `profile_image`, `profile_header`, `pinned_tweet`, `verified`, `follower_count`, `following_count`, `private`, `date_joined`) VALUES
-('kays', 'kaysservice', '$2a$11$vrNNnkA8sBarSLJBRu73QeXIea2VPfGiiQC.VSG8lmP1muGTwQmXe', '5550690', NULL, NULL, NULL, NULL, 0, 0, 0, 0, '2025-10-09 14:19:39');
 
 -- --------------------------------------------------------
 
@@ -5244,14 +4289,6 @@ CREATE TABLE `piwel_territoires` (
 -- Déchargement des données de la table `piwel_territoires`
 --
 
-INSERT INTO `piwel_territoires` (`zone`, `id_crew_owner`, `crews_points`) VALUES
-('Chantier Paleto', NULL, '{}'),
-('Davis', NULL, '{}'),
-('Grand Senora Desert', NULL, '{}'),
-('GrapeSeed', NULL, '{}'),
-('Mirror Park', NULL, '{}'),
-('San Andreas', NULL, '{}'),
-('Vinewood Boulevard', NULL, '{}');
 
 -- --------------------------------------------------------
 
@@ -5275,11 +4312,6 @@ CREATE TABLE `plaintes` (
 -- Déchargement des données de la table `plaintes`
 --
 
-INSERT INTO `plaintes` (`identifier`, `Prenom`, `Nom`, `Num`, `Prenom1`, `Nom1`, `Num1`, `raison`, `auteur`) VALUES
-('license:22f81345d6a4cfd83cdb6bf9d6f37301cbf95de6', 'Smith', 'Mike', '/', '/', '/', '/', 'Arme - Carabine Spéciale a vous donner', 'Mike'),
-('license:6caeec777267cd716b8ef935b01864deab9718eb', 'BONJOUR', 'AURVOIR', '06 36 63 45 54', 'DOCTEUR ', 'MEDECIN', '06 07 34 23 65', 'Y A DIT BONJOUR LE SOIR', 'FHOVIX'),
-('license:797a0e3622aa173a6cd4bd018a4804c15c125f50', 'Cailloux', 'Pierre', '18965415', 'Meyers', 'Robert', 'J ai pas', 'Viol a plusieur reprise', '.Zayros'),
-('license:d2c898f434411deb914a859262c0ee27d900388d', 'myer', 'Henryco', '06 52 44 24 94', 'myer', 'Robert', '002020203033', 'viole sur mineur', 'Henrycoo');
 
 -- --------------------------------------------------------
 
@@ -5314,33 +4346,6 @@ CREATE TABLE `playerstattoos` (
 -- Déchargement des données de la table `playerstattoos`
 --
 
-INSERT INTO `playerstattoos` (`identifier`, `tattoos`) VALUES
-('license:1419b137c7211a1e0a7d25079f68a9050287b9a1', '[]'),
-('license:19cd4d4c04b7f410e6fc179619e618dcc7528757', '[]'),
-('license:214315ffb6b1f4899c249364bc1b44dfd5a690e1', '[]'),
-('license:2e35218c23bd014dcb89d25164f85957a1af2a7f', '[]'),
-('license:3c2f3c5fb0bd9cf8f0b03f9c87b936d5fb0a87c8', '[]'),
-('license:44cd1ef37b4fda00d53702007fb2c5cec6356919', '[]'),
-('license:52953829a66104dfd4a1cf30f3ef7f5990714968', '[]'),
-('license:5b72f58116e111c998f65cc2446b28716b1c6656', '[]'),
-('license:7ff6f1946f2f1bfe40b860ecf6100019f1a71bc6', '[]'),
-('license:80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f', '[]'),
-('license:85e8937833a05423627d78865cb0da6ab013652b', '[]'),
-('license:86f18a2d6f24691336c74f6987dd645cdb65e45a', '[]'),
-('license:88830294ccd5ffe723158350adb3f2046b1fe30c', '[]'),
-('license:88afb341c54c6ed2006bd7be158667299b00d341', '[]'),
-('license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', '[]'),
-('license:a3eefd2be737902bcc0a3d5048b8ad611602000c', '[]'),
-('license:a3f90caeb2011bbe94ead4782b3ff5832d39bdf1', '[{\"texture\":\"MP_LUXE_TAT_009_F\",\"collection\":\"mpluxe_overlays\"},{\"texture\":\"MP_MP_ImportExport_Tat_007_F\",\"collection\":\"mpimportexport_overlays\"}]'),
-('license:a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a', '[]'),
-('license:bd0b96bcf0ad850627351145e2cd98ce9fb9b394', '[]'),
-('license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', '[{\"texture\":\"MP_Buis_M_Neck_003\",\"collection\":\"mpbusiness_overlays\"},{\"texture\":\"MP_LR_Tat_006_F\",\"collection\":\"mplowrider2_overlays\"},{\"texture\":\"MP_LR_Tat_035_F\",\"collection\":\"mplowrider2_overlays\"},{\"texture\":\"MP_LR_Tat_018_F\",\"collection\":\"mplowrider2_overlays\"},{\"texture\":\"FM_Tat_F_027\",\"collection\":\"multiplayer_overlays\"},{\"texture\":\"FM_Tat_M_000\",\"collection\":\"multiplayer_overlays\"}]'),
-('license:ce5deecf9b52b051d22f5b1f7c9e2fe726a91e1c', '[]'),
-('license:d80d72c120d125db77e208fec6c02ffd4d14ef6b', '[]'),
-('license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', '[]'),
-('license:dee2edc22852c38e04ab150a05d65c454db22ab3', '[]'),
-('license:effa1ffd386df938a94332c73611cf8003bdbf36', '[]'),
-('license:ff187a16a8f5e997e2d25dcb92abba25aff5f52f', '[]');
 
 -- --------------------------------------------------------
 
@@ -5459,14 +4464,6 @@ CREATE TABLE `player_outfits` (
 -- Déchargement des données de la table `player_outfits`
 --
 
-INSERT INTO `player_outfits` (`id`, `identifier`, `name`, `outfit`) VALUES
-(1, 'license:3310914fc4f9f87dd05b0fb4fe52519a2d0702d4', 'test', '{\"torso\":{\"texture\":0,\"drawable\":87},\"undershirt\":{\"texture\":0,\"drawable\":15},\"pants\":{\"texture\":0,\"drawable\":1},\"shoes\":{\"texture\":0,\"drawable\":0},\"accessories\":{\"texture\":0,\"drawable\":0},\"arms\":{\"texture\":0,\"drawable\":0}}'),
-(2, 'license:3310914fc4f9f87dd05b0fb4fe52519a2d0702d4', 'caca', '{\"torso\":{\"drawable\":6,\"texture\":0},\"pants\":{\"drawable\":1,\"texture\":0},\"shoes\":{\"drawable\":0,\"texture\":0},\"accessories\":{\"drawable\":0,\"texture\":0},\"undershirt\":{\"drawable\":15,\"texture\":0},\"arms\":{\"drawable\":0,\"texture\":0}}'),
-(3, 'license:3310914fc4f9f87dd05b0fb4fe52519a2d0702d4', 'test', '{\"accessories\":{\"drawable\":0,\"texture\":0},\"pants\":{\"drawable\":1,\"texture\":0},\"shoes\":{\"drawable\":0,\"texture\":0},\"torso\":{\"drawable\":6,\"texture\":0},\"arms\":{\"drawable\":0,\"texture\":0},\"undershirt\":{\"drawable\":15,\"texture\":0}}'),
-(4, 'license:3310914fc4f9f87dd05b0fb4fe52519a2d0702d4', 'test', '{\"accessories\":{\"drawable\":0,\"texture\":0},\"pants\":{\"drawable\":1,\"texture\":0},\"shoes\":{\"drawable\":0,\"texture\":0},\"torso\":{\"drawable\":10,\"texture\":0},\"arms\":{\"drawable\":0,\"texture\":0},\"undershirt\":{\"drawable\":15,\"texture\":0}}'),
-(5, 'license:3310914fc4f9f87dd05b0fb4fe52519a2d0702d4', 'test', '{\"accessories\":{\"drawable\":0,\"texture\":0},\"pants\":{\"drawable\":1,\"texture\":0},\"shoes\":{\"drawable\":0,\"texture\":0},\"torso\":{\"drawable\":6,\"texture\":0},\"arms\":{\"drawable\":0,\"texture\":0},\"undershirt\":{\"drawable\":15,\"texture\":0}}'),
-(6, 'license:3310914fc4f9f87dd05b0fb4fe52519a2d0702d4', 'test', '{\"accessories\":{\"drawable\":0,\"texture\":0},\"pants\":{\"drawable\":1,\"texture\":0},\"shoes\":{\"drawable\":0,\"texture\":0},\"torso\":{\"drawable\":51,\"texture\":0},\"arms\":{\"drawable\":0,\"texture\":0},\"undershirt\":{\"drawable\":15,\"texture\":0}}'),
-(7, 'license:3310914fc4f9f87dd05b0fb4fe52519a2d0702d4', 'test', '{\"accessories\":{\"drawable\":0,\"texture\":0},\"pants\":{\"drawable\":1,\"texture\":0},\"shoes\":{\"drawable\":0,\"texture\":0},\"torso\":{\"drawable\":43,\"texture\":0},\"arms\":{\"drawable\":0,\"texture\":0},\"undershirt\":{\"drawable\":15,\"texture\":0}}');
 
 -- --------------------------------------------------------
 
@@ -5484,35 +4481,6 @@ CREATE TABLE `player_uids` (
 -- Déchargement des données de la table `player_uids`
 --
 
-INSERT INTO `player_uids` (`id`, `uid`, `identifier`) VALUES
-(1, 1, 'license:3310914fc4f9f87dd05b0fb4fe52519a2d0702d4'),
-(2, 2, 'license:889f0d96d7e5b365c6921a856b44258bb17c0868'),
-(4, 3, 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2'),
-(5, 4, 'license:214315ffb6b1f4899c249364bc1b44dfd5a690e1'),
-(6, 5, 'license:52953829a66104dfd4a1cf30f3ef7f5990714968'),
-(7, 6, 'license:a3f90caeb2011bbe94ead4782b3ff5832d39bdf1'),
-(8, 7, 'license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded'),
-(9, 8, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3'),
-(10, 9, 'license:a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a'),
-(11, 10, 'license:44cd1ef37b4fda00d53702007fb2c5cec6356919'),
-(12, 11, 'license:85e8937833a05423627d78865cb0da6ab013652b'),
-(13, 12, 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757'),
-(14, 13, 'license:88afb341c54c6ed2006bd7be158667299b00d341'),
-(15, 14, 'license:ff187a16a8f5e997e2d25dcb92abba25aff5f52f'),
-(16, 15, 'license:d80d72c120d125db77e208fec6c02ffd4d14ef6b'),
-(17, 16, 'license:dc502dade01b28a90ede45a6538b6c1a0794f6ce'),
-(18, 17, 'license:80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f'),
-(19, 18, 'license:88830294ccd5ffe723158350adb3f2046b1fe30c'),
-(20, 19, 'license:2e35218c23bd014dcb89d25164f85957a1af2a7f'),
-(21, 20, 'license:7ff6f1946f2f1bfe40b860ecf6100019f1a71bc6'),
-(22, 21, 'license:effa1ffd386df938a94332c73611cf8003bdbf36'),
-(23, 22, 'license:bd0b96bcf0ad850627351145e2cd98ce9fb9b394'),
-(24, 23, 'license:3c2f3c5fb0bd9cf8f0b03f9c87b936d5fb0a87c8'),
-(25, 24, 'license:5b72f58116e111c998f65cc2446b28716b1c6656'),
-(26, 25, 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c'),
-(27, 26, 'license:ce5deecf9b52b051d22f5b1f7c9e2fe726a91e1c'),
-(28, 27, 'license:86f18a2d6f24691336c74f6987dd645cdb65e45a'),
-(29, 28, 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1');
 
 -- --------------------------------------------------------
 
@@ -5595,34 +4563,6 @@ CREATE TABLE `playtime` (
 -- Déchargement des données de la table `playtime`
 --
 
-INSERT INTO `playtime` (`identifier`, `timeplayed`) VALUES
-('license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 47700000),
-('license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 4740000),
-('license:214315ffb6b1f4899c249364bc1b44dfd5a690e1', 27540000),
-('license:2e35218c23bd014dcb89d25164f85957a1af2a7f', 180000),
-('license:3c2f3c5fb0bd9cf8f0b03f9c87b936d5fb0a87c8', 780000),
-('license:44cd1ef37b4fda00d53702007fb2c5cec6356919', 840000),
-('license:455f58044f988017e2a1eafe39970040aa2ecaf3', 1020000),
-('license:52953829a66104dfd4a1cf30f3ef7f5990714968', 32700000),
-('license:5b72f58116e111c998f65cc2446b28716b1c6656', 720000),
-('license:7ff6f1946f2f1bfe40b860ecf6100019f1a71bc6', 2220000),
-('license:80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f', 3360000),
-('license:85e8937833a05423627d78865cb0da6ab013652b', 3960000),
-('license:86f18a2d6f24691336c74f6987dd645cdb65e45a', 480000),
-('license:88830294ccd5ffe723158350adb3f2046b1fe30c', 5580000),
-('license:88afb341c54c6ed2006bd7be158667299b00d341', 240000),
-('license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 44100000),
-('license:a3eefd2be737902bcc0a3d5048b8ad611602000c', 2640000),
-('license:a3f90caeb2011bbe94ead4782b3ff5832d39bdf1', 10620000),
-('license:a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a', 4080000),
-('license:bd0b96bcf0ad850627351145e2cd98ce9fb9b394', 60000),
-('license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 18720000),
-('license:ce5deecf9b52b051d22f5b1f7c9e2fe726a91e1c', 60000),
-('license:d80d72c120d125db77e208fec6c02ffd4d14ef6b', 1560000),
-('license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', 52980000),
-('license:dee2edc22852c38e04ab150a05d65c454db22ab3', 2340000),
-('license:effa1ffd386df938a94332c73611cf8003bdbf36', 720000),
-('license:ff187a16a8f5e997e2d25dcb92abba25aff5f52f', 2220000);
 
 -- --------------------------------------------------------
 
@@ -5742,12 +4682,6 @@ CREATE TABLE `rapports` (
 -- Déchargement des données de la table `rapports`
 --
 
-INSERT INTO `rapports` (`Prenom`, `Nom`, `Type`, `Montant`) VALUES
-('sacha ', 'fonoti', 'Réanimation', '5000'),
-('sacha ', 'fonoti', 'Réanimation', '5000'),
-('nil', 'fonoti', 'Réanimation', '5000'),
-('Sacha', 'fonoti', 'Réanimation', '5000'),
-('rose', 'je sais pas', 'Grands soins', '1000000');
 
 -- --------------------------------------------------------
 
@@ -5802,8 +4736,6 @@ CREATE TABLE `slife_gf_zones` (
 -- Déchargement des données de la table `slife_gf_zones`
 --
 
-INSERT INTO `slife_gf_zones` (`idtemp`, `id`, `infos`, `players`) VALUES
-(4, 1, '{\"name\":\"Dust\",\"maxPlayers\":25}', '[{\"UniqueID\":12238,\"isIn\":false,\"name\":\"Kays\",\"lastKillTime\":34619983,\"kill\":45},{\"UniqueID\":7842,\"isIn\":false,\"name\":\"akito\",\"lastKillTime\":82148165,\"kill\":24},{\"UniqueID\":178,\"isIn\":false,\"name\":\"slayz\",\"kill\":0},{\"UniqueID\":14288,\"isIn\":false,\"name\":\"ydk.dppppppppppp\",\"lastKillTime\":42326139,\"kill\":98},{\"UniqueID\":14419,\"isIn\":false,\"name\":\"cybow93\",\"lastKillTime\":48717568,\"kill\":29},{\"UniqueID\":11130,\"isIn\":false,\"name\":\"Carlos\",\"lastKillTime\":17556901,\"kill\":9},{\"UniqueID\":1330,\"isIn\":false,\"name\":\"az_piwi\",\"lastKillTime\":1238390,\"kill\":3},{\"UniqueID\":9561,\"isIn\":false,\"name\":\"valen\",\"lastKillTime\":60991762,\"kill\":12},{\"UniqueID\":14536,\"isIn\":false,\"name\":\"simba\",\"lastKillTime\":51131277,\"kill\":138},{\"UniqueID\":10315,\"isIn\":false,\"name\":\"amx.fr\",\"lastKillTime\":47768866,\"kill\":50},{\"UniqueID\":11272,\"isIn\":false,\"name\":\"Dexgang95140\",\"lastKillTime\":55655077,\"kill\":157},{\"UniqueID\":14546,\"isIn\":false,\"name\":\"Hawk.Gf\",\"kill\":0},{\"UniqueID\":14101,\"isIn\":false,\"name\":\"KDZ\",\"lastKillTime\":30169615,\"kill\":20},{\"UniqueID\":14100,\"isIn\":false,\"name\":\"Vit\",\"lastKillTime\":19820646,\"kill\":10},{\"UniqueID\":14249,\"isIn\":false,\"name\":\"hld\",\"kill\":0},{\"UniqueID\":14277,\"isIn\":false,\"name\":\"sebas\",\"kill\":0},{\"UniqueID\":11824,\"isIn\":false,\"name\":\"soben\",\"kill\":0},{\"UniqueID\":14136,\"isIn\":false,\"name\":\"Silvio\",\"lastKillTime\":30231091,\"kill\":6},{\"UniqueID\":12392,\"isIn\":false,\"name\":\"14bmkytb\",\"kill\":0},{\"UniqueID\":9241,\"isIn\":false,\"name\":\"sskmo\",\"lastKillTime\":35637282,\"kill\":66},{\"UniqueID\":10312,\"isIn\":false,\"name\":\"FZK\",\"lastKillTime\":55373463,\"kill\":79},{\"UniqueID\":1594,\"isIn\":false,\"name\":\"ben93140\",\"lastKillTime\":34005237,\"kill\":11},{\"UniqueID\":13414,\"isIn\":false,\"name\":\"JeremieDasanta\",\"kill\":0},{\"UniqueID\":10047,\"isIn\":false,\"name\":\"ayko\",\"lastKillTime\":59107462,\"kill\":14},{\"UniqueID\":9530,\"isIn\":false,\"name\":\"yashog3\",\"lastKillTime\":22845769,\"kill\":18},{\"UniqueID\":5949,\"isIn\":false,\"name\":\"LewisMillers\",\"lastKillTime\":57609788,\"kill\":130},{\"UniqueID\":7665,\"isIn\":false,\"name\":\"Nafa\",\"lastKillTime\":58917769,\"kill\":82},{\"UniqueID\":5945,\"isIn\":false,\"name\":\"idx_nazo\",\"lastKillTime\":58957221,\"kill\":36},{\"UniqueID\":1658,\"isIn\":false,\"name\":\"LuSky\",\"kill\":0},{\"UniqueID\":1174,\"isIn\":false,\"name\":\"le_joker\",\"lastKillTime\":41379396,\"kill\":25},{\"UniqueID\":4487,\"isIn\":false,\"name\":\"JAMES\",\"lastKillTime\":41527935,\"kill\":33},{\"UniqueID\":8483,\"isIn\":false,\"name\":\"vatos\",\"lastKillTime\":62471601,\"kill\":188},{\"UniqueID\":10483,\"isIn\":false,\"name\":\"Noahhh\",\"kill\":0},{\"UniqueID\":89,\"isIn\":false,\"name\":\"antoi\",\"lastKillTime\":61849239,\"kill\":41},{\"UniqueID\":93,\"isIn\":false,\"name\":\"swg\",\"lastKillTime\":61736966,\"kill\":37},{\"UniqueID\":14588,\"isIn\":false,\"name\":\"Mangaz\",\"lastKillTime\":61026427,\"kill\":17},{\"UniqueID\":14593,\"isIn\":false,\"name\":\"ebgyusiy70\",\"kill\":0},{\"UniqueID\":10467,\"isIn\":false,\"name\":\"Administrateur\",\"kill\":0},{\"UniqueID\":14590,\"isIn\":false,\"name\":\"smoky\",\"kill\":0},{\"UniqueID\":14589,\"isIn\":false,\"name\":\"Mathis\",\"lastKillTime\":55652700,\"kill\":1},{\"UniqueID\":13513,\"isIn\":false,\"name\":\"A2VM\",\"lastKillTime\":59088947,\"kill\":31},{\"UniqueID\":11413,\"isIn\":false,\"name\":\"izzoz21\",\"kill\":0},{\"UniqueID\":14317,\"isIn\":false,\"name\":\"Luney2ns\",\"lastKillTime\":82220353,\"kill\":18},{\"UniqueID\":11473,\"isIn\":false,\"name\":\"jujuhjujuh998\",\"kill\":0},{\"UniqueID\":14092,\"isIn\":false,\"name\":\"Osheun\",\"kill\":0},{\"UniqueID\":11943,\"isIn\":false,\"name\":\"papyj\",\"kill\":0},{\"UniqueID\":8693,\"isIn\":false,\"name\":\"Cristiano\",\"kill\":0},{\"UniqueID\":8689,\"isIn\":false,\"name\":\"Izix\",\"lastKillTime\":64709569,\"kill\":26},{\"UniqueID\":12024,\"isIn\":false,\"name\":\"Maylo\",\"lastKillTime\":40331946,\"kill\":14},{\"UniqueID\":11308,\"isIn\":false,\"name\":\"Kls\",\"kill\":0},{\"UniqueID\":9036,\"isIn\":false,\"name\":\"fierf\",\"kill\":0},{\"UniqueID\":14318,\"isIn\":false,\"name\":\"Rafaelo\",\"kill\":0},{\"UniqueID\":14319,\"isIn\":false,\"name\":\"SK\",\"kill\":0},{\"UniqueID\":13702,\"isIn\":false,\"name\":\"Bandito\",\"kill\":0},{\"UniqueID\":2607,\"isIn\":false,\"name\":\"Craig\",\"lastKillTime\":62390495,\"kill\":39},{\"UniqueID\":4089,\"isIn\":false,\"name\":\"andrew\",\"lastKillTime\":62441426,\"kill\":24},{\"UniqueID\":3622,\"isIn\":false,\"name\":\"NAIIKOO\",\"lastKillTime\":62388128,\"kill\":196},{\"UniqueID\":3273,\"isIn\":false,\"name\":\"zekfr\",\"lastKillTime\":62230203,\"kill\":82},{\"UniqueID\":4136,\"isIn\":false,\"name\":\"iinlaxxu\",\"lastKillTime\":62575093,\"kill\":2},{\"UniqueID\":12983,\"isIn\":false,\"name\":\"Zayros\",\"lastKillTime\":63805574,\"kill\":17}]');
 
 -- --------------------------------------------------------
 
@@ -5972,34 +4904,6 @@ CREATE TABLE `tebex_accounts` (
 -- Déchargement des données de la table `tebex_accounts`
 --
 
-INSERT INTO `tebex_accounts` (`steam`, `fivem`, `vip`, `expiration`) VALUES
-('1419b137c7211a1e0a7d25079f68a9050287b9a1', '9141304', 3, 1762501673),
-('19cd4d4c04b7f410e6fc179619e618dcc7528757', '17049513', 0, 0),
-('214315ffb6b1f4899c249364bc1b44dfd5a690e1', '14220563', 0, 0),
-('2e35218c23bd014dcb89d25164f85957a1af2a7f', '0', 0, 0),
-('3c2f3c5fb0bd9cf8f0b03f9c87b936d5fb0a87c8', '1137998', 0, 0),
-('44cd1ef37b4fda00d53702007fb2c5cec6356919', '8110601', 0, 0),
-('455f58044f988017e2a1eafe39970040aa2ecaf3', '13513617', 0, 0),
-('52953829a66104dfd4a1cf30f3ef7f5990714968', '13351934', 0, 0),
-('5b72f58116e111c998f65cc2446b28716b1c6656', '15914073', 0, 0),
-('7ff6f1946f2f1bfe40b860ecf6100019f1a71bc6', '8328191', 0, 0),
-('80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f', '14480406', 0, 0),
-('85e8937833a05423627d78865cb0da6ab013652b', '17526033', 0, 0),
-('86f18a2d6f24691336c74f6987dd645cdb65e45a', '17567329', 0, 0),
-('88830294ccd5ffe723158350adb3f2046b1fe30c', '12639573', 0, 0),
-('88afb341c54c6ed2006bd7be158667299b00d341', '9737729', 0, 0),
-('8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', '9141304', 0, 0),
-('a3eefd2be737902bcc0a3d5048b8ad611602000c', '10775537', 0, 0),
-('a3f90caeb2011bbe94ead4782b3ff5832d39bdf1', '7924653', 0, 0),
-('a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a', '0', 0, 0),
-('bd0b96bcf0ad850627351145e2cd98ce9fb9b394', '0', 0, 0),
-('c6ee6cf33cab4d0a29ec683fdb8042b04471cded', '4479984', 3, 1760314041),
-('ce5deecf9b52b051d22f5b1f7c9e2fe726a91e1c', '5386085', 0, 0),
-('d80d72c120d125db77e208fec6c02ffd4d14ef6b', '10403284', 0, 0),
-('dc502dade01b28a90ede45a6538b6c1a0794f6ce', '17406911', 0, 0),
-('dee2edc22852c38e04ab150a05d65c454db22ab3', '15010377', 0, 0),
-('effa1ffd386df938a94332c73611cf8003bdbf36', '9904507', 0, 0),
-('ff187a16a8f5e997e2d25dcb92abba25aff5f52f', '8705535', 3, 1760296287);
 
 -- --------------------------------------------------------
 
@@ -6032,61 +4936,6 @@ CREATE TABLE `tebex_fidelite` (
 -- Déchargement des données de la table `tebex_fidelite`
 --
 
-INSERT INTO `tebex_fidelite` (`id`, `license`, `havebuy`, `totalbuy`) VALUES
-(1, 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 0, 0),
-(2, 'license:8f181d9ed17e4d3c6bdbf74a77fd6b5ff2cc0ee2', 0, 0),
-(3, 'license:214315ffb6b1f4899c249364bc1b44dfd5a690e1', 0, 0),
-(4, 'license:214315ffb6b1f4899c249364bc1b44dfd5a690e1', 0, 0),
-(5, 'license:52953829a66104dfd4a1cf30f3ef7f5990714968', 0, 0),
-(6, 'license:52953829a66104dfd4a1cf30f3ef7f5990714968', 0, 0),
-(7, 'license:a3f90caeb2011bbe94ead4782b3ff5832d39bdf1', 0, 0),
-(8, 'license:a3f90caeb2011bbe94ead4782b3ff5832d39bdf1', 0, 0),
-(9, 'license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 2500, 17500),
-(10, 'license:c6ee6cf33cab4d0a29ec683fdb8042b04471cded', 2500, 17500),
-(11, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 0, 0),
-(12, 'license:dee2edc22852c38e04ab150a05d65c454db22ab3', 0, 0),
-(13, 'license:a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a', 0, 0),
-(14, 'license:a8f9e7cc2eb121d983f0daa8a77d5641fd32c34a', 0, 0),
-(15, 'license:44cd1ef37b4fda00d53702007fb2c5cec6356919', 0, 0),
-(16, 'license:44cd1ef37b4fda00d53702007fb2c5cec6356919', 0, 0),
-(17, 'license:85e8937833a05423627d78865cb0da6ab013652b', 0, 0),
-(18, 'license:85e8937833a05423627d78865cb0da6ab013652b', 0, 0),
-(19, 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 0, 0),
-(20, 'license:19cd4d4c04b7f410e6fc179619e618dcc7528757', 0, 0),
-(21, 'license:88afb341c54c6ed2006bd7be158667299b00d341', 0, 0),
-(22, 'license:88afb341c54c6ed2006bd7be158667299b00d341', 0, 0),
-(23, 'license:ff187a16a8f5e997e2d25dcb92abba25aff5f52f', 2000, 2000),
-(24, 'license:ff187a16a8f5e997e2d25dcb92abba25aff5f52f', 2000, 2000),
-(25, 'license:d80d72c120d125db77e208fec6c02ffd4d14ef6b', 0, 0),
-(26, 'license:d80d72c120d125db77e208fec6c02ffd4d14ef6b', 0, 0),
-(27, 'license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', 0, 0),
-(28, 'license:dc502dade01b28a90ede45a6538b6c1a0794f6ce', 0, 0),
-(29, 'license:80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f', 0, 0),
-(30, 'license:80f2cc0ea0e2d8b3ff8f60d70e18b334baaf873f', 0, 0),
-(31, 'license:88830294ccd5ffe723158350adb3f2046b1fe30c', 0, 0),
-(32, 'license:88830294ccd5ffe723158350adb3f2046b1fe30c', 0, 0),
-(33, 'license:2e35218c23bd014dcb89d25164f85957a1af2a7f', 0, 0),
-(34, 'license:2e35218c23bd014dcb89d25164f85957a1af2a7f', 0, 0),
-(35, 'license:7ff6f1946f2f1bfe40b860ecf6100019f1a71bc6', 0, 0),
-(36, 'license:7ff6f1946f2f1bfe40b860ecf6100019f1a71bc6', 0, 0),
-(37, 'license:effa1ffd386df938a94332c73611cf8003bdbf36', 0, 0),
-(38, 'license:effa1ffd386df938a94332c73611cf8003bdbf36', 0, 0),
-(39, 'license:bd0b96bcf0ad850627351145e2cd98ce9fb9b394', 0, 0),
-(40, 'license:bd0b96bcf0ad850627351145e2cd98ce9fb9b394', 0, 0),
-(41, 'license:3c2f3c5fb0bd9cf8f0b03f9c87b936d5fb0a87c8', 0, 0),
-(42, 'license:3c2f3c5fb0bd9cf8f0b03f9c87b936d5fb0a87c8', 0, 0),
-(43, 'license:5b72f58116e111c998f65cc2446b28716b1c6656', 0, 0),
-(44, 'license:5b72f58116e111c998f65cc2446b28716b1c6656', 0, 0),
-(45, 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c', 0, 0),
-(46, 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c', 0, 0),
-(47, 'license:455f58044f988017e2a1eafe39970040aa2ecaf3', 0, 0),
-(48, 'license:455f58044f988017e2a1eafe39970040aa2ecaf3', 0, 0),
-(49, 'license:ce5deecf9b52b051d22f5b1f7c9e2fe726a91e1c', 0, 0),
-(50, 'license:ce5deecf9b52b051d22f5b1f7c9e2fe726a91e1c', 0, 0),
-(51, 'license:86f18a2d6f24691336c74f6987dd645cdb65e45a', 0, 0),
-(52, 'license:86f18a2d6f24691336c74f6987dd645cdb65e45a', 0, 0),
-(53, 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 4500, 4500),
-(54, 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 4500, 4500);
 
 -- --------------------------------------------------------
 
@@ -6106,15 +4955,6 @@ CREATE TABLE `tebex_logs_commands` (
 -- Déchargement des données de la table `tebex_logs_commands`
 --
 
-INSERT INTO `tebex_logs_commands` (`id`, `fivem`, `command`, `argument`, `transaction`) VALUES
-(3, '137', 'removeVip', '3', '0'),
-(4, '137', 'removeVip', '3', '1'),
-(5, '67', 'removeVip', '3', 'supp'),
-(6, '67', 'removeVip', '3', 'supp'),
-(7, '67', 'removeVip', '2', 'supp'),
-(8, '67', 'removeVip', '1', 'supp'),
-(9, '67', 'removeVip', '0', 'supp'),
-(10, '5', 'removeVip', '1', '1');
 
 -- --------------------------------------------------------
 
@@ -6136,48 +4976,6 @@ CREATE TABLE `tebex_players_wallet` (
 -- Déchargement des données de la table `tebex_players_wallet`
 --
 
-INSERT INTO `tebex_players_wallet` (`identifiers`, `transaction`, `price`, `currency`, `points`, `created_at`, `updated_at`) VALUES
-('9141304', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-08-30 15:03:10', '2025-08-30 15:03:10'),
-('14220563', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-09 12:15:47', '2025-09-09 12:15:47'),
-('13333006', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-09 16:07:39', '2025-09-09 16:07:39'),
-('7924653', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-09 16:39:56', '2025-09-09 16:39:56'),
-('15010377', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-10 14:33:52', '2025-09-10 14:33:52'),
-('4479984', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-10 17:38:15', '2025-09-10 17:38:15'),
-('8110601', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-11 20:20:16', '2025-09-11 20:20:16'),
-('17526033', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-12 18:25:46', '2025-09-12 18:25:46'),
-('17049513', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-12 18:33:32', '2025-09-12 18:33:32'),
-('9737729', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-12 18:36:50', '2025-09-12 18:36:50'),
-('8705535', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-12 18:38:21', '2025-09-12 18:38:21'),
-('10403284', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-12 18:57:36', '2025-09-12 18:57:36'),
-('9737729', 'Ajout de Coins via la console', '0', 'Points', 17000, '2025-09-12 19:03:12', '2025-09-12 19:03:12'),
-('8705535', 'Ajout de Coins via la console', '0', 'Points', 17000, '2025-09-12 19:03:21', '2025-09-12 19:03:21'),
-('10403284', 'Ajout de Coins via la console', '0', 'Points', 1000, '2025-09-12 19:07:02', '2025-09-12 19:07:02'),
-('10403284', 'Ajout de Coins via la console', '0', 'Points', 1500, '2025-09-12 19:08:43', '2025-09-12 19:08:43'),
-('8705535', 'Achat de : VIP Diamond 1 Mois', '0', 'Points', -2000, '2025-09-12 19:11:04', '2025-09-12 19:11:04'),
-('17406911', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-12 19:24:21', '2025-09-12 19:24:21'),
-('14480406', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-12 19:30:23', '2025-09-12 19:30:23'),
-('4479984', 'Ajout de Coins via la console', '0', 'Points', 500, '2025-09-12 20:00:30', '2025-09-12 20:00:30'),
-('14480406', 'Ajout de Coins via la console', '0', 'Points', 8500, '2025-09-12 20:03:11', '2025-09-12 20:03:11'),
-('4479984', 'Ajout de Coins via la console', '0', 'Points', 8500, '2025-09-12 20:05:20', '2025-09-12 20:05:20'),
-('4479984', 'Ajout de Coins via la console', '0', 'Points', 20000, '2025-09-12 20:05:36', '2025-09-12 20:05:36'),
-('12639573', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-12 20:10:23', '2025-09-12 20:10:23'),
-('12639573', 'Ajout de Coins via la console', '0', 'Points', 13000, '2025-09-12 20:55:30', '2025-09-12 20:55:30'),
-('4479984', 'Achat de : VIP Diamond 1 Mois', '0', 'Points', -2000, '2025-09-13 00:07:15', '2025-09-13 00:07:15'),
-('4479984', 'Achat Entreprise', '0', 'Points', -5000, '2025-09-13 00:07:24', '2025-09-13 00:07:24'),
-('9141304', 'Ajout de Coins via la console', '0', 'Points', 84374, '2025-09-13 00:08:39', '2025-09-13 00:08:39'),
-('4479984', 'Achat de : gblod4', '0', 'Points', -2500, '2025-09-13 00:09:42', '2025-09-13 00:09:42'),
-('4479984', 'Achat de : Longfin', '0', 'Points', -3000, '2025-09-13 00:10:29', '2025-09-13 00:10:29'),
-('4479984', 'Achat de : Swift Deluxe', '0', 'Points', -5000, '2025-09-13 00:11:12', '2025-09-13 00:11:12'),
-('8328191', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-13 04:20:43', '2025-09-13 04:20:43'),
-('9904507', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-13 10:32:49', '2025-09-13 10:32:49'),
-('1137998', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-13 14:44:10', '2025-09-13 14:44:10'),
-('15914073', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-13 15:07:47', '2025-09-13 15:07:47'),
-('10775537', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-13 20:50:47', '2025-09-13 20:50:47'),
-('13513617', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-14 17:52:23', '2025-09-14 17:52:23'),
-('5386085', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-14 23:33:18', '2025-09-14 23:33:18'),
-('17567329', 'Cadeau de Bienvenue', '0', 'Points', 1000, '2025-09-17 07:32:02', '2025-09-17 07:32:02'),
-('9141304', 'Achat de : VIP Diamond 1 Mois', '0', 'Points', -2000, '2025-10-08 09:47:12', '2025-10-08 09:47:12'),
-('9141304', 'Achat de : Schwartzers', '0', 'Points', -2500, '2025-10-09 20:40:22', '2025-10-09 20:40:22');
 
 -- --------------------------------------------------------
 
@@ -6363,8 +5161,6 @@ CREATE TABLE `users` (
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`character_id`, `identifier`, `permission_group`, `permission_level`, `position`, `skin`, `accounts`, `inventory`, `loadout`, `job`, `job_grade`, `job2`, `job2_grade`, `isDead`, `status`, `last_property`, `firstname`, `lastname`, `dateofbirth`, `sex`, `height`, `animations`, `tattoos`, `coins`, `jail_time`, `xp`, `rp_rank`, `statuscompte`, `viplevel`, `kills`, `apps`, `widget`, `bt`, `charinfo`, `metadata`, `cryptocurrency`, `cryptocurrencytransfers`, `phonePos`, `spotify`, `first_screen_showed`, `adventcalendar`, `ammo`, `IsHurt`, `idhouse`, `idgarage`, `wheel`, `in_property`, `property_id`, `in_garage`, `uid`, `account_number`, `bank`, `image_url`, `code_boutique`, `phone_number`) VALUES
-(1, 'license:1419b137c7211a1e0a7d25079f68a9050287b9a1', 'user', 0, '{\"z\":29.70000076293945,\"x\":72.80000305175781,\"y\":-1397.0999755859376}', '{\"chin_2\":0,\"beard_2\":10,\"nose_2\":0,\"blush_2\":0,\"bodyb_2\":0,\"sex\":0,\"face_md_weight\":50,\"torso_1\":73,\"chin_1\":0,\"nose_4\":0,\"chest_1\":0,\"lip_thickness\":0,\"cheeks_2\":0,\"torso_2\":0,\"chain_1\":0,\"sun_2\":0,\"eyebrows_3\":0,\"helmet_1\":-1,\"shoes_1\":274,\"hair_2\":0,\"eyebrows_2\":10,\"pants_2\":1,\"eye_squint\":0,\"lipstick_1\":0,\"age_1\":0,\"complexion_1\":0,\"mask_2\":0,\"blemishes_1\":0,\"lipstick_4\":0,\"bodyb_1\":-1,\"chest_3\":0,\"bags_1\":0,\"moles_1\":0,\"eyebrows_1\":26,\"arms_2\":0,\"bproof_1\":65,\"decals_1\":0,\"tshirt_1\":15,\"mom\":23,\"sun_1\":0,\"tshirt_2\":0,\"nose_6\":0,\"hair_color_2\":0,\"bracelets_1\":-1,\"ears_2\":0,\"cheeks_1\":0,\"chest_2\":0,\"eyebrows_6\":0,\"watches_2\":0,\"bodyb_3\":-1,\"jaw_2\":0,\"mask_1\":0,\"chin_4\":0,\"bproof_2\":0,\"beard_1\":3,\"blush_1\":0,\"nose_3\":0,\"glasses_1\":0,\"ears_1\":-1,\"chin_3\":0,\"bodyb_4\":0,\"eyebrows_5\":0,\"helmet_2\":0,\"beard_4\":0,\"glasses_2\":0,\"neck_thickness\":0,\"watches_1\":-1,\"shoes_2\":0,\"makeup_2\":0,\"age_2\":0,\"nose_5\":0,\"makeup_1\":0,\"complexion_2\":0,\"blemishes_2\":0,\"blush_3\":0,\"lipstick_2\":0,\"cheeks_3\":0,\"chain_2\":0,\"lipstick_3\":0,\"bracelets_2\":0,\"beard_3\":0,\"pants_1\":25,\"arms\":0,\"skin_md_weight\":50,\"dad\":2,\"makeup_4\":0,\"makeup_3\":0,\"hair_1\":246,\"eyebrows_4\":0,\"moles_2\":0,\"jaw_1\":0,\"decals_2\":0,\"hair_color_1\":0,\"nose_1\":0,\"eye_color\":0,\"bags_2\":0}', '[{\"money\":52550,\"name\":\"cash\"},{\"money\":0,\"name\":\"dirtycash\"},{\"money\":324434,\"name\":\"bank\"},{\"money\":0,\"name\":\"chip\"},{\"money\":0,\"name\":\"crypto\"}]', '[{\"count\":1,\"name\":\"jewels\"},{\"count\":5,\"name\":\"water\"},{\"count\":1,\"name\":\"fixkit\"},{\"count\":4,\"name\":\"bread\"},{\"count\":1,\"name\":\"radio\"},{\"count\":1,\"name\":\"phone\"}]', '[]', 'sasp', 6, 'unemployed2', 0, 0, '[{\"percent\":91.27,\"val\":912700,\"name\":\"hunger\"},{\"percent\":78.4525,\"val\":784525,\"name\":\"thirst\"}]', NULL, 'Angel', 'Holl', '02/07/2000', '0', '150', NULL, NULL, 0, 0, 0, 1, 0, 0, '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '[]', '{\"assault_rifles\":766}', 0, '-1', '-1', NULL, 0, NULL, 0, 28, NULL, 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -6382,9 +5178,6 @@ CREATE TABLE `user_licenses` (
 -- Déchargement des données de la table `user_licenses`
 --
 
-INSERT INTO `user_licenses` (`id`, `type`, `owner`) VALUES
-(1, 'drive', 'license:dc502dade01b28a90ede45a6538b6c1a0794f6ce'),
-(2, 'drive', 'license:a3eefd2be737902bcc0a3d5048b8ad611602000c');
 
 -- --------------------------------------------------------
 
