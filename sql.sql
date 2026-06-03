@@ -10131,6 +10131,44 @@ ALTER TABLE `phone_wallet_transactions`
   ADD CONSTRAINT `phone_wallet_transactions_ibfk_1` FOREIGN KEY (`phone_number`) REFERENCES `phone_phones` (`phone_number`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
+-- --------------------------------------------------------
+-- Tables ajoutées lors de l'audit sécurité (session 00h) : référencées par le
+-- code Lua mais absentes du dump initial. Schémas déduits des requêtes existantes.
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `gangs`
+-- Utilisée par : resources/[Core]/Gamemode/gameManager/modules/server/personal/sv_main.lua (getGangsAccount)
+--
+
+CREATE TABLE IF NOT EXISTS `gangs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) NOT NULL,
+  `label` varchar(128) NOT NULL,
+  `coords` longtext DEFAULT NULL,
+  `data` longtext DEFAULT NULL,
+  `vehicle` longtext DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Structure de la table `elevator_floors`
+-- Utilisée par : resources/[Shyroz]/[Script]/kay_elevator/server/sv_elevator.lua
+--
+
+CREATE TABLE IF NOT EXISTS `elevator_floors` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `elevator_id` int(11) NOT NULL,
+  `floor_name` varchar(255) NOT NULL,
+  `x` double NOT NULL,
+  `y` double NOT NULL,
+  `z` double NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `elevator_id` (`elevator_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
