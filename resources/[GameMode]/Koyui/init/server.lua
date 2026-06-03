@@ -1,0 +1,4 @@
+-- Koyui init/server.lua
+-- Placeholder requis par fxmanifest.lua (server_scripts).
+-- Le fichier d'origine etait absent du repo, ce stub evite le warning
+-- "could not find server_script 'init/server.lua'" au demarrage.

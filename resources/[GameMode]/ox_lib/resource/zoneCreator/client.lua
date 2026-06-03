@@ -1,3 +1,11 @@
+--[[
+    https://github.com/overextended/ox_lib
+
+    This file is licensed under LGPL-3.0 or higher <https://www.gnu.org/licenses/lgpl-3.0.en.html>
+
+    Copyright © 2025 Linden <https://github.com/thelindat>
+]]
+
 local creatorActive = false
 local controlsActive = false
 local zoneType, step, xCoord, yCoord, zCoord, heading, height, width, length
@@ -28,8 +36,8 @@ local function updateText()
 		text[#text + 1] = ('Height [Shift + Scroll]: %s  \n'):format(height)
 		text[#text + 1] = ('Cycle display mode [G]: %s  \n'):format(firstToUpper(displayModes[displayMode]))
         text[#text + 1] = ('Toggle Axis mode [C]: %s  \n'):format(alignMovementWithCamera and 'Camera' or 'Grid')
-		text[#text + 1] = 'Create new point - [Kay]  \n'
-        text[#text + 1] = 'Edit last point - [BackKay]  \n'
+		text[#text + 1] = 'Create new point - [Space]  \n'
+        text[#text + 1] = 'Edit last point - [Backspace]  \n'
 	elseif zoneType == 'box' then
 		text[#text + 1] = ('Heading [Q/E]: %s&deg;  \n'):format(heading)
 		text[#text + 1] = ('Height [Shift + Scroll]: %s  \n'):format(height)
@@ -37,11 +45,11 @@ local function updateText()
 		text[#text + 1] = ('Length [Alt + Scroll]: %s  \n'):format(length)
 		text[#text + 1] = ('Cycle display mode [G]: %s  \n'):format(firstToUpper(displayModes[displayMode]))
         text[#text + 1] = ('Toggle Axis mode [C]: %s  \n'):format(alignMovementWithCamera and 'Camera' or 'Grid')
-		text[#text + 1] = 'Recenter - [Kay]  \n'
+		text[#text + 1] = 'Recenter - [Space]  \n'
 	elseif zoneType == 'sphere' then
 		text[#text + 1] = ('Size [Shift + Scroll]: %s  \n'):format(height)
         text[#text + 1] = ('Toggle Axis mode [C]: %s  \n'):format(alignMovementWithCamera and 'Camera' or 'Grid')
-		text[#text + 1] = 'Recenter - [Kay]  \n'
+		text[#text + 1] = 'Recenter - [Space]  \n'
 	end
 
 	text[#text + 1] = 'Toggle controls - [X]  \n'
@@ -429,7 +437,7 @@ local function startCreator(arg, useLast)
             elseif IsDisabledControlJustReleased(0, 26) then -- c
                 change = true
                 alignMovementWithCamera = not alignMovementWithCamera
-            elseif IsDisabledControlJustReleased(0, 22) then -- Kay
+            elseif IsDisabledControlJustReleased(0, 22) then -- space
                 change = true
 
                 if zoneType == 'poly' then
@@ -441,7 +449,7 @@ local function startCreator(arg, useLast)
                 yCoord = round(coords.y)
             elseif IsDisabledControlJustReleased(0, 201) then -- enter
                 closeCreator()
-            elseif IsDisabledControlJustReleased(0, 194) then -- backKay
+            elseif IsDisabledControlJustReleased(0, 194) then -- backspace
                 change = true
 
                 if zoneType == 'poly' and #points > 0 then

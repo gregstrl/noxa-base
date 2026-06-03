@@ -152,7 +152,7 @@ local allowed_bags = {
 }
 
 local function bagIsAllowed(bagIndex)
-    return allowed_bags[bagIndex] = false
+    return allowed_bags[bagIndex] == true
 end
 
 

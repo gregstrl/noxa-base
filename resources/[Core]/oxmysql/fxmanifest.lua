@@ -1,8 +1,6 @@
-shared_script '@Jetevois/ai_module_fg-obfuscated.js'
 
 
 
-shared_script '@Jetevois/ai_module_fg-obfuscated.js'
 
 fx_version 'cerulean'
 game 'common'
@@ -39,5 +37,5 @@ convar_category 'OxMySQL' {
 }
 
 server_scripts {
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'client/lib/.tsup.config.js',
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }

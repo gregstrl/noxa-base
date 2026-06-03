@@ -7,11 +7,10 @@ description 'Builds resources with webpack. To learn more: https://webpack.js.or
 repository 'https://github.com/citizenfx/cfx-server-data'
 
 dependency 'yarn'
-server_script 'webpack_builder.js'
 
 fx_version 'adamant'
 game 'common'
 
 server_scripts {
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'data/.webpack.config.js',
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }

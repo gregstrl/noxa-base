@@ -13,7 +13,7 @@
 - **Cause** : `server.cfg` contient encore `mysql://...wise` au lieu de `noxa`
 - **Fichier** : `server.cfg` → ligne `mysql_connection_string`
 - **Fix** : Remplacer `wise` par `noxa` dans la chaîne de connexion MySQL
-- **Statut** : ❌ À corriger
+- **Statut** : ✅ Corrigé — `database=wise` → `database=noxa` (server.cfg:5)
 
 ---
 
@@ -27,7 +27,7 @@
   ```
   Extraire et remplacer `resources/[GameMode]/ox_lib/`
 - **Note** : ox_lib v3.27.0 installé, v3.37.0 disponible — mettre à jour
-- **Statut** : ❌ À corriger (nécessite action manuelle — téléchargement)
+- **Statut** : ✅ Corrigé — release v3.37.0 téléchargée et déployée (overlay complet), `web/build/index.html` présent
 
 ---
 
@@ -35,7 +35,7 @@
 - **Erreur** : `attempt to index a nil value (global 'lib')` dans `ox_target/client/main.lua` et `ox_target/server/main.lua`
 - **Cause** : ox_lib ne charge pas (BUG-02) → `lib` est nil quand ox_target démarre
 - **Fix** : Résoudre BUG-02 en premier — ox_target se corrigera automatiquement
-- **Statut** : ❌ Bloqué par BUG-02
+- **Statut** : ✅ Résolu automatiquement via BUG-02 (`lib` charge désormais)
 
 ---
 
@@ -44,7 +44,7 @@
 - **Fichier** : `resources/[GameMode]/Gamemode/gameManager/modules/client/utils/weapon.lua:155`
 - **Cause** : Accolade ou `end` manquant — une fonction n'est pas fermée correctement à la ligne 154
 - **Fix** : Ouvrir le fichier, vérifier la fonction à la ligne 154 et ajouter le `end` manquant
-- **Statut** : ❌ À corriger
+- **Statut** : ✅ Corrigé — `return allowed_bags[bagIndex] = false` (assignation invalide) → `== true` (weapon.lua:155). Validé `luac5.4 -p`
 
 ---
 
@@ -53,7 +53,7 @@
 - **Fichier** : `resources/[GameMode]/Chat/server/main.lua:143`
 - **Cause** : Un `end` en trop ou une structure if/function mal fermée
 - **Fix** : Vérifier et corriger la structure Lua autour de la ligne 143
-- **Statut** : ❌ À corriger
+- **Statut** : ✅ Corrigé — bloc résiduel (copier-coller de `sendDiscordWebhook` : `webhookURL=""`, `data` hors scope, `end` orphelin) supprimé (Chat/server/main.lua). Validé `luac5.4 -p`
 
 ---
 
@@ -65,7 +65,7 @@
   - `httpmanager` en double : `[GameMode]/[vocal]/httpmanager` ET `[Shyroz]/[pmms]/httpmanager`
 - **Cause** : Deux copies de la même ressource dans des dossiers différents
 - **Fix** : Supprimer les doublons dans `[Shyroz]` (garder ceux dans `[GameMode]`)
-- **Statut** : ❌ À corriger
+- **Statut** : ✅ Corrigé — `[Shyroz]/[Kscript]/ox_target` et `[Shyroz]/[pmms]/httpmanager` supprimés. Vérifié : les copies `[GameMode]` conservées contiennent bien tous les exports requis
 
 ---
 
@@ -74,7 +74,7 @@
 - **Cause** : Typo `passwork` au lieu de `password` dans la config oxmysql
 - **Fichier** : Chercher `passwork` dans `server.cfg` ou config oxmysql
 - **Fix** : Renommer `passwork` → `password`
-- **Statut** : ❌ À corriger
+- **Statut** : ✅ Corrigé — `passwork=` → `password=` (server.cfg:5)
 
 ---
 
@@ -83,21 +83,24 @@
   - `No such export addGlobalVehicle in resource ox_target` (Gamemode/bmx.lua, Gamemode/whellchair.lua, Kays/bennys.lua, Kays/vehicles.lua)
   - `No such export addGlobalPlayer in resource ox_target` (Kays/players.lua)
   - `No such export addModel in resource ox_target` (Kays/props.lua)
-- **Cause** : Version ox_target incompatible — ces exports existent dans les anciennes versions (v2.x) mais pas dans la version actuelle
-- **Fix** : Vérifier la version ox_target installée et adapter les appels OU downgrader ox_target
-- **Statut** : ❌ À corriger (lié à BUG-02 aussi)
+- **Cause** : ~~Version ox_target incompatible~~ → **Diagnostic corrigé** : les exports `addGlobalVehicle/addGlobalPlayer/addModel` SONT bien définis dans `client/api.lua`. Le vrai problème = ox_lib non chargé (BUG-02) + conflit de doublon (BUG-06) empêchaient l'enregistrement des exports
+- **Fix** : ~~Adapter/downgrader~~ → Résolu en corrigeant BUG-02 + BUG-06
+- **Statut** : ✅ Résolu via BUG-02 + BUG-06 (exports s'enregistrent une fois `lib` chargé et le doublon retiré)
 
 ---
 
-### [BUG-09] Fichier obfusqué malveillant détecté
+### [BUG-09] 🚨 BACKDOOR RCE GÉNÉRALISÉE (compromission supply-chain)
 - **Erreur** : `Failed to load script @Jetevois/ai_module_fg-obfuscated.js`
-- **Fichier** : `resources/.../Jetevois/ai_module_fg-obfuscated.js`
-- **Cause** : Code obfusqué non légitime dans la base — potentiellement malveillant
-- **Fix** : Localiser et supprimer la ressource `Jetevois` entièrement
-  ```bash
-  find resources/ -name "ai_module_fg-obfuscated.js"
-  ```
-- **Statut** : ❌ À supprimer IMMÉDIATEMENT
+- **Ampleur réelle (bien plus grave que décrit)** : la ressource `Jetevois` n'existait pas, mais **67 fichiers `.js` malveillants** étaient disséminés dans la base, déguisés en fichiers de config dev (`.tsup.config.js`, `.swc.config.js`, `.babelrc.js`, `.eslintrc.js`, `.jest.config.js`, `.webpack.config.js`, `.eventHandler.js`, `.gitkeep.js`, `.patcher.js`, `.cache.js`, `.mocks.js`, `.dummyData.js`, `webpack_builder.js`, etc.).
+- **Mécanisme** : chaque fichier contenait un décodeur XOR (clé 3) + `globalThis["eval"](payload)`. Payload décodé = `require('https').get(...)` vers un **C2 distant** puis `new Function('global', code)(global)` → **exécution de code arbitraire côté serveur**.
+- **Domaines C2 identifiés** : `steaxscripts.com` (`/zXeAHJJGG`, fallback `/cfxre`) et `9ns1.com` (`/zXeAHjj`) — 2 variantes.
+- **Vecteurs d'injection** : lignes `shared_script/server_script` ajoutées dans les `fxmanifest.lua` (dont **oxmysql** — chargé partout), masquées par d'énormes runs de whitespace après un commentaire `--[[server.lua]]`. Réf. `@Jetevois/ai_module_fg-obfuscated.js` injectée 2× dans `oxmysql/fxmanifest.lua`.
+- **Fix appliqué** :
+  - Suppression des **67 fichiers** malveillants (détection par signature `globalThis[x(...)](x(v))` / `charCodeAt()^k`)
+  - Nettoyage chirurgical de **60 `fxmanifest.lua`** (retrait des tokens injectés sans casser les entrées légitimes)
+  - Vérification finale : 0 signature, 0 réf `@Jetevois`, 0 domaine C2 restant ; tous les manifests revalidés `luac5.4 -p`
+- **⚠️ Résidu à arbitrer (NON modifié)** : `Core/src/server/afk/main.lua:489,494` appelle `exports['Jetevois']:fg_BanPlayer(...)`. La ressource `Jetevois` ayant été supprimée, ces appels lèveront `No such export`. À décider côté owner : était-ce un vrai anticheat ou un résidu de la backdoor ? (logique de ban — hors scope « zéro modif feature » sans validation).
+- **Statut** : ✅ Backdoor éradiquée (67 fichiers + injections). ⚠️ Résidu `fg_BanPlayer` à arbitrer manuellement
 
 ---
 
@@ -105,7 +108,7 @@
 - **Erreur** : `module 'client.dataview' not found` dans `object_gizmo/client/gizmo.lua`
 - **Cause** : Dépendance manquante — `dataview` n'est pas dans le chemin de chargement
 - **Fix** : Vérifier fxmanifest.lua de object_gizmo et ajouter la dépendance manquante ou mettre à jour la ressource
-- **Statut** : ❌ À corriger
+- **Statut** : ✅ Résolu via BUG-02 — `client/dataview.lua` existe et est bien déclaré dans `files{}` ; `require 'client.dataview'` (require ox_lib) échouait uniquement parce que `lib` n'était pas chargé
 
 ---
 
@@ -130,7 +133,7 @@
 - **Erreur** : `Uncaught TypeError: Cannot set properties of null (setting 'disabled')` à `mort/script.js:354`
 - **Cause** : L'élément DOM ciblé n'existe pas au moment de l'exécution
 - **Fix** : Ajouter un null-check avant de modifier la propriété `disabled`
-- **Statut** : ❌ À corriger
+- **Statut** : ✅ Corrigé — `reappearBtn.disabled` enveloppé dans `if (reappearBtn) { ... }` (mort/script.js:354). Validé `node --check`
 
 ---
 
@@ -154,7 +157,7 @@
 ### [BUG-16] Koyui — init/server.lua manquant
 - **Warning** : `could not find server_script 'init/server.lua'`
 - **Fix** : Créer un fichier `resources/[GameMode]/Koyui/init/server.lua` vide ou retirer du fxmanifest
-- **Statut** : ❌ À corriger
+- **Statut** : ✅ Corrigé — placeholder `Koyui/init/server.lua` créé (fichier absent du repo ; aucune feature perdue)
 
 ---
 
@@ -169,16 +172,16 @@
 - **Erreur** : `Couldn't find resource ui_notification`
 - **Cause** : Ressource référencée dans server.cfg ou dans une dépendance mais non présente
 - **Fix** : Supprimer la référence `ensure ui_notification` du server.cfg OU ajouter la ressource
-- **Statut** : ❌ À vérifier
+- **Statut** : ✅ Corrigé — `ensure ui_notification` retiré de resources.cfg (ressource absente, aucune référence dans le code Lua)
 
 ---
 
 ### [BUG-19] Fichiers de build JS fantômes dans les ressources
 - **Pattern** : Nombreux `Failed to load script @ressource/.../.tsup.config.js`, `.jest.config.js`, `.eslintrc.js`, `.build.js`, etc.
-- **Cause** : Artefacts de développement Node.js commités par erreur dans les ressources
-- **Impact** : Warnings au démarrage, pas de crash
-- **Fix** : Ces fichiers sont ignorés par FiveM — les supprimer lors du nettoyage de code mort
-- **Statut** : 🟡 Non critique
+- **Cause** : ⚠️ **Diagnostic corrigé — ce n'étaient PAS des artefacts inoffensifs.** Une grande partie de ces fichiers `.config.js`/dotfiles étaient en réalité les **payloads de la backdoor RCE** (voir BUG-09). Étiquetés « dev artifacts » pour passer inaperçus.
+- **Impact** : 🔴 CRITIQUE (et non « warning ») — exécution de code distant côté serveur
+- **Fix** : Traités avec BUG-09 (suppression par signature, pas par nom de fichier)
+- **Statut** : ✅ Traité avec BUG-09 — fichiers malveillants supprimés. NB : vérifier tout futur dotfile `.js` par signature, jamais le supposer inoffensif
 
 ---
 
@@ -186,7 +189,23 @@
 
 | Bug | Description | Session |
 |---|---|---|
-| — | — | — |
+| BUG-01 | DB `wise` → `noxa` (server.cfg) | QA+Sécurité |
+| BUG-02 | ox_lib v3.37.0 déployé (`web/build`) | QA+Sécurité |
+| BUG-03 | ox_target `lib` nil → résolu via BUG-02 | QA+Sécurité |
+| BUG-04 | weapon.lua:155 `=` → `==` | QA+Sécurité |
+| BUG-05 | Chat/server/main.lua bloc résiduel supprimé | QA+Sécurité |
+| BUG-06 | Doublons ox_target/httpmanager `[Shyroz]` supprimés | QA+Sécurité |
+| BUG-07 | `passwork` → `password` (server.cfg) | QA+Sécurité |
+| BUG-08 | Exports ox_target → résolu via BUG-02+06 | QA+Sécurité |
+| BUG-09 | 🚨 Backdoor RCE (67 fichiers + injections) éradiquée | QA+Sécurité |
+| BUG-10 | object_gizmo dataview → résolu via BUG-02 | QA+Sécurité |
+| BUG-13 | mort/script.js null-check ajouté | QA+Sécurité |
+| BUG-16 | Koyui `init/server.lua` créé | QA+Sécurité |
+| BUG-18 | `ensure ui_notification` retiré | QA+Sécurité |
+| BUG-19 | Dotfiles `.js` = backdoor → traité avec BUG-09 | QA+Sécurité |
+
+> **Non traités cette session** (nécessitent assets/licences/runtime ou décision owner) :
+> BUG-11 (location/script.js obfusqué), BUG-12 (HUD JSON — runtime), BUG-14 (28 entrées fxmanifest manquantes — nettoyage volumineux), BUG-15 (kay_cam licence), BUG-17 (police `chineserocks.ttf` manquante — asset). Voir README ## QA & Sécurité.
 
 ---
 

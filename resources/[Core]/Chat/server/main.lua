@@ -137,11 +137,6 @@ RegisterCommand('report', function(source, args, rawCommand)
     sendDiscordWebhook(reportNumber, playerName, playerId, reportMessage)
 end, false)
 
-local webhookURL = ""
-
-PerformHttpRequest(webhookURL, function(err, text, headers) end, 'POST', json.encode(data), { ['Content-Type'] = 'application/json' })
-end
-
 local staffGroups = {
     ["founder"] = true,
     ["admin"] = true,

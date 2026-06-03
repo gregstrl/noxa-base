@@ -351,8 +351,10 @@ function updateUI(data) {
     const ambulanceDetails = ambulanceBtn ? ambulanceBtn.querySelector('.details') : null;
     const killerInfo = document.getElementById('killerInfo');
 
-    reappearBtn.disabled = !canRespawn;
-    
+    if (reappearBtn) {
+        reappearBtn.disabled = !canRespawn;
+    }
+
     if (ambulanceBtn && ambulanceDetails) {
         if (gotpressed) {
             const minutes = Math.floor(data.ambulanceCooldown / 60);

@@ -1,4 +1,12 @@
--- Add additional functions to the standard table es_extentedCore
+--[[
+    https://github.com/overextended/ox_lib
+
+    This file is licensed under LGPL-3.0 or higher <https://www.gnu.org/licenses/lgpl-3.0.en.html>
+
+    Copyright © 2025 Linden <https://github.com/thelindat>
+]]
+
+-- Add additional functions to the standard table library
 
 ---@class oxtable : tablelib
 lib.table = table
@@ -39,13 +47,10 @@ end
 ---@return boolean
 ---Compares if two values are equal, iterating over tables and matching both keys and values.
 local function table_matches(t1, t2)
-    local tabletype1 = table.type(t1)
+	local type1, type2 = type(t1), type(t2)
 
-    if not tabletype1 then return t1 == t2 end
-
-    if tabletype1 ~= table.type(t2) or (tabletype1 == 'array' and #t1 ~= #t2) then
-        return false
-    end
+	if type1 ~= type2 then return false end
+	if type1 ~= 'table' and type2 ~= 'table' then return t1 == t2 end
 
     for k, v1 in pairs(t1) do
         local v2 = t2[k]
@@ -85,7 +90,7 @@ end
 ---@return table
 ---Merges two tables together. Defaults to adding duplicate keys together if they are numbers, otherwise they are overriden.
 local function table_merge(t1, t2, addDuplicateNumbers)
-    addDuplicateNumbers = addDuplicateNumbers ~= nil and addDuplicateNumbers or true
+    addDuplicateNumbers = addDuplicateNumbers == nil or addDuplicateNumbers
     for k, v2 in pairs(t2) do
         local v1 = t1[k]
         local type1 = type(v1)
@@ -103,10 +108,36 @@ local function table_merge(t1, t2, addDuplicateNumbers)
     return t1
 end
 
+---@param tbl table
+---@return table
+---Shuffles the elements of a table randomly using the Fisher-Yates algorithm.
+local function shuffle(tbl)
+    local len = #tbl
+    for i = len, 2, -1 do
+        local j = math.random(i)
+        tbl[i], tbl[j] = tbl[j], tbl[i]
+    end
+    return tbl
+end
+
+
+---@param tbl table
+---@param fn function(value: any, key: any): any
+---@return table
+local function map(tbl, fn)
+    local result = {}
+    for k, v in pairs(tbl) do
+        result[k] = fn(v, k)
+    end
+    return result
+end
+
 table.contains = contains
 table.matches = table_matches
 table.deepclone = table_deepclone
 table.merge = table_merge
+table.shuffle = shuffle
+table.map = map
 
 local frozenNewIndex = function(self) error(('cannot set values on a frozen table (%s)'):format(self), 2) end
 local _rawset = rawset

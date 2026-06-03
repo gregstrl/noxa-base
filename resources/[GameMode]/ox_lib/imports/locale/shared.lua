@@ -1,3 +1,11 @@
+--[[
+    https://github.com/overextended/ox_lib
+
+    This file is licensed under LGPL-3.0 or higher <https://www.gnu.org/licenses/lgpl-3.0.en.html>
+
+    Copyright © 2025 Linden <https://github.com/thelindat>
+]]
+
 ---@type { [string]: string }
 local dict = {}
 
@@ -63,10 +71,12 @@ function lib.locale(key)
 
     table.wipe(dict)
 
-    for k, v in pairs(flattenDict(locales, {})) do
+    local flat = flattenDict(locales, {})
+
+    for k, v in pairs(flat) do
         if type(v) == 'string' then
             for var in v:gmatch('${[%w%s%p]-}') do
-                local locale = locales[var:sub(3, -2)]
+                local locale = flat[var:sub(3, -2)]
 
                 if locale then
                     locale = locale:gsub('%%', '%%%%')
