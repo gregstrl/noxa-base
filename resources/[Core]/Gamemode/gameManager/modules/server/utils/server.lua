@@ -81,12 +81,6 @@ AddEventHandler("esx:playerLoaded", function(_, xPlayer)
 	end
 end)
 
---[[Citizen.CreateThread(function()
-	PerformHttpRequest("https://ppm.ma2pi.xyz/engine/api.php?serveur=xlt&action=reboot", function(err, data, headers)
-        ESX.Logs.Success("^7[^2wise^7] ^7 Server Started");
-	end);
-end)]]
-
 function SendLogs(name, title, message, web)
     local local_date = os.date('%H:%M:%S', os.time())
   
