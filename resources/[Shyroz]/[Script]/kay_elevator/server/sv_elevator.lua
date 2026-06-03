@@ -22,11 +22,11 @@ local Elevators = LoadElevators()
 RegisterServerEvent('elevator:createElevator')
 AddEventHandler('elevator:createElevator', function(name, floors)
     local xPlayer = ESX.GetPlayerFromId(source)
-    
-    -- if xPlayer.getGroup() ~= 'admin' and xPlayer.getGroup() ~= 'superadmin' then
-    --     xPlayer.showNotification("Vous n'avez pas les permissions nécessaires.")
-    --     return
-    -- end
+
+    if not xPlayer or (xPlayer.getGroup() ~= 'admin' and xPlayer.getGroup() ~= 'superadmin') then
+        if xPlayer then xPlayer.showNotification("Vous n'avez pas les permissions nécessaires.") end
+        return
+    end
 
     MySQL.Async.insert('INSERT INTO elevators (name) VALUES (@name)', {
         ['@name'] = name
@@ -54,11 +54,11 @@ end)
 
 ESX.RegisterServerCallback('elevator:deleteElevator', function(source, cb, elevatorId)
     local xPlayer = ESX.GetPlayerFromId(source)
-    
-    -- if xPlayer.getGroup() ~= 'admin' and xPlayer.getGroup() ~= 'superadmin' then
-    --     cb(false)
-    --     return
-    -- end
+
+    if not xPlayer or (xPlayer.getGroup() ~= 'admin' and xPlayer.getGroup() ~= 'superadmin') then
+        cb(false)
+        return
+    end
 
     MySQL.Async.execute('DELETE FROM elevators WHERE id = @id', {
         ['@id'] = elevatorId
@@ -79,11 +79,11 @@ end)
 RegisterServerEvent('elevator:renameElevator')
 AddEventHandler('elevator:renameElevator', function(elevatorId, newName)
     local xPlayer = ESX.GetPlayerFromId(source)
-    
-    -- if xPlayer.getGroup() ~= 'admin' and xPlayer.getGroup() ~= 'superadmin' then
-    --     xPlayer.showNotification("Vous n'avez pas les permissions nécessaires.")
-    --     return
-    -- end
+
+    if not xPlayer or (xPlayer.getGroup() ~= 'admin' and xPlayer.getGroup() ~= 'superadmin') then
+        if xPlayer then xPlayer.showNotification("Vous n'avez pas les permissions nécessaires.") end
+        return
+    end
 
     MySQL.Async.execute('UPDATE elevators SET name = @name WHERE id = @id', {
         ['@name'] = newName,
