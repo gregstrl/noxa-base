@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <script>
+      (function () {
+        // En DUI (pas NUI), certains bundles tentent des appels Axios vers des callbacks NUI,
+        // ce qui génère des "AxiosError: Network Error" bruyants. On neutralise ces erreurs.
+        try {
+          var isDuiEnv = typeof GetParentResourceName === "undefined";
+          if (!isDuiEnv) return; // En NUI on ne touche à rien
+
+          // Évite le rejet non géré pour Axios Network Error
+          window.addEventListener("unhandledrejection", function (e) {
+            try {
+              var r = e && e.reason;
+              var isAxiosNetworkError =
+                r && ((r.isAxiosError === true) || (r.name === "AxiosError") || (r.message && r.message.indexOf("Network Error") !== -1));
+              if (isAxiosNetworkError) {
+                e.preventDefault();
+                return false;
+              }
+            } catch (_) {}
+          });
+
+          // Filtre le spam console pour ces erreurs spécifiques
+          var originalConsoleError = console.error;
+          console.error = function () {
+            try {
+              var joined = Array.prototype.join.call(arguments, " ");
+              if (joined.indexOf("AxiosError") !== -1 && joined.indexOf("Network Error") !== -1) {
+                return; // ignore
+              }
+            } catch (_) {}
+            return originalConsoleError.apply(console, arguments);
+          };
+        } catch (_) {
+          // Ne casse jamais le chargement si une erreur survient ici
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-DTuXM9-f.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BN7YIsED.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+  </body>
+</html>

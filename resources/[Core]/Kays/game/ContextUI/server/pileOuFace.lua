@@ -1,0 +1,5 @@
+RegisterServerEvent('tossCoinServer')
+AddEventHandler('tossCoinServer', function(targetPlayer, boneCoords)
+    local result = math.random(0, 1)
+    TriggerClientEvent('tossCoinClient', targetPlayer, result, boneCoords)
+end)

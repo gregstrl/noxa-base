@@ -1,0 +1,30 @@
+Shared.Lang:Insert("fr", {
+
+    ["personnal_menu_label"] = "Menu Personnel",
+    ["personnal_menu_inventory_label"] = "Inventaire",
+    ["personnal_menu_identity_label"] = "Identité",
+    ["personnal_menu_inventory_button_label"] = "Inventaire ~c~(%s%s~c~/%s%s~c~)",
+    ["personnal_menu_management_button_label"] = "Gestion",
+    ["personnal_menu_management_label"] = "Gestion",
+    ["personnal_menu_vehicle_button_label"] = "Gestion du véhicule",
+    ["personnal_menu_vehicle_label"] = "Gestion du véhicule",
+    ["personnal_menu_vehicle_extra_button_label"] = "Gestion des extras",
+    ["personnal_menu_vehicle_extra_label"] = "Gestion des extras",
+    ["personnal_menu_vehicle_extra_no_extra"] = "~s~Aucun extra disponible.",
+    ["personnal_menu_vehicle_engine_on"] = "~g~Moteur en fonctionnement",
+    ["personnal_menu_vehicle_engine_off"] = "~s~Moteur éteint",
+    ["personnal_menu_vehicle_doors_button_label"] = "Gestion des portes:",
+    ["personnal_menu_vehicle_engine_button_label"] = "Status:",
+    ["personnal_menu_vehicle_not_in_vehicle"] = "~s~Vous n'êtes pas dans un véhicule.",
+    ["personnal_menu_vehicle_door_driver"] = "Conducteur",
+    ["personnal_menu_vehicle_door_passenger"] = "Passager avant",
+    ["personnal_menu_vehicle_door_passenger_rear_left"] = "Arrière gauche",
+    ["personnal_menu_vehicle_door_passenger_rear_right"] = "Arrière droit",
+    ["personnal_menu_vehicle_door_trunk"] = "Coffre",
+    ["personnal_menu_vehicle_door_hood"] = "Capot",
+    ["personnal_menu_inventory_list_actions"] = "Séléction:",
+    ["personnal_menu_inventory_items_list"] = "Items",
+    -- FIN LISTE
+    ["personnal_menu_inventory_weapons_list"] = "Armes",
+
+});

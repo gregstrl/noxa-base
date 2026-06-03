@@ -1,0 +1,87 @@
+#categories-group {
+	position: absolute;
+	top: -1vw;
+	right: 50vw;
+}
+
+.categorys {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70vw;
+	height: 2.2vw;
+}
+.first-category-all,
+.sec-category-food,
+.three-category-weapon,
+.four-category-clothes {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 4vw;
+	height: 1.5vw;
+	background: #111111ab;
+	margin-left: 0.6vw;
+	transition: all 0.1s ease;
+	cursor: pointer;
+	border-radius: 0.3vw;
+}
+.first-category-all:hover,
+.sec-category-food:hover,
+.three-category-weapon:hover,
+.four-category-clothes:hover { background: var(--hover-color); }
+.first-category-all:active,
+.sec-category-food:active,
+.three-category-weapon:active,
+.four-category-clothes:active { background: var(--active-color); }
+
+.first-category-all img:nth-child(1),
+.sec-category-food img:nth-child(1),
+.three-category-weapon img:nth-child(1),
+.four-category-clothes img:nth-child(1) {
+	position: absolute;
+	top: -10%;
+	left: 1.5vw;
+	transform: translateY(-50%);
+	width: 0.9vw;
+	height: auto;
+	pointer-events: none;
+}
+
+.label-all {
+	position: absolute;
+	top: 60%;
+	left: 1.3vw;
+	transform: translateY(-50%);
+	font-size: 0.6vw;
+	font-weight: 700;
+	color: #ffffffcc;
+}
+.label-food {
+	position: absolute;
+	top: 60%;
+	left: 0.5vw;
+	transform: translateY(-50%);
+	font-size: 0.6vw;
+	font-weight: 700;
+	color: #ffffffcc;
+}
+.label-weapon {
+	position: absolute;
+	top: 55%;
+	left: 1.1vw;
+	transform: translateY(-50%);
+	font-size: 0.6vw;
+	font-weight: 700;
+	color: #ffffffcc;
+}
+.label-clothes {
+	position: absolute;
+	top: 60%;
+	left: 0.5vw;
+	transform: translateY(-50%);
+	font-size: 0.6vw;
+	font-weight: 700;
+	color: #ffffffcc;
+}

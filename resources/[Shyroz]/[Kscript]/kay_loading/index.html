@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ng_load</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="background-container">
+            <div id="background" class="background-image" style="background-image: url('public/bg1.png'); background-color: #2b1b2f;"></div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="neon-effects">
+            <div class="neon neon-top-left"></div>
+            <div class="neon neon-bottom-right"></div>
+        </div>
+
+        <div class="navbar-container">
+            <div class="navbar-glassy">
+                <a href="#" class="nav-link" data-link="discord" data-tooltip="Rejoindre Discord">
+                    <svg class="nav-icon discord-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0188 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1568 2.4189Z"/>
+                    </svg>
+                </a>
+                <a href="#" class="nav-link" data-link="boutique" data-tooltip="Boutique">
+                    <svg class="nav-icon shop-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 7H18V6C18 3.79 16.21 2 14 2H10C7.79 2 6 3.79 6 6V7H5C3.9 7 3 7.9 3 9V20C3 21.1 3.9 22 5 22H19C20.1 22 21 21.1 21 20V9C21 7.9 20.1 7 19 7ZM10 4H14C15.1 4 16 4.9 16 6V7H8V6C8 4.9 8.9 4 10 4ZM19 20H5V9H7V11H9V9H15V11H17V9H19V20ZM12 13C10.9 13 10 13.9 10 15S10.9 17 12 17 14 16.1 14 15 13.1 13 12 13Z"/>
+                    </svg>
+                </a>
+                <a href="#" class="nav-link" data-link="reglement" data-tooltip="Wiki">
+                    <svg class="nav-icon rules-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM5 19V5H11V12L13.5 10.5L16 12V5H19V19H5ZM9 7H7V9H9V7ZM7 11V13H14V11H7ZM7 15V17H14V15H7Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="music-controls-container">
+            <div class="music-controls-glassy">
+                <div class="track-info-section">
+                    <div class="track-icon">
+                        <svg class="music-note-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 3V13.55C11.41 13.21 10.73 13 10 13C7.79 13 6 14.79 6 17S7.79 21 10 21 14 19.21 14 17V7H18V3H12Z"/>
+                        </svg>
+                    </div>
+                    <div class="track-details">
+                        <div class="track-title" id="displayTrackName">Chargement...</div>
+                        <div class="track-artist" id="displayTrackArtist">En cours...</div>
+                    </div>
+                </div>
+                
+                <div class="music-separator"></div>
+                
+                <div class="playback-controls">
+                    <button class="music-btn" id="prevTrack" aria-label="Piste précédente">
+                        <svg class="music-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 6H8V18H6V6ZM9.5 12L18 6V18L9.5 12Z"/>
+                        </svg>
+                    </button>
+                    <button class="music-btn play-pause-btn" id="playPause" aria-label="Lecture/Pause">
+                        <svg class="music-icon play-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                            <path d="M8 5V19L19 12L8 5Z"/>
+                        </svg>
+                        <svg class="music-icon pause-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19H10V5H6V19ZM14 5V19H18V5H14Z"/>
+                        </svg>
+                    </button>
+                    <button class="music-btn" id="nextTrack" aria-label="Piste suivante">
+                        <svg class="music-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 18L14.5 12L6 6V18ZM16 6V18H18V6H16Z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="volume-control">
+                    <svg class="volume-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 9V15H7L12 20V4L7 9H3ZM16.5 12C16.5 10.23 15.48 8.71 14 7.97V16.02C15.48 15.29 16.5 13.77 16.5 12ZM14 3.23V5.29C16.89 6.15 19 8.83 19 12S16.89 17.85 14 18.71V20.77C18.01 19.86 21 16.28 21 12S18.01 4.14 14 3.23Z"/>
+                    </svg>
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50" aria-label="Volume">
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-container-glassy">
+            <div class="loading-text-container">
+                <div class="loading-text-left">
+                    <div class="loading-spinner">
+                        <svg class="spinner-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,4V2A10,10 0 0,0 2,12H4A8,8 0 0,1 12,4Z"/>
+                        </svg>
+                    </div>
+                    <span class="loading-text">Chargement en cours...</span>
+                </div>
+            </div>
+            
+            <div class="progress-bar-glassy">
+                <div class="progress-fill-glassy" id="progressFill"></div>
+                <div class="progress-shine"></div>
+            </div>
+        </div>
+
+        <audio id="bgMusic" preload="auto">
+            <source src="music/song1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="index.js?v=1"></script>
+</body>
+</html>

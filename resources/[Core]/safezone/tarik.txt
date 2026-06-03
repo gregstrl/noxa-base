@@ -1,0 +1,4 @@
+-- Afficher l'ui de zone safe :
+--     TriggerEvent('gamemode:safezone:toggleDisplay', true)
+-- Masquer l'ui de zone safe :
+--     TriggerEvent('gamemode:safezone:toggleDisplay', false)

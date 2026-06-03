@@ -1,0 +1,29 @@
+dmeC = {
+    language = 'fr',
+    color = { r = 0, g = 115, b = 243, a = 250 }, 
+    font = 0,
+    time = 4000,
+    scale = 0.5,
+    dist = 250,
+}
+
+Languages = {
+    ['en'] = {
+        commandName = 'me',
+        commandDescription = 'Display an action above your head.',
+        commandSuggestion = {{ name = 'action', help = '"scratch his nose" for example.'}},
+        prefix = 'the person '
+    },
+    ['fr'] = {
+        commandName = 'me',
+        commandDescription = 'Affiche une action au dessus de votre tête.',
+        commandSuggestion = {{ name = 'action', help = '"se gratte le nez" par exemple.'}},
+        prefix = 'l\'individu '
+    },
+    ['dk'] = {
+        commandName = 'me',
+        commandDescription = 'Viser en handling over hovedet.',
+        commandSuggestion = {{ name = 'Handling', help = '"Tager en smøg op ad lommen" for eksempel.'}},
+        prefix = 'Personen '
+    },
+}

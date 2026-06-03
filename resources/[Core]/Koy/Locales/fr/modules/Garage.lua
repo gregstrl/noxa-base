@@ -1,0 +1,31 @@
+Shared.Lang:Insert("fr", {
+
+    --GARAGE
+    ["garage_zone_text_take"] = "Appuyez sur ~c~[~s~E~s~]~s~ pour accéder au garage",
+    ["garage_zone_text_put"] = "Appuyez sur ~c~[~s~E~s~]~s~ pour rangé le véhicule",
+    ["garage_menu_main_title"] = "Garage",
+    ["garage_menu_main_subtitle"] = "LISTE DES VÉHICULES",
+    ["garage_menu_sub_title"] = "Garage",
+    ["garage_menu_sub_subtitle"] = "Que voulez vous faire ?",
+    ["garage_menu_waiting_vehicles"] = "Chargement des véhicules...",
+    ["garage_menu_waiting_vehicle"] = "Chargement du véhicule...",
+    ["garage_menu_drive"] = "Conduire",
+    ["garage_menu_give"] = "Transaction du véhicule",
+    ["garage_menu_list_give"] = "~r~Donner~s~",
+    ["garage_menu_list_sell"] = "~r~Vendre~s~",
+    ["garage_buy_vehicle"] = "Vous avez acheté le véhicule ~c~(~g~%s~c~)~s~ à ~g~%s",
+    ["garage_sell_vehicle"] = "Vous avez vendu le véhicule ~c~(~g~%s~c~)~s~ à ~g~%s",
+    ["garage_menu_no_vehicles"] = "~r~Aucun véhicule.",
+    ["garage_menu_vehicle_in"] = "~g~Disponible",
+    ["garage_menu_vehicle_out"] = "~r~Sortie",
+    ["garage_vehicle_parked"] = "[~g~Succès~s~] Vous avez rangé votre véhicule.",
+    ["garage_vehicle_not_owned"] = "[~r~Impossible~s~] Vous ne posséder pas ce véhicule.",
+    ["garage_player_give"] = "Vous avez donner le véhicule ~c~(~g~%s~c~)~s~ à ~g~%s",
+    ["garage_player_receive"] = "Vous avez reçu le véhicule ~c~(~g~%s~c~)~s~ de la part de ~g~%s",
+    ["garage_menu_authorisation_prompt"] = "Appuyer sur ~c~[~g~Y~c~]~s~ pour confirmer l'achat de ~c~(~g~%s~c~)~s~ à ~g~%s~s~ pour ~g~%s~g~$",
+    ["garage_menu_prompt_notification_header"] = "Vente entre particulier",
+    ["garage_prompt_canceled"] = "[~r~Impossible~s~] La requête de paiment a expiré.",
+    ["garage_request_canceled"] = "[~r~Impossible~s~] Requête annulé.",
+    ["garage_vehicle_boutique"] = "[~r~Impossible~s~] Ce véhicule ne peut pas être donner/vendu",
+    
+});

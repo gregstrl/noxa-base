@@ -1,0 +1,140 @@
+
+
+.middle-bottom-slots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 29.708vw;
+	height: 5.4vw;
+	position: absolute;
+	right: 30vw;
+	bottom: 4vh;
+}
+
+
+.middle-slot-box {
+	display: flex;
+	width: 5.4vw;
+	height: 5.4vw;
+	
+	background-color: #111111ab;
+    border-radius: 3%;
+	margin: 0.15vw;
+	position: relative;
+	transition: all 0.1s ease;
+	cursor: pointer;
+}
+.middle-slot-box:hover{
+	
+	background: var(--hover-color);
+}
+.middle-slot-box:active{
+	
+	background: var(--active-color);
+}
+.middle-slot-box:nth-child(1) {
+	margin-left: 0.15vw;
+}
+.middle-slot-box span:nth-child(1) {
+	margin-top: 0.313vw;
+	margin-left: 0.729vw;
+}
+.middle-slot-box img:nth-child(2) {
+	position: absolute;
+	width: 4.479vw;
+	height: 1.354vw;
+	margin-top: 1.927vw;
+	margin-left: 0.365vw;
+}
+
+/* item */
+
+.slot {
+    display: flex;
+    float: left;
+    width: 5.4vw;
+    height: 5.4vw;
+    bottom: -5%;
+    color: #fff;
+    /* border: 0.078vw solid var(--background-color); */
+    background-color: #111111ab;
+    border-radius: 3%; 
+    margin: 0.15vw;
+    /* border-radius: 3%; */
+    position: relative;
+}
+
+
+.slot:hover {
+
+	background: var(--hover-color);
+}
+.slot:active {
+	/* border: 0.052vw solid rgba(0, 85, 255, 0.2); */
+	background: var(--active-color);
+}
+
+
+.slot-name {
+    position: absolute;
+    background-color: rgba(2,2,2, 0.315);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.55vw;
+    /* font-weight: bold; */
+    text-align: center;
+    padding-top: 0.186vw;
+    padding-bottom: 0.417vw;
+    margin-left: -.38vw;
+    width: 5.4vw;
+    min-height: 0.15vw;
+    bottom: 0;
+    border-radius: 0.2vw;
+    z-index: 500
+}
+
+.ui-draggable-dragging .slot-name  {
+    display: none
+}
+
+.slot-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    color: rgba(255, 255, 255, 0.35);
+    z-index: 200;
+    font-size: 2vw;
+    pointer-events: none;
+}
+
+#shortcut-label {
+	position: absolute;
+	top: 35.8vw;
+	right: 50vw;
+	font-size: 1.2vw;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	color: #ffffffcc;
+	pointer-events: none;
+	z-index: 600;
+}
+
+#tips-label {
+	position: absolute;
+	top: 44.3vw;
+	left: -68vw;
+	right: 0;
+	width: 100vw;
+	font-size: 0.5vw;
+	line-height: 1.2;
+	color: #ffffffcc;
+	text-align: center;
+	pointer-events: none;
+	z-index: 600;
+}

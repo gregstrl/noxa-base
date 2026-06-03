@@ -1,0 +1,76 @@
+.loading-bar-kg-left-part {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 20vw;
+	height: auto;
+	margin-left: 2.2vw;
+	position: relative; 
+
+}
+.text-loading-bar-left-part {
+    display: flex;
+	font-size: 0.68vw;
+	color: #ffff;
+}
+.text-loading-bar-left-part span:nth-child(2) {
+	margin-left: auto;
+}
+#weight {
+	position: absolute;
+	top: 31.9vw; 
+	left: 19.3vw; 
+	white-space: nowrap;
+	pointer-events: none;
+}
+#weight-icon {
+	position: absolute;
+	top: 32vw;
+	left: 2vw;
+	font-size: 0.5vw;
+	color: #ffffffad;
+	pointer-events: none;
+}
+#weight-icon i {
+	color: inherit;
+}
+.inventory-label-left {
+	font-size: 0.833vw;
+	color: #ffff;
+	position: relative;
+	top: 0vw;
+	margin-left: 0vw;
+}
+.weight-text-left {
+	font-size: 0.233vw;
+	color: #ffff;
+	position: absolute; 
+	top: 31.5vw; 
+	left: 3.3vw; 
+}
+.novalue-left-part {
+	display: flex;
+	align-items: center;
+	width: 15.2vw;
+	height: 0.721vw;
+	background: #1111116c;
+	margin-top: 0.4vw;
+	border-radius: 9vw;
+    margin-left: 3.3vw;
+	position: relative; 
+	top: 31.5vw; 
+}
+.value-left-part {
+	height: 0.721vw;
+    border-radius: 9vw;
+    background: #0055ff;
+    animation: width 3s ease;
+}
+
+@keyframes width {
+	0% { width: 0%; }
+	100% { width: width; }
+}
+.weight-current {
+	color: #0055ff;
+}
