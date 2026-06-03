@@ -153,9 +153,18 @@ AddEventHandler('pSociety:washMoney', function(society, amount, tax)
 	local xPlayer = ESX.GetPlayerFromId(source)
 	local societyy = pSociety.GetSociety(society)
 	local account = xPlayer.getAccount(pSocietyCFG.BlackMoney)
-	tax = ESX.Math.Round(tonumber(amount*tax))
-	amount = ESX.Math.Round(tonumber(amount))
-	finalamount = ESX.Math.Round(tonumber(amount-tax))
+	-- Securite : amount ET tax viennent du client. Sans garde, un tax negatif rend
+	-- finalamount > amount (blanchit plus que le black money retire). On valide et on borne.
+	amount = tonumber(amount)
+	tax = tonumber(tax)
+	if (not amount) or (not tax) or amount <= 0 then
+		return
+	end
+	tax = ESX.Math.Round(amount*tax)
+	amount = ESX.Math.Round(amount)
+	finalamount = ESX.Math.Round(amount-tax)
+	if finalamount < 0 then finalamount = 0 end
+	if finalamount > amount then finalamount = amount end
 	money = ESX.Math.GroupDigits(amount)..""..pSociety.Trad["money_symbol"]
 
 	if xPlayer.job.name == society then

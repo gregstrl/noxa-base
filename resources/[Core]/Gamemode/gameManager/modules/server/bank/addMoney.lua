@@ -13,6 +13,13 @@ RegisterNetEvent("Bank:addMoney", function(money)
         return
     end
 
+    -- Securite : le montant vient du client. On exige un entier strictement positif
+    -- sinon un montant negatif/decimal/non-numerique permet de dupliquer de l'argent.
+    money = tonumber(money)
+    if (not money) or money <= 0 or money ~= math.floor(money) then
+        return
+    end
+
     if (xPlayer.getAccount("cash").money >= money) then
         xPlayer.removeAccountMoney("cash", money)
         xPlayer.addAccountMoney("bank", money)

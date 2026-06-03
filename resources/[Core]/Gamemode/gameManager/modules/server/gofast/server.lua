@@ -109,10 +109,27 @@ RegisterNetEvent("gofast:reward")
 AddEventHandler("gofast:reward", function()
     local _source = source
     local xPlayer = ESX.GetPlayerFromId(_source)
-    if xPlayer then
-        local reward = math.random(50000, 80000)
-        xPlayer.addAccountMoney('dirtycash', reward)
-        TriggerClientEvent("gofast:success", _source, reward)
+    if not xPlayer then return end
+
+    local identifier = GetPlayerIdentifier(_source, 0)
+    if not identifier then return end
+
+    -- Securite : cet event etait declenchable en boucle par le client => imprimante a argent.
+    -- On le gate sur le meme cooldown 12h que le run, et on pose le cooldown cote serveur
+    -- (au lieu de faire confiance au client pour appeler gofast:startCooldown separement).
+    if cooldowns[identifier] and cooldowns[identifier] > os.time() then
+        return
     end
+
+    cooldowns[identifier] = os.time() + 43200
+    MySQL.Async.execute(
+        "INSERT INTO gofast_cooldown (identifier, cooldown) VALUES (@identifier, @cooldown) ON DUPLICATE KEY UPDATE cooldown = @cooldown",
+        {["@identifier"] = identifier, ["@cooldown"] = cooldowns[identifier]}
+    )
+
+    local reward = math.random(50000, 80000)
+    xPlayer.addAccountMoney('dirtycash', reward)
+    TriggerClientEvent("gofast:updateCooldown", _source, 43200)
+    TriggerClientEvent("gofast:success", _source, reward)
 end)
 
