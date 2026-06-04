@@ -1731,7 +1731,7 @@ INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, 
 (1552, 'bahamas', 1, 'videur', 'Videur', 1500, '{}', '{}'),
 (1553, 'bahamas', 2, 'dj', 'DJ', 5000, '{}', '{}'),
 (1554, 'bahamas', 3, 'boss', 'Gérant', 8000, '{}', '{}'),
-(1642, 'cardealer', 4, 'boss', 'Patron', 9999, '{}', '{}'),
+(1642, 'cardealer', 4, 'boss', 'Patron', 1000, '{}', '{}'), -- Ajusté Noxa : 9999 → 1000 (salaire aberrant pour métier à commission ; aligné sur cardealer2 boss=1000)
 (1655, 'cardealer2', 0, 'recruit', 'Recrue', 400, '{}', '{}'),
 (1656, 'cardealer2', 1, 'novice', 'Novice', 500, '{}', '{}'),
 (1657, 'cardealer2', 2, 'experienced', 'Experimente', 800, '{}', '{}'),
@@ -9004,6 +9004,18 @@ CREATE TABLE IF NOT EXISTS `KoyCase_codes` (
   `code` varchar(255) NOT NULL,
   `creditCount` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Table `KoyCase`
+-- Réf : [GameMode]/MysteryCase/server/main.lua:571 (UPDATE goldcoin WHERE citizenid — rédemption de code)
+-- Intégrité Noxa : table référencée activement mais absente du schéma → ajoutée
+--
+CREATE TABLE IF NOT EXISTS `KoyCase` (
+  `citizenid` varchar(255) NOT NULL,
+  `goldcoin` int(11) NOT NULL DEFAULT 0,
+  `silvercoin` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`citizenid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
