@@ -12,7 +12,7 @@ Citizen.CreateThread(function()
     if AK4Y.Framework == "esx" then
 		while ESX == nil do
 			TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-			Wait(0)
+			Wait(100)
 		end
     elseif AK4Y.Framework == "newEsx" then 
 		while ESX == nil do 

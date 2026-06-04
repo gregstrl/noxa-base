@@ -4,7 +4,7 @@ ESX = nil
 function LoadESX()
     while ESX == nil do
         TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-        Wait(0)
+        Wait(100)
     end    
     
 	ESX.PlayerData = ESX.GetPlayerData()

@@ -477,7 +477,7 @@ Citizen.CreateThread(function()
 									end)
 								end, i)
 								while canRob == nil do
-									Wait(0)
+									Wait(100)
 								end
 							end
                             if canRob == true then

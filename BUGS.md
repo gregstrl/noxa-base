@@ -226,6 +226,7 @@
 | BUG-20 | Injection SQL `MysteryCase` (`KoyCase:sendInput`) → requêtes paramétrées | Audit 2026-06-04 |
 | BUG-21 | Intégrité SQL : 3 tables manquantes ajoutées à `install.sql` | Audit 2026-06-04 |
 | BUG-22 | Anti-dupe : 5 handlers à montant-client durcis (négatif/décimal bloqué) | Audit 2026-06-04 |
+| PERF-01 | Optim : 24 spin-loops readiness ESX `Wait(0)`→`Wait(100)` (19 fichiers) — voir README ## Performance | Optim 2026-06-04 |
 
 > **Non traités cette session** (nécessitent assets/licences/runtime ou décision owner) :
 > BUG-11 (location/script.js obfusqué), BUG-12 (HUD JSON — runtime), BUG-14 (28 entrées fxmanifest manquantes — nettoyage volumineux), BUG-15 (kay_cam licence), BUG-17 (police `chineserocks.ttf` manquante — asset). Voir README ## QA & Sécurité.

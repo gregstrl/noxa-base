@@ -474,7 +474,7 @@ _AddExplosion = AddExplosion
 Citizen.CreateThread(function()
 	while ESX == nil do
 		TriggerEvent(Config.Get.ESX, function(obj) ESX = obj end)
-		Wait(0)
+		Wait(100)
   	end
 end)
 

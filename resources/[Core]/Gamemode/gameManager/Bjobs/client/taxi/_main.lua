@@ -57,17 +57,17 @@ end
 
 CreateThread(function()
     while (ESX == nil) do
-        Wait(0)
+        Wait(100)
     end
 
     while (ESX.GetPlayerData() == nil or ESX.GetPlayerData().job == nil) do
-        Wait(0)
+        Wait(100)
     end
 
     TriggerServerEvent("Taxi:request:loadConfig")
 
     while (Taxi.Config == nil) do
-        Wait(0)
+        Wait(100)
     end
 
     local playerData = ESX.GetPlayerData()
