@@ -15,7 +15,6 @@ files {
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
 'server/sv_elevator.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 client_scripts {

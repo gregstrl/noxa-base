@@ -80,6 +80,37 @@ Audit complet réalisé le **2026-06-03** sur **2178 fichiers Lua**.
 
 > Session **2026-06-03** — focus *bugs logiques + sécurisation des events réseau*. **Aucun menu / UI / feature gameplay supprimé.** Tous les fichiers Lua touchés revalidés via `luac5.4 -p`.
 
+### 🛡️ Session 2026-06-04 — Audit sécurité approfondi
+
+> Focus *éradication backdoor (résidus), injection SQL, intégrité SQL*. **Aucune modif visuelle / feature gameplay.** Manifests & Lua touchés revalidés `luac5.4 -p`.
+
+**1. 🚨 BUG-09 — la backdoor n'était PAS entièrement éradiquée (résidus actifs trouvés).**
+La session précédente avait supprimé les 67 *payloads* `.js`, mais **les références injectées subsistaient dans les `fxmanifest.lua`**, masquées après les runs de whitespace. Comme `--[[server.lua]]` est un commentaire *fermé* (`]]`), l'entrée `.js` qui suit était une entrée **vivante** dans les tables `server_scripts`/`client_scripts` :
+
+| Manifest | Entrée backdoor résiduelle (retirée) |
+|---|---|
+| `[Core]/Koy/fxmanifest.lua` | `'server/utils/.tsup.config.js'` (dans `server_scripts`) |
+| `[GameMode]/doorlock/fxmanifest.lua` | `'client/lib/.job_runner.js'` |
+| `[Shyroz]/[Kscript]/kay_loading/fxmanifest.lua` | `'data/.snapshot.js'` (seule entrée du bloc → 100 % malveillant) |
+| `[GameMode]/ox_target/fxmanifest.lua` | **3 lignes préfixées** injectant `@frame/{client,server}/security/_main.lua` + `event.lua` (= ressource `Framework`, dossiers `security/` **inexistants**) |
+
+Les fichiers `.js` pointés n'existaient plus sur disque (payloads déjà purgés) → pas d'exécution en cours, mais erreurs `Failed to load script` + **ré-armement trivial** si quelqu'un recrée le fichier. **Remédiation** : retrait des 4 entrées + nettoyage du **footprint `--[[server.lua]]` dans les 60 manifests** (lignes 100 % commentaire+whitespace). Vérif finale : `0` footprint, `0` réf `.js` backdoor, `0` réf `@frame/security`, `0` payload C2 sur disque (signature `globalThis["eval"]` / domaines `steaxscripts.com`·`9ns1.com` recherchée sur les 110 `.js`). Tous les manifests revalidés `luac5.4 -p` + accolades équilibrées.
+
+**2. ✅ Résidu `fg_BanPlayer` arbitré (BUG-09).**
+`Core/src/server/afk/main.lua:489,494` appelait `exports['Jetevois']:fg_BanPlayer(...)`. `Jetevois` étant la **ressource backdoor C2** (à ne jamais restaurer) et aucune API de ban simple n'existant dans `BanSQL`, l'intention anti-cheat est préservée par une **action défensive native** : `SeaLogs(...)` (log Discord existant) + `DropPlayer(source, reason)`. Plus aucune dépendance au backdoor, plus de `No such export`.
+
+**3. 🔓 Injection SQL corrigée — `MysteryCase`.**
+Le callback `ESX.RegisterServerCallback('KoyCase:sendInput')` concaténait `data.input` (**fourni par le client**) directement dans du SQL brut via `ExecuteSql` → injection (`' OR '1'='1`, requêtes empilées, exfiltration). **Correctif** : `ExecuteSql(query)` → `ExecuteSql(query, params)` (rétro-compatible, `params` optionnel) ; les requêtes touchant des données client/serveur passées en **requêtes paramétrées** (`?` placeholders). Aucune feature modifiée.
+
+**4. 🗄️ Intégrité SQL (`install.sql`).**
+3 tables référencées par le code Lua mais absentes du dump ajoutées (schémas dérivés des `INSERT`/`SELECT`, `IF NOT EXISTS`, idempotent) : `Koy_afk_players` (AFK), `KoyCase_codes` (MysteryCase), `eInvest` (AFK-farm).
+
+**5. 🧩 BUG-02 — `ox_lib/web/build` rendu persistant.**
+Le build était gitignoré (`/web/build`) → absent à chaque fresh clone malgré le « ✅ » précédent. Build officiel v3.37.0 (= version du repo, aucun mismatch) re-déployé et **force-add** dans le repo pour que le fix persiste.
+
+> ⚠️ **Branding `WISEFA` (server.cfg) laissé intact** : `database=` est déjà `noxa` (BUG-01 OK). Les occurrences `wise` restantes sont du **branding visuel** (nom serveur, hostname, discord, tags) → **règle ZÉRO modif visuelle**. Le `sed s|/wise|/noxa|` aurait cassé `discord.gg/wisefa` → non appliqué. Rebranding à faire par l'owner si souhaité.
+
+
 ### 🚨 Incident majeur — Backdoor RCE éradiquée (BUG-09 / BUG-19)
 
 Découverte d'une **compromission supply-chain** : **67 fichiers `.js` malveillants** disséminés dans la base, déguisés en fichiers de config de développement (`.tsup.config.js`, `.swc.config.js`, `.babelrc.js`, `.eslintrc.js`, `.jest.config.js`, `.webpack.config.js`, `.eventHandler.js`, `.gitkeep.js`, `.patcher.js`, `.cache.js`, `.mocks.js`, `.dummyData.js`, `webpack_builder.js`…).

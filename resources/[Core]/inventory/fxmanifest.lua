@@ -37,7 +37,6 @@ server_scripts {
   'server/apps/default/*.lua',
   'server/apps/system/*.lua',
   "server/main.lua",
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 ui_page 'src/html/ui.html'
 files {

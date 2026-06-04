@@ -29,7 +29,6 @@ server_scripts {
 	"server/emulator/interact_sound/server.lua",
 
 	"addon/**/server/*.lua",
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 ui_page "html/index.html"

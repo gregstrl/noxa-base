@@ -12,7 +12,6 @@ server_scripts {
     "mime.lua",
     "httphandler.lua",
 'server.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 

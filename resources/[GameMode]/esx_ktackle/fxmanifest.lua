@@ -5,7 +5,6 @@ game('gta5')
 server_scripts {
 	'config.lua',
 'server/main.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 --client_script('@korioz/lib.lua')
 client_scripts {

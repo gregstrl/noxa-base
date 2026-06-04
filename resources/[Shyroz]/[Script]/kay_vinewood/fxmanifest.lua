@@ -17,7 +17,6 @@ shared_scripts {
 
 server_scripts {
     'server.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 ui_page 'web/index.html'

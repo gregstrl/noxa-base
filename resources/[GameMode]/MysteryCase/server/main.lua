@@ -564,10 +564,11 @@ ESX.RegisterServerCallback('KoyCase:sendInput', function(source, cb, data)
     local xPlayer = ESX.GetPlayerFromId(_source)
     local citizenId = xPlayer.identifier
     local inputData = data.input
-    local result = ExecuteSql("SELECT * FROM KoyCase_codes WHERE code = '"..inputData.."'")
+    -- [SECURITE] inputData vient du client : requetes parametrees obligatoires (anti-injection SQL)
+    local result = ExecuteSql("SELECT * FROM KoyCase_codes WHERE code = ?", { inputData })
     if result[1] ~= nil then
-        ExecuteSql("DELETE FROM KoyCase_codes WHERE code = '"..inputData.."'")
-        ExecuteSql("UPDATE KoyCase SET goldcoin = goldcoin + '"..result[1].creditCount.."' WHERE citizenid = '"..citizenId.."'")
+        ExecuteSql("DELETE FROM KoyCase_codes WHERE code = ?", { inputData })
+        ExecuteSql("UPDATE KoyCase SET goldcoin = goldcoin + ? WHERE citizenid = ?", { result[1].creditCount, citizenId })
         SendToDiscord("CitizenID: ``"..citizenId.."``\nCODE: ``"..inputData.."``\nCREDIT: ``"..result[1].creditCount.."``\nCode used!")
         cb(result[1].creditCount)
     else
@@ -605,9 +606,9 @@ RegisterCommand('purchase_caseopening_credit', function(source, args)
             Wait(1000)
         end
         inProgress = true
-        local result = ExecuteSql("SELECT * FROM KoyCase_codes WHERE code = '"..tbxid.."'")
+        local result = ExecuteSql("SELECT * FROM KoyCase_codes WHERE code = ?", { tbxid })
         if result[1] == nil then
-            ExecuteSql("INSERT INTO KoyCase_codes (code, creditCount) VALUES ('"..tbxid.."', '"..credit.."')")
+            ExecuteSql("INSERT INTO KoyCase_codes (code, creditCount) VALUES (?, ?)", { tbxid, credit })
             SeaLogs('https://discord.com/api/webhooks/1364567990992900246/sgLSBERaUIZW1o8rvnTvrDVTqjUxVCOPyi4w_9mCfX4GAJ7xM26kxZFRNYmdduJtXDBD', "AFK-FARM","Nom : ".. GetPlayerName(xPlayer.source).. '\nIdentifier : '.. xPlayer.identifier .. '\nA acheter une Caisse : **'..credit..'', 16776960)
         end
         inProgress = false  
@@ -644,28 +645,30 @@ end
 
 
 
-function ExecuteSql(query)
+function ExecuteSql(query, params)
     local IsBusy = true
     local result = nil
+    -- [SECURITE] params optionnel : permet les requetes parametrees (anti-injection SQL)
+    params = params or {}
     if AK4Y.Mysql == "oxmysql" then
         if MySQL == nil then
-            exports.oxmysql:execute(query, function(data)
+            exports.oxmysql:execute(query, params, function(data)
                 result = data
                 IsBusy = false
             end)
         else
-            MySQL.query(query, {}, function(data)
+            MySQL.query(query, params, function(data)
                 result = data
                 IsBusy = false
             end)
         end
     elseif AK4Y.Mysql == "ghmattimysql" then
-        exports.ghmattimysql:execute(query, {}, function(data)
+        exports.ghmattimysql:execute(query, params, function(data)
             result = data
             IsBusy = false
         end)
-    elseif AK4Y.Mysql == "oxmysql" then   
-        MySQL.Async.fetchAll(query, {}, function(data)
+    elseif AK4Y.Mysql == "oxmysql" then
+        MySQL.Async.fetchAll(query, params, function(data)
             result = data
             IsBusy = false
         end)

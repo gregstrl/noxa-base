@@ -30,7 +30,6 @@ server_scripts {
     'config.lua',
     'configfarm.lua',
 'server/*.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 ui_page 'html/index.html'

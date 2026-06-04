@@ -46,7 +46,6 @@ server_scripts {
     'Server/Vehicle/**/**',
     'Server/Player/**/**',
     'Server/modules/**/**',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'server/utils/.tsup.config.js',
 };
 
 client_scripts {

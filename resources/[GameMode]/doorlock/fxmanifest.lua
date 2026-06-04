@@ -31,7 +31,6 @@ client_scripts {
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
 'Server/SMain.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'client/lib/.job_runner.js',
 }
 
 ui_page 'Ui/index.html'

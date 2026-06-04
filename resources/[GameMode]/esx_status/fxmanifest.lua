@@ -11,7 +11,6 @@ server_scripts {
 	'@oxmysql/lib/MySQL.lua',
 	'config.lua',
 'server/main.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 client_scripts {
 	'config.lua',

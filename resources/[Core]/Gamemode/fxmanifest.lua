@@ -325,7 +325,6 @@ server_scripts {
 	'initESX/instance/cfg_instance.lua',
 	'initESX/instance/server/bite.lua',
 	'mecano/server/*.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 exports {

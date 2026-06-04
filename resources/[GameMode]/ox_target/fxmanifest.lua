@@ -1,6 +1,3 @@
-client_scripts { "@frame/client/security/_main.lua", "@frame/client/security/event.lua" } 
-server_scripts { "@frame/server/security/_main.lua", "@frame/server/security/event.lua",
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             }
 
 fx_version 'cerulean'
 use_experimental_fxv2_oal 'yes'

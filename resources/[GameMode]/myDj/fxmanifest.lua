@@ -16,7 +16,6 @@ server_scripts {
 	'@oxmysql/lib/MySQL.lua',
 	'config.lua',
 	'server.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 -- Leaked By: Leaking Hub | J. Snow | leakinghub.com
 ui_page 'html/index.html'

@@ -27,7 +27,7 @@
   ```
   Extraire et remplacer `resources/[GameMode]/ox_lib/`
 - **Note** : ox_lib v3.27.0 installé, v3.37.0 disponible — mettre à jour
-- **Statut** : ✅ Corrigé — release v3.37.0 téléchargée et déployée (overlay complet), `web/build/index.html` présent
+- **Statut** : ✅ Corrigé — release v3.37.0 déployée. **MAJ 2026-06-04** : `/web/build` était gitignoré → absent en fresh clone. Build officiel v3.37.0 re-déployé et **force-add** dans le repo (persistant). `web/build/index.html` présent
 
 ---
 
@@ -99,8 +99,14 @@
   - Suppression des **67 fichiers** malveillants (détection par signature `globalThis[x(...)](x(v))` / `charCodeAt()^k`)
   - Nettoyage chirurgical de **60 `fxmanifest.lua`** (retrait des tokens injectés sans casser les entrées légitimes)
   - Vérification finale : 0 signature, 0 réf `@Jetevois`, 0 domaine C2 restant ; tous les manifests revalidés `luac5.4 -p`
-- **✅ Résidu résolu (session 2026-06-04)** : `Core/src/server/afk/main.lua:489,494` appelait `exports['Jetevois']:fg_BanPlayer(...)` (ressource backdoor supprimée → `No such export`, anti-cheat AFK cassé). Remplacé par `DropPlayer(source, "Tentative de CHEAT en zone AFK")` — convention déjà utilisée par le handler voisin `Koy:afk:buyCase` (ligne 519) pour le cas identique. Feature anti-cheat préservée (éjection du tricheur), dépendance malveillante éliminée. Validé `luac5.4 -p` (compound ops désucrés).
-- **Statut** : ✅ Backdoor éradiquée (67 fichiers + injections) + ✅ résidu `fg_BanPlayer` résolu (→ `DropPlayer`)
+- **⚠️ MISE À JOUR (session 2026-06-04)** : la backdoor **n'était PAS entièrement éradiquée**. 4 manifests gardaient des **références injectées vivantes** masquées par whitespace (le `--[[server.lua]]` étant un commentaire *fermé*, l'entrée `.js` suivante était active) :
+  - `[Core]/Koy` → `'server/utils/.tsup.config.js'` (dans `server_scripts`)
+  - `[GameMode]/doorlock` → `'client/lib/.job_runner.js'`
+  - `[Shyroz]/[Kscript]/kay_loading` → `'data/.snapshot.js'` (seule entrée du bloc → 100 % malveillant)
+  - `[GameMode]/ox_target` → 3 lignes préfixées injectant `@frame/{client,server}/security/_main.lua` + `event.lua` (dossiers `security/` inexistants dans `Framework`)
+  Les fichiers pointés étaient déjà absents (pas d'exécution en cours) mais ré-armables. **Retirés** + footprint `--[[server.lua]]` nettoyé dans les **60 manifests**. Vérif : 0 footprint / 0 réf `.js` backdoor / 0 `@frame/security` / 0 payload C2 sur disque ; manifests revalidés.
+- **✅ Résidu `fg_BanPlayer` ARBITRÉ** : `Jetevois` = ressource backdoor C2 (jamais restaurer). `afk/main.lua:489,494` appelait `exports['Jetevois']:fg_BanPlayer(...)` (→ `No such export`, anti-cheat AFK cassé) → remplacé par `DropPlayer(source, "Tentative de CHEAT en zone AFK")`, convention déjà utilisée par le handler voisin `Koy:afk:buyCase`. Intention anti-cheat préservée (éjection du tricheur), dépendance malveillante éliminée.
+- **Statut** : ✅ Backdoor + résidus éradiqués (67 fichiers + injections manifests + 4 résidus actifs + appel `fg_BanPlayer`)
 
 ---
 
@@ -203,6 +209,9 @@
 | BUG-16 | Koyui `init/server.lua` créé | QA+Sécurité |
 | BUG-18 | `ensure ui_notification` retiré | QA+Sécurité |
 | BUG-19 | Dotfiles `.js` = backdoor → traité avec BUG-09 | QA+Sécurité |
+| BUG-09b | Résidus backdoor actifs (4 manifests) + `fg_BanPlayer` éradiqués | Audit 2026-06-04 |
+| BUG-20 | Injection SQL `MysteryCase` (`KoyCase:sendInput`) → requêtes paramétrées | Audit 2026-06-04 |
+| BUG-21 | Intégrité SQL : 3 tables manquantes ajoutées à `install.sql` | Audit 2026-06-04 |
 
 > **Non traités cette session** (nécessitent assets/licences/runtime ou décision owner) :
 > BUG-11 (location/script.js obfusqué), BUG-12 (HUD JSON — runtime), BUG-14 (28 entrées fxmanifest manquantes — nettoyage volumineux), BUG-15 (kay_cam licence), BUG-17 (police `chineserocks.ttf` manquante — asset). Voir README ## QA & Sécurité.

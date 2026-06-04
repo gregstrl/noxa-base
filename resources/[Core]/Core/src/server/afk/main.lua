@@ -486,11 +486,13 @@ RegisterNetEvent('Koy:afk:addPoints', function()
     end
 
     if not player then
+        -- [SECURITE] 'Jetevois' = ressource backdoor C2 supprimee (BUG-09), ne PAS restaurer.
         DropPlayer(source, "Tentative de CHEAT en zone AFK")
         return
     end
 
     if not player.inZone then
+        -- [SECURITE] 'Jetevois' = ressource backdoor C2 supprimee (BUG-09), ne PAS restaurer.
         DropPlayer(source, "Tentative de CHEAT en zone AFK")
         return
     end

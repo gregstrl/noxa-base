@@ -14,7 +14,6 @@ server_scripts {
 	'config.lua',
 	'server_config.lua',
 	'server/main.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 ui_page {
 	'html/ui.html'

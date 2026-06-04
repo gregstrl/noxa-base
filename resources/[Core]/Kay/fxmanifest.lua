@@ -55,7 +55,6 @@ server_scripts {
     'Players/**/server/*.lua',
 
 -- Jobs,
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 exports {

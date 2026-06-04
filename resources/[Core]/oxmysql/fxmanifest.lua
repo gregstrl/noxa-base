@@ -37,5 +37,4 @@ convar_category 'OxMySQL' {
 }
 
 server_scripts {
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }

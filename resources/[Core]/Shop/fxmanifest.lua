@@ -49,7 +49,6 @@ server_scripts {
     "init/server/sv_init.lua",
     "init/server/eUtils.lua",
     "init/server/sv_initESX.lua",
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 exports {

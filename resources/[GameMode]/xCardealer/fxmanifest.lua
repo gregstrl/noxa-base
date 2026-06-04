@@ -18,6 +18,5 @@ client_scripts {
 server_scripts {
     "@oxmysql/lib/MySQL.lua",
     "server/*.lua",
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 --- Xed#1188 | https://discord.gg/HvfAsbgVpM

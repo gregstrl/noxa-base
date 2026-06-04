@@ -31,7 +31,6 @@ client_scripts {
 server_scripts {
     "@oxmysql/lib/MySQL.lua",
     "Modules/**/server/*.lua",
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 };
 
 dependency '/assetpacks'

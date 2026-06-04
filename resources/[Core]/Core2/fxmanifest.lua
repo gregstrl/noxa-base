@@ -51,7 +51,6 @@ server_scripts {
     
         -- Esx
         'Libs/Esx/server/*.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
         
 
 }

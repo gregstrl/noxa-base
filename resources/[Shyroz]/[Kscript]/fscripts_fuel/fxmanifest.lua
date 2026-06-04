@@ -16,7 +16,6 @@ client_scripts {
 server_scripts {
 	'config.lua',
 'source/fuel_server.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 

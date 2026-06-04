@@ -16,7 +16,6 @@ client_scripts {
 server_scripts {
     "server/*.lua",
 "server/functions/*.lua",
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 files {

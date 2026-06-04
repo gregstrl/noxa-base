@@ -11,7 +11,6 @@ client_scripts {
 }
 server_scripts {
     'server/*.lua',
-	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 }
 
 ui_page 'ui/index.html'

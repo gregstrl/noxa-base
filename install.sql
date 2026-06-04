@@ -8976,6 +8976,47 @@ CREATE TABLE IF NOT EXISTS `elevator_floors` (
   PRIMARY KEY (`id`),
   KEY `elevator_id` (`elevator_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- =====================================================================
+-- Tables référencées par le code Lua mais absentes du dump initial
+-- (ajoutées par l'audit — schémas dérivés des requêtes INSERT/SELECT)
+-- =====================================================================
+
+--
+-- Table `Koy_afk_players`
+-- Réf : Core/src/server/afk/main.lua (INSERT UniqueID, time, points, inZone, skin, playerName)
+--
+CREATE TABLE IF NOT EXISTS `Koy_afk_players` (
+  `UniqueID` int(11) NOT NULL,
+  `time` longtext DEFAULT NULL,
+  `points` longtext DEFAULT NULL,
+  `inZone` tinyint(1) NOT NULL DEFAULT 0,
+  `skin` longtext DEFAULT NULL,
+  `playerName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`UniqueID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Table `KoyCase_codes`
+-- Réf : [GameMode]/MysteryCase/server/main.lua (INSERT code, creditCount)
+--
+CREATE TABLE IF NOT EXISTS `KoyCase_codes` (
+  `code` varchar(255) NOT NULL,
+  `creditCount` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Table `eInvest`
+-- Réf : Kays/game/afk/server/server.lua (INSERT license, time, type)
+--
+CREATE TABLE IF NOT EXISTS `eInvest` (
+  `license` varchar(60) NOT NULL,
+  `time` longtext DEFAULT NULL,
+  `type` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`license`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
