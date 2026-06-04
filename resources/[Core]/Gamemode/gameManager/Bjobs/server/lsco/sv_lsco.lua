@@ -175,7 +175,8 @@ RegisterNetEvent('confiscatePlayerItemlsco', function(target, itemType, itemName
             end         
             if itemType == 'item_account' then
                 local targetAccount = targetXPlayer.getAccount(itemName)
-                if (targetAccount and targetAccount.money >= amount) then
+                amount = tonumber(amount)
+                if (amount and amount > 0 and amount == math.floor(amount) and targetAccount and targetAccount.money >= amount) then
                     targetXPlayer.removeAccountMoney(itemName, amount);
                     TriggerClientEvent("esx:showNotification", source, "Vous avez confisqué ~g~"..amount.."$ ~s~argent non déclaré~s~.");
                     TriggerClientEvent("esx:showNotification", target, "Quelqu'un vous a pris ~g~"..amount.."$ ~s~argent non déclaré~s~.");
@@ -236,11 +237,19 @@ end)
 RegisterNetEvent("lsco:SendFacture", function(target, price)
     local source = source
 	local xPlayer = ESX.GetPlayerFromId(source)
+	if not xPlayer then return end
 
 	if xPlayer.job.name ~= 'lsco' then
         xPlayer.ban(0, '(lsco:SendFacture)');
         return
 	end
+
+    -- Securite : le prix vient du client. Entier strictement positif obligatoire,
+    -- sinon un prix negatif/decimal ajoute de l'argent a la cible et corrompt la societe.
+    price = tonumber(price)
+    if (not price) or price <= 0 or price ~= math.floor(price) then
+        return
+    end
 
     local society = ESX.DoesSocietyExist("lsco");
 

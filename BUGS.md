@@ -99,8 +99,8 @@
   - Suppression des **67 fichiers** malveillants (détection par signature `globalThis[x(...)](x(v))` / `charCodeAt()^k`)
   - Nettoyage chirurgical de **60 `fxmanifest.lua`** (retrait des tokens injectés sans casser les entrées légitimes)
   - Vérification finale : 0 signature, 0 réf `@Jetevois`, 0 domaine C2 restant ; tous les manifests revalidés `luac5.4 -p`
-- **⚠️ Résidu à arbitrer (NON modifié)** : `Core/src/server/afk/main.lua:489,494` appelle `exports['Jetevois']:fg_BanPlayer(...)`. La ressource `Jetevois` ayant été supprimée, ces appels lèveront `No such export`. À décider côté owner : était-ce un vrai anticheat ou un résidu de la backdoor ? (logique de ban — hors scope « zéro modif feature » sans validation).
-- **Statut** : ✅ Backdoor éradiquée (67 fichiers + injections). ⚠️ Résidu `fg_BanPlayer` à arbitrer manuellement
+- **✅ Résidu résolu (session 2026-06-04)** : `Core/src/server/afk/main.lua:489,494` appelait `exports['Jetevois']:fg_BanPlayer(...)` (ressource backdoor supprimée → `No such export`, anti-cheat AFK cassé). Remplacé par `DropPlayer(source, "Tentative de CHEAT en zone AFK")` — convention déjà utilisée par le handler voisin `Koy:afk:buyCase` (ligne 519) pour le cas identique. Feature anti-cheat préservée (éjection du tricheur), dépendance malveillante éliminée. Validé `luac5.4 -p` (compound ops désucrés).
+- **Statut** : ✅ Backdoor éradiquée (67 fichiers + injections) + ✅ résidu `fg_BanPlayer` résolu (→ `DropPlayer`)
 
 ---
 

@@ -486,12 +486,12 @@ RegisterNetEvent('Koy:afk:addPoints', function()
     end
 
     if not player then
-        exports['Jetevois']:fg_BanPlayer(source, "Tentative de CHEAT en zone AFK", true)
+        DropPlayer(source, "Tentative de CHEAT en zone AFK")
         return
     end
 
     if not player.inZone then
-        exports['Jetevois']:fg_BanPlayer(source, "Tentative de CHEAT en zone AFK", true)
+        DropPlayer(source, "Tentative de CHEAT en zone AFK")
         return
     end
 
