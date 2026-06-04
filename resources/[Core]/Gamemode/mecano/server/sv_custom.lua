@@ -24,9 +24,13 @@ RegisterServerEvent("BuyLsCustoms")
 AddEventHandler("BuyLsCustoms", function(newVehProps, amount)
     local _src = source
     local xPlayer = ESX.GetPlayerFromId(_src)
+    if not xPlayer then return end
     local job = xPlayer.job.name
     local societyAccount = nil
+    -- Securite : le montant vient du client. Entier strictement positif obligatoire,
+    -- sinon un montant negatif credite la societe (RemoveSocietyMoney avec valeur < 0).
     local price = tonumber(amount)
+    if (not price) or price <= 0 or price ~= math.floor(price) then return end
     TriggerEvent('Mecano:refreshOwnedVehicle', newVehProps)
     TriggerClientEvent("Mecano:installMod", _src)
     ESX.RemoveSocietyMoney(job, price)
@@ -36,9 +40,13 @@ RegisterServerEvent("BuyLsCustomsPDG")
 AddEventHandler("BuyLsCustomsPDG", function(newVehProps, amount)
     local _src = source
     local xPlayer = ESX.GetPlayerFromId(_src)
+    if not xPlayer then return end
     local job = xPlayer.job.name
     local societyAccount = nil
+    -- Securite : le montant vient du client. Entier strictement positif obligatoire,
+    -- sinon un montant negatif credite la societe (RemoveSocietyMoney avec valeur < 0).
     local price = tonumber(amount)
+    if (not price) or price <= 0 or price ~= math.floor(price) then return end
     TriggerEvent('Mecano:refreshOwnedVehicle', newVehProps)
     TriggerClientEvent("Mecano:installMod", _src)
     ESX.RemoveSocietyMoney(job, price)
@@ -48,6 +56,13 @@ end)
 ESX.RegisterServerCallback("Koy:PayCustom", function(source, cb, tplayer, price, societyName)
         local xPlayer = ESX.GetPlayerFromId(source)
         if xPlayer == nil then
+            return
+        end
+        -- Securite : le prix vient du client. Entier strictement positif obligatoire,
+        -- sinon un prix negatif credite la cible et vide la societe.
+        price = tonumber(price)
+        if (not price) or price <= 0 or price ~= math.floor(price) then
+            cb(false)
             return
         end
         local tPlayer = ESX.GetPlayerFromId(tplayer)
@@ -78,6 +93,13 @@ ESX.RegisterServerCallback("Koy:PayCustom", function(source, cb, tplayer, price,
 ESX.RegisterServerCallback("Koy:PayCustomPatron", function(source, cb, tplayer, price, societyName)
     local xPlayer = ESX.GetPlayerFromId(source)
     if xPlayer == nil then
+        return
+    end
+    -- Securite : le prix vient du client. Entier strictement positif obligatoire,
+    -- sinon un prix negatif credite le joueur et vide la societe.
+    price = tonumber(price)
+    if (not price) or price <= 0 or price ~= math.floor(price) then
+        cb(false)
         return
     end
     local job = xPlayer.job.name

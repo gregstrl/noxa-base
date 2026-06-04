@@ -123,7 +123,7 @@
 - **Fichier** : `resources/.../location/web/script.js`
 - **Cause** : Code obfusqué avec variable déclarée deux fois — fichier corrompu ou obfusqué
 - **Fix** : Mettre à jour la ressource `location` ou corriger le script.js
-- **Statut** : ❌ À corriger
+- **Statut** : 🔍 Non reproductible (audit 2026-06-04) — `web/script.js` contient **une seule** déclaration top-level `const _0x3f8090` (ligne 171) et `index.html` n'inclut `script.js` **qu'une fois** (`web/*.js` ne matche qu'un fichier) ; `node --check` passe sans erreur. L'erreur « already declared » provenait d'un état/cache antérieur. Toucher un bundle obfusqué de 1.8 Mo à l'aveugle casserait la feature (règle ZÉRO suppression) → laissé en l'état, à revérifier au runtime navigateur
 
 ---
 
@@ -191,6 +191,19 @@
 
 ---
 
+### [BUG-22] 🚨 Anti-dupe — montants client non validés (génération d'argent)
+- **Erreur** : Plusieurs events serveur débitaient un montant **fourni par le client** sans validation. Un montant **négatif** inverse `removeAccountMoney`/`RemoveSocietyMoney` → **crédit infini** (le check `solde >= prix` passe trivialement pour un prix négatif). Décimaux possibles aussi.
+- **Handlers vulnérables corrigés** :
+  - `autoecole:pay` (`price`) → `removeAccountMoney('bank', price)` — `modules/server/autoecole/main.lua`
+  - `tattoos:save` (`price`) → `removeAccountMoney('cash', price)` — `modules/server/tatouages/main.lua`
+  - `BuyLsCustoms` + `BuyLsCustomsPDG` (`amount`) → `ESX.RemoveSocietyMoney(job, price)` (montant négatif **crédite la société**) — `mecano/server/sv_custom.lua`
+  - `Koy:PayCustom` + `Koy:PayCustomPatron` (callbacks, `price`) → débit bank + `AddSocietyMoney` — `mecano/server/sv_custom.lua`
+- **Fix** : convention déjà en place (cf. lsco) — garde `nil` sur `xPlayer` + `price = tonumber(price); if (not price) or price <= 0 or price ~= math.floor(price) then return end`. Entier strictement positif obligatoire. Comportement légitime (prix positif) **inchangé** ; seul l'exploit négatif/décimal est bloqué.
+- **Note** : `gangsbuilder:UpdateGangProperty` (concat nom de colonne) = **code mort** (jamais rattaché à un net event) → pas de chemin d'exploitation actif, laissé tel quel. `Framework/functions.lua` setUserData (concat valeurs) = code ESX legacy interne (non client) → laissé intact (règle ESX).
+- **Statut** : ✅ Corrigé — 5 handlers durcis, validés `luac5.4 -p`
+
+---
+
 ## ✅ Corrigés
 
 | Bug | Description | Session |
@@ -212,6 +225,7 @@
 | BUG-09b | Résidus backdoor actifs (4 manifests) + `fg_BanPlayer` éradiqués | Audit 2026-06-04 |
 | BUG-20 | Injection SQL `MysteryCase` (`KoyCase:sendInput`) → requêtes paramétrées | Audit 2026-06-04 |
 | BUG-21 | Intégrité SQL : 3 tables manquantes ajoutées à `install.sql` | Audit 2026-06-04 |
+| BUG-22 | Anti-dupe : 5 handlers à montant-client durcis (négatif/décimal bloqué) | Audit 2026-06-04 |
 
 > **Non traités cette session** (nécessitent assets/licences/runtime ou décision owner) :
 > BUG-11 (location/script.js obfusqué), BUG-12 (HUD JSON — runtime), BUG-14 (28 entrées fxmanifest manquantes — nettoyage volumineux), BUG-15 (kay_cam licence), BUG-17 (police `chineserocks.ttf` manquante — asset). Voir README ## QA & Sécurité.

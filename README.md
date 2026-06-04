@@ -110,6 +110,26 @@ Le build était gitignoré (`/web/build`) → absent à chaque fresh clone malgr
 
 > ⚠️ **Branding `WISEFA` (server.cfg) laissé intact** : `database=` est déjà `noxa` (BUG-01 OK). Les occurrences `wise` restantes sont du **branding visuel** (nom serveur, hostname, discord, tags) → **règle ZÉRO modif visuelle**. Le `sed s|/wise|/noxa|` aurait cassé `discord.gg/wisefa` → non appliqué. Rebranding à faire par l'owner si souhaité.
 
+### 🛡️ Session 2026-06-04 (suite) — Récupération de travail + anti-dupe
+
+**0. ♻️ Récupération de 12 commits QA/sécurité perdus.** La session précédente s'était terminée en **HEAD détaché** : 12 commits (backdoor, injection SQL, intégrité SQL, ox_lib, anti-dupe Bank/society) n'avaient **jamais été poussés** sur `origin/main` (resté au commit `initial`). Ces commits formaient une descendance linéaire propre de `main` → **fast-forward** + push : tout le travail est désormais sur `origin/main`.
+
+**1. 🚨 BUG-22 — Anti-dupe : montants client non validés (génération d'argent).**
+Plusieurs events serveur débitaient un montant **fourni par le client** sans validation. Un montant **négatif** inverse `removeAccountMoney`/`RemoveSocietyMoney` → **crédit infini** (le test `solde >= prix` passe trivialement). 5 handlers durcis avec la convention déjà en place (cf. lsco) — garde `nil` sur `xPlayer` + entier strictement positif :
+
+| Handler | Fichier | Impact de l'exploit |
+|---|---|---|
+| `autoecole:pay` (`price`) | `modules/server/autoecole/main.lua` | prix négatif → crédit banque |
+| `tattoos:save` (`price`) | `modules/server/tatouages/main.lua` | prix négatif → crédit cash |
+| `BuyLsCustoms` / `BuyLsCustomsPDG` (`amount`) | `mecano/server/sv_custom.lua` | montant négatif → **crédit société** |
+| `Koy:PayCustom` / `Koy:PayCustomPatron` (`price`) | `mecano/server/sv_custom.lua` | prix négatif → crédit cible + société vidée |
+
+Correctif type : `price = tonumber(price); if (not price) or price <= 0 or price ~= math.floor(price) then return end`. Comportement légitime (prix positif) **inchangé**. `gangsbuilder:UpdateGangProperty` = code mort (jamais rattaché à un net event) → pas de chemin actif. `Framework` setUserData (concat) = code ESX legacy interne → intact (règle ESX).
+
+**2. 🔍 BUG-11 (`location/script.js`) non reproductible.** Une seule déclaration top-level `const _0x3f8090` + une seule inclusion dans `index.html` ; `node --check` passe. L'erreur « already declared » venait d'un cache/état antérieur. Bundle obfusqué 1.8 Mo laissé intact (règle ZÉRO suppression).
+
+**3. ✅ Intégrité SQL revérifiée.** 47 tables référencées (`FROM`), toutes présentes ; candidats `lgd_idcard`/`camera` = **commentaires** (faux positifs). 0 table manquante.
+
 
 ### 🚨 Incident majeur — Backdoor RCE éradiquée (BUG-09 / BUG-19)
 

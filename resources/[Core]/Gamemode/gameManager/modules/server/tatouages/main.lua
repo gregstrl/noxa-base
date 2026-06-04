@@ -53,6 +53,11 @@ end)
 RegisterServerEvent("tattoos:save")
 AddEventHandler("tattoos:save", function(tattoosList, price, value)
 	local xPlayer = ESX.GetPlayerFromId(source)
+	if not xPlayer then return end
+	-- Securite : le prix vient du client. Entier strictement positif obligatoire,
+	-- sinon un prix negatif/decimal credite le joueur au lieu de le debiter.
+	price = tonumber(price)
+	if (not price) or price <= 0 or price ~= math.floor(price) then return end
 
 	if xPlayer.getAccount('cash').money >= price then
 		xPlayer.removeAccountMoney('cash', price)
